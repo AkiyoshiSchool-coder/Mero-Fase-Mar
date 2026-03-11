@@ -234,3 +234,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86bd430c0c63c24a9e7730029fcb976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeroMovement
+  InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

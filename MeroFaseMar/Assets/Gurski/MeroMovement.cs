@@ -3,17 +3,26 @@ using UnityEngine.InputSystem;
 
 public class MeroMovement : MonoBehaviour
 {
-    float speed = 5.01f;
-    void Start()
+    float speed = 20f;
+    public InputActionAsset InputActions;
+    private InputAction moveAction;
+    Vector2 direction;
+    Vector2 mouseworld;
+    void Awake()
     {
+        moveAction = InputSystem.actions.FindAction("Move");
         
     }
 
     void Update()
     {
-        Vector3 mouseworld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        Debug.Log(mouseworld);
-        Vector3 direction = mouseworld - transform.position;
-
+        if(moveAction.WasPressedThisFrame())
+        {
+            mouseworld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            Debug.Log(mouseworld);
+            direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
+        }
+        transform.LookAt(direction);
+        transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
     }
 }
