@@ -132,12 +132,20 @@ PrefabInstance:
       value: OceanWater
       objectReference: {fileID: 0}
     - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 71.03915
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 39.96755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.45162
+      value: -5.4593
       objectReference: {fileID: 0}
     - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.47369
+      value: -1.4464
       objectReference: {fileID: 0}
     - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -170,6 +178,14 @@ PrefabInstance:
     - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948625467271937392, guid: e0013925ac18fff42b751981164055fe, type: 3}
+      propertyPath: m_Color.b
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948625467271937392, guid: e0013925ac18fff42b751981164055fe, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40876526
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -250,6 +266,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -344,7 +361,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -369,12 +386,25 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -17.6, y: -9.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9c6c1c5a3b38148ad11bb3e63f04d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowCamera
+  Follow: {fileID: 1180932541}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,19 +503,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8898878390301449094, guid: 65f9f099e46feda4386bf2df213f261a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.707865
+      value: 11.60311
       objectReference: {fileID: 0}
     - target: {fileID: 8898878390301449094, guid: 65f9f099e46feda4386bf2df213f261a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.332319
+      value: 9.784836
       objectReference: {fileID: 0}
     - target: {fileID: 8898878390301449094, guid: 65f9f099e46feda4386bf2df213f261a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.4446
+      value: -5.45
       objectReference: {fileID: 0}
     - target: {fileID: 8898878390301449094, guid: 65f9f099e46feda4386bf2df213f261a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.488
+      value: -1.4654
       objectReference: {fileID: 0}
     - target: {fileID: 8898878390301449094, guid: 65f9f099e46feda4386bf2df213f261a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -528,6 +558,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8898878390301449094, guid: 65f9f099e46feda4386bf2df213f261a, type: 3}
   m_PrefabInstance: {fileID: 1079999274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1180932541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3151501142731296008, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+  m_PrefabInstance: {fileID: 87184913}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1769334005
 GameObject:
