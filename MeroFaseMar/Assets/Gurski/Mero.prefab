@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 2220960240111314292}
   - component: {fileID: 8422166405269986528}
   - component: {fileID: 1512029316152212232}
+  - component: {fileID: 8499717547839377244}
   m_Layer: 0
   m_Name: Mero
   m_TagString: Untagged
@@ -175,7 +176,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.34509805, g: 0.34509805, b: 0.34509805, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -221,3 +222,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &8499717547839377244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151501142731296008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86bd430c0c63c24a9e7730029fcb976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeroMovement
