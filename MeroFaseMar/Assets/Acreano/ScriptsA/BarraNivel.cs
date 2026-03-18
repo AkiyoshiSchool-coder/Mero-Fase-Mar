@@ -4,14 +4,11 @@ using UnityEngine.UIElements;
 
 public class BarraNivel : MonoBehaviour
 {
-    public int teste;
-    void Update()
-    {
-        FoodCount(teste);
-    }
+    private int teste = 0;
 
-    void FoodCount(int food)
+    public void FoodCount()
     {
-        transform.localScale = new Vector3(food*0.3325f,0.65f,1);
+        teste += 1;
+        transform.localScale = new Vector3(teste*0.3325f,0.65f,1);
     }
 }

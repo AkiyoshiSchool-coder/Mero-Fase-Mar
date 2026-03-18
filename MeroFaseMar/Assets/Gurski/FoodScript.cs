@@ -27,13 +27,12 @@ public class FoodScript : MonoBehaviour
             if(gameObject.CompareTag("FoodA"))
             {
                 Debug.Log("comida A");
-                foodA++;
             }
             else if(gameObject.CompareTag("FoodB"))
             {
                 Debug.Log("comida B");
-                foodB++;
             }
+            barraCode.FoodCount();
             Destroy(gameObject);
 
         }

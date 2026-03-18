@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Head
   - FoodA
+  - FoodB
   layers:
   - Default
   - TransparentFX
