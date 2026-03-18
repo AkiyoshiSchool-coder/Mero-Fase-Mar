@@ -39,6 +39,30 @@ public class FoodSpawner : MonoBehaviour
             posX = posX*-1;
             posY = posY*-1;
         }
+        if((Mathf.Abs(Mero.transform.position.x)+ Mathf.Abs(posX)) > 34)
+        {
+            if(Mero.transform.position.x < 0)
+            {
+                posX = Random.Range(9.02f,18.04f);    
+            }
+            if(Mero.transform.position.x > 0)
+            {
+                posX = Random.Range(-18.04f,-9.02f);    
+            }
+            
+        }
+        if((Mathf.Abs(Mero.transform.position.y)+ Mathf.Abs(posY)) > 18)
+        {
+            if(Mero.transform.position.y >0)
+            {
+                posY = Random.Range(-10.24f,-5.12f);
+            }
+            if(Mero.transform.position.y < 0)
+            {
+                posY = Random.Range(5.12f,10.25f);
+            }
+            
+        }
     }
     void FoodSpawn()
     {
