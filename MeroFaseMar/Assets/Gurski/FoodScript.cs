@@ -8,7 +8,7 @@ public class FoodScript : MonoBehaviour
 {
     private int foodA = 0;
     private int foodB = 0;
-    public Sprite barra;
+    public GameObject barra;
     private BarraNivel barraCode;
 
     void Awake()
