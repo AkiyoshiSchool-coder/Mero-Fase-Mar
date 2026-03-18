@@ -141,4 +141,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ab40401c2b0b741af6e99325706e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodScript
-  barra: {fileID: 0}
+  barra: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
