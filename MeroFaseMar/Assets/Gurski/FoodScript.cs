@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class FoodScript : MonoBehaviour
 {
     private int foodA = 0;
     private int foodB = 0;
-    public GameObject barra;
+    public Sprite barra;
     private BarraNivel barraCode;
 
     void Awake()
