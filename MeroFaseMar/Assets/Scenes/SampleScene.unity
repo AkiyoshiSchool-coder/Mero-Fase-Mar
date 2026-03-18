@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OceanWater
       objectReference: {fileID: 0}
+    - target: {fileID: 2442468300194931103, guid: e0013925ac18fff42b751981164055fe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: m_LocalScale.x
       value: 71.03915
