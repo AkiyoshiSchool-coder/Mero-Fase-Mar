@@ -29,6 +29,7 @@ public class MeroMovement : MonoBehaviour
         {
             Movement();
         }
+        Debug.Log(gameObject.transform.position.z);
     }
 
     void Movement()

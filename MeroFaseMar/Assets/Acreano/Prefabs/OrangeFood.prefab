@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 179792676984794741}
   - component: {fileID: 9040532304946246417}
+  - component: {fileID: 7645877236436431129}
   m_Layer: 27
   m_Name: OrangeFood
-  m_TagString: Untagged
+  m_TagString: FoodA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,3 +92,15 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &7645877236436431129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327296857486405652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ab40401c2b0b741af6e99325706e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodScript
