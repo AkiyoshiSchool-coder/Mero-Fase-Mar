@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FoodSpawner : MonoBehaviour
@@ -15,21 +16,16 @@ public class FoodSpawner : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("RandomDefine", 2.5f, 2f);
+        InvokeRepeating("FoodSpawn", 2.5f, 2f);
     }
 
 
-    void Update()
+    void RandomPositionDefine()
     {
-        
-    }
-    // mathf.abs()
-    void RandomDefine()
-    {
-        posX = Random.Range(9.02f, 17.5f);
-        posY = Random.Range(5.13f, 9.75f);
+        posX = Random.Range(9.01f, 17.6f);
+        posY = Random.Range(5.12f, 9.76f);
 
-        operators = Random.Range(1, 4); // 1 ++ 2 -+ 3 +- 4 --
+        operators = Random.Range(1, 5); // 1 ++ 2 -+ 3 +- 4 --
         if(operators == 2)
         {
             posX = posX*-1;
@@ -43,24 +39,20 @@ public class FoodSpawner : MonoBehaviour
             posX = posX*-1;
             posY = posY*-1;
         }
-
-        Instantiate(FoodA, new Vector3(Mero.transform.position.x + posX, 
-        Mero.transform.position.y + posY, 0), Quaternion.identity);
     }
-    //9.02 5.13
-    void FoodPositionDecider()
+    void FoodSpawn()
     {
-        
-    }
-    void FoodDecider()
-    {
-        random = Random.Range(0,1);
-    }
-    void FoodSpawn(int rand, Vector3 randPos)
-    {
-        if(rand == 1)
+        random = Random.Range(0,2);
+        RandomPositionDefine();
+        if(random == 1)
         {
-            Instantiate(FoodA, randPos, Quaternion.identity);
+            Instantiate(FoodA, new Vector3(Mero.transform.position.x + posX, 
+            Mero.transform.position.y + posY, 0), Quaternion.identity);
+        }
+        else if(random == 0)
+        {
+            Instantiate(FoodB, new Vector3(Mero.transform.position.x + posX, 
+            Mero.transform.position.y + posY, 0), Quaternion.identity);
         }
     }
 
