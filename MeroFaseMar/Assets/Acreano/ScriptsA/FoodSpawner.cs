@@ -16,7 +16,7 @@ public class FoodSpawner : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("FoodSpawn", 2.5f, 2f);
+        InvokeRepeating("FoodSpawn", 1f, 0.6f);
     }
 
 

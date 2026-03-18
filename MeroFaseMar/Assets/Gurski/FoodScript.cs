@@ -8,11 +8,12 @@ public class FoodScript : MonoBehaviour
 {
     private int foodA = 0;
     private int foodB = 0;
-    public GameObject barra;
+    [SerializeField] private GameObject barra;
     private BarraNivel barraCode;
 
     void Awake()
     {
+        barra = GameObject.Find("BarraNível");
         barraCode = barra.GetComponent<BarraNivel>();
     }
 
