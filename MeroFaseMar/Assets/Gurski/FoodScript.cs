@@ -12,7 +12,7 @@ public class FoodScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("aaaa");
-        if(collider.CompareTag("Head"))
+        if(collider.gameObject.CompareTag("Head"))
         {
             Destroy(gameObject);
         }
