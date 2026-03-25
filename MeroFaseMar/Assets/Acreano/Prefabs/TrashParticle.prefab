@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4017347124948616019}
   - component: {fileID: 4016748834900546642}
+  - component: {fileID: -8378223856110880211}
   m_Layer: 0
   m_Name: TrashParticle
   m_TagString: Untagged
@@ -91,3 +92,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-8378223856110880211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832248732016877227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d82747a6eea4d45a241e13fab59870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrashMove
+  foodSpawn: {fileID: 0}
+  FS: {fileID: 0}
+  foodDecider: 0
+  FoodCords: {x: 0, y: 0, z: 0}
