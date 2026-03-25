@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mero
       objectReference: {fileID: 0}
+    - target: {fileID: 8422166405269986528, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -268,6 +272,8 @@ GameObject:
   m_Component:
   - component: {fileID: 315514899}
   - component: {fileID: 315514900}
+  - component: {fileID: 315514902}
+  - component: {fileID: 315514901}
   m_Layer: 0
   m_Name: MeroAbrigo
   m_TagString: Abrigo
@@ -321,12 +327,52 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2.5
+  m_Radius: 5
+--- !u!114 &315514901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315514898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41359d7d9af96143b504b4d38a7817d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbrigoDetection
+  player: {fileID: 1180932541}
+--- !u!50 &315514902
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315514898}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDamping: 0
+  m_AngularDamping: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54ea3615b9cdab4bb37a7078719be57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSpawner
+  Foods: []
   FoodA: {fileID: 3327296857486405652, guid: 39d6d304161eb764c8c0e998fbd8fec8, type: 3}
   FoodB: {fileID: 3403562119263904250, guid: 980c0df42dc96a64b92e1fafdd4ec2dd, type: 3}
   Mero: {fileID: 1180932541}
@@ -1363,7 +1410,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 315514899}
@@ -1427,63 +1474,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &693154730321627117
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.45777
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.60262
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650685097768080151, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6645644014765317942, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
-      propertyPath: m_Name
-      value: Boom
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
 --- !u!1001 &3920020528112835724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1700,4 +1690,3 @@ SceneRoots:
   - {fileID: 1975739952}
   - {fileID: 315514899}
   - {fileID: 869922924}
-  - {fileID: 693154730321627117}

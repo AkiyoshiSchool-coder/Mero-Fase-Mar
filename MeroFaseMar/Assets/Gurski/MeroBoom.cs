@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +7,8 @@ public class MeroBoom : MonoBehaviour
     public GameObject boom;
     public InputActionAsset InputActions;
     private InputAction boomAction;
+    [SerializeField] private bool noAbrigo;
+    private float timer = 0;
     void Awake()
     {
         boomAction = InputSystem.actions.FindAction("Attack");
@@ -13,9 +16,23 @@ public class MeroBoom : MonoBehaviour
 
     void Update()
     {
-        if(boomAction.WasPressedThisFrame())
+        if(noAbrigo && timer <= 0)
         {
-            Instantiate(boom, transform.position, Quaternion.identity);
+            if(boomAction.WasPressedThisFrame())
+            {
+                Instantiate(boom, transform.position, Quaternion.identity);
+                timer = 0.5f;
+            }
         }
+    }
+
+    void FixedUpdate()
+    {
+        timer -= Time.deltaTime;
+    }
+
+    public void Abrigo(bool estanoabrigo)
+    {
+        noAbrigo = estanoabrigo;
     }
 }
