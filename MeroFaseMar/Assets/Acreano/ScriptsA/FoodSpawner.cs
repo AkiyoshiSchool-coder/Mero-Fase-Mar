@@ -71,12 +71,12 @@ public class FoodSpawner : MonoBehaviour
         if(random == 1)
         {
             Instantiate(FoodA, new Vector3(Mero.transform.position.x + posX, 
-            Mero.transform.position.y + posY, 0), Quaternion.identity);
+            Mero.transform.position.y + posY, -1), Quaternion.identity);
         }
         else if(random == 0)
         {
             Instantiate(FoodB, new Vector3(Mero.transform.position.x + posX, 
-            Mero.transform.position.y + posY, 0), Quaternion.identity);
+            Mero.transform.position.y + posY, -1), Quaternion.identity);
         }
     }
 
