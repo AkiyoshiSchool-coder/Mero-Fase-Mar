@@ -32,11 +32,8 @@ public class FoodScript : MonoBehaviour
             {
                 Debug.Log("comida A");
                 foodA++;
-<<<<<<< Updated upstream
-                cs.anchoredPosition = new Rect(cs.anchoredPosition.x + 100, cs.anchoredPosition.y, 10, 30);
-=======
-           //   cs.anchoredPosition = new Rect(cs.anchoredPosition.x + 100, cs.anchoredPosition.y, 10, 30);
->>>>>>> Stashed changes
+
+                //cs.anchoredPosition = new Rect(cs.anchoredPosition.x + 100, cs.anchoredPosition.y, 10, 30);
             }
             else if(gameObject.CompareTag("FoodB"))
             {
