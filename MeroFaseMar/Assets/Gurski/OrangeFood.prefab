@@ -141,5 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ab40401c2b0b741af6e99325706e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodScript
-  cursor: {fileID: 731591691293518012, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
+  cursor: {fileID: 0}
+  cs: {fileID: 0}
   barra: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
