@@ -7,6 +7,8 @@ TagManager:
   - Head
   - FoodA
   - FoodB
+  - Boom
+  - Abrigo
   layers:
   - Default
   - TransparentFX

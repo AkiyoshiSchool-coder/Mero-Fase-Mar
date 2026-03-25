@@ -123,7 +123,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 2220960240111314292}
   - component: {fileID: 8422166405269986528}
   - component: {fileID: 8499717547839377244}
+  - component: {fileID: -7253781465284499921}
   - component: {fileID: 8262630833375765872}
   m_Layer: 0
   m_Name: Mero
@@ -185,7 +186,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.46492, y: 0.43951, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 637277616889927797}
@@ -262,6 +263,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86bd430c0c63c24a9e7730029fcb976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeroMovement
+  InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+--- !u!114 &-7253781465284499921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151501142731296008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acacec1c9c5642d4dafe5c018fa6e154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeroBoom
+  boom: {fileID: 6645644014765317942, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
   InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!70 &8262630833375765872
 CapsuleCollider2D:
