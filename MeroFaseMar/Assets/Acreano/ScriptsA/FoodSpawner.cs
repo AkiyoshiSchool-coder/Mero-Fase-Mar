@@ -1,14 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class FoodSpawner : MonoBehaviour
 {
+    public List<UnityEngine.Vector3> Foods = new List<UnityEngine.Vector3>();
     public GameObject FoodA;
     public GameObject FoodB;
     public GameObject Mero;
     [SerializeField] int operators = 0;
 
-    private Vector3 RandomPos;
+    private UnityEngine.Vector3 RandomPos;
 
     private float posX, posY;
 
@@ -70,13 +76,17 @@ public class FoodSpawner : MonoBehaviour
         RandomPositionDefine();
         if(random == 1)
         {
-            Instantiate(FoodA, new Vector3(Mero.transform.position.x + posX, 
-            Mero.transform.position.y + posY, -1), Quaternion.identity);
+            RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
+
+            Instantiate(FoodA, RandomPos, UnityEngine.Quaternion.identity);
+            Foods.Add(RandomPos); 
         }
         else if(random == 0)
         {
-            Instantiate(FoodB, new Vector3(Mero.transform.position.x + posX, 
-            Mero.transform.position.y + posY, -1), Quaternion.identity);
+            RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
+
+            Instantiate(FoodB, RandomPos, UnityEngine.Quaternion.identity);
+            Foods.Add(RandomPos); 
         }
     }
 
