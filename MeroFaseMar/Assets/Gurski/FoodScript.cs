@@ -9,20 +9,24 @@ using UnityEngine.UI;
 
 public class FoodScript : MonoBehaviour
 {
-    private int foodA = 0;
-    private int foodB = 0;
     public bool IsInfected = false;
     private GameObject cursor;
     [SerializeField] private GameObject foodSpawn;
     [SerializeField] private FoodSpawner FS;
     [SerializeField] private RectTransform cs;
     [SerializeField] private GameObject barra;
+    [SerializeField] private GameObject Mero;
+    [SerializeField] private MeroStats merostats;
+    [SerializeField] private PoisonDamage poison;
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        Mero = GameObject.Find("Mero");
+        merostats = Mero.GetComponent<MeroStats>();
+        poison = Mero.GetComponent<PoisonDamage>();
         cursor = GameObject.Find("cursor");
         barra = GameObject.Find("BarraNível");
         foodSpawn = GameObject.Find("Spawner");
@@ -45,7 +49,6 @@ public class FoodScript : MonoBehaviour
 
     private void FoodInfect()
     {
-        spriteRenderer.color = Color.darkViolet;
         spriteRenderer.color = Color.HSVToRGB(0.75f,1f,0.65f);
     }
 
@@ -56,7 +59,13 @@ public class FoodScript : MonoBehaviour
             if(gameObject.CompareTag("FoodA"))
             {
                 Debug.Log("comida A");
-                foodA++;
+                merostats.FoodA++;
+
+                if(IsInfected)
+                {
+                    merostats.Poison += 1;
+                    poison.BarsMove();
+                }
 
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
@@ -66,8 +75,14 @@ public class FoodScript : MonoBehaviour
             else if(gameObject.CompareTag("FoodB"))
             {
                 Debug.Log("comida B");
-                foodB++;
-                
+                merostats.FoodB++;
+
+                if(IsInfected)
+                {
+                    merostats.Poison += 1;
+                    poison.BarsMove();
+                }
+
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
