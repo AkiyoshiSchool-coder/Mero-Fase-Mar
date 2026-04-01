@@ -12,6 +12,9 @@ public class MeroStats : MonoBehaviour
 
     void Update()
     {
-        
+        if(FoodA > 10 -Poison || FoodB > 10 -Poison)
+        {
+            Debug.Log("Morte Bruta");
+        }
     }
 }

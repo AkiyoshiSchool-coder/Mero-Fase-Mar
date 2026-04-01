@@ -60,6 +60,9 @@ public class FoodScript : MonoBehaviour
             {
                 Debug.Log("comida A");
                 merostats.FoodA++;
+                merostats.FoodB--;
+                if(merostats.FoodB <0)
+                    merostats.FoodB = 0;
 
                 if(IsInfected)
                 {
@@ -76,7 +79,9 @@ public class FoodScript : MonoBehaviour
             {
                 Debug.Log("comida B");
                 merostats.FoodB++;
-
+                merostats.FoodA--;
+                if(merostats.FoodA <0)
+                    merostats.FoodA = 0;
                 if(IsInfected)
                 {
                     merostats.Poison += 1;
