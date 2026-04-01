@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -10,15 +11,18 @@ public class FoodScript : MonoBehaviour
 {
     private int foodA = 0;
     private int foodB = 0;
+    public bool IsInfected = false;
     private GameObject cursor;
     [SerializeField] private GameObject foodSpawn;
     [SerializeField] private FoodSpawner FS;
     [SerializeField] private RectTransform cs;
     [SerializeField] private GameObject barra;
+    private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
 
     void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         cursor = GameObject.Find("cursor");
         barra = GameObject.Find("BarraNível");
         foodSpawn = GameObject.Find("Spawner");
@@ -31,6 +35,20 @@ public class FoodScript : MonoBehaviour
         cs.anchoredPosition = new Vector2(cs.anchoredPosition.x, cs.anchoredPosition.y);
     }
 
+    void Update()
+    {
+        if(IsInfected)
+        {
+            FoodInfect();
+        }
+    }
+
+    private void FoodInfect()
+    {
+        spriteRenderer.color = Color.darkViolet;
+        spriteRenderer.color = Color.HSVToRGB(0.75f,1f,0.65f);
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject.CompareTag("Head"))
@@ -40,7 +58,8 @@ public class FoodScript : MonoBehaviour
                 Debug.Log("comida A");
                 foodA++;
 
-                FS.Foods.Remove(gameObject.transform.position);
+                FS.FoodsPos.Remove(gameObject.transform.position);
+                FS.Foods.Remove(gameObject);
 
                 cs.localPosition = new Vector3(cs.localPosition.x - 48.7f, cs.localPosition.y, cs.localPosition.z);
             }
@@ -49,7 +68,8 @@ public class FoodScript : MonoBehaviour
                 Debug.Log("comida B");
                 foodB++;
                 
-                FS.Foods.Remove(gameObject.transform.position);
+                FS.FoodsPos.Remove(gameObject.transform.position);
+                FS.Foods.Remove(gameObject);
 
                 cs.localPosition = new Vector3(cs.localPosition.x + 48.7f, cs.localPosition.y, cs.localPosition.z);
             }

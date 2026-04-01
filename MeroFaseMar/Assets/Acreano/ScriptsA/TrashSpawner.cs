@@ -5,15 +5,17 @@ public class TrashSpawner : MonoBehaviour
 {
 
     [SerializeField]private GameObject trashParticle;
+    public float StartTime;
+    public float Cooldown;
     void Start()
     {
         if(gameObject.tag == "beacon1")
         {
-            InvokeRepeating("TrashSpawn", 5, 3);
+            InvokeRepeating("TrashSpawn", StartTime, Cooldown);
         }
         if(gameObject.tag == "beacon2")
         {
-            InvokeRepeating("TrashSpawn", 6.5f, 3);
+            InvokeRepeating("TrashSpawn", StartTime+1.5f, Cooldown);
         }
     }
 
