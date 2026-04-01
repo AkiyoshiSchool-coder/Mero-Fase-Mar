@@ -269,25 +269,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2428681735801413381, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3151501142731296008, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Name
       value: Mero
       objectReference: {fileID: 0}
-    - target: {fileID: 8262630833375765872, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 4333045775212785828, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: BarraDir
+      value: 
+      objectReference: {fileID: 1055653939}
+    - target: {fileID: 4333045775212785828, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: BarraEsq
+      value: 
+      objectReference: {fileID: 964317601}
+    - target: {fileID: 6406353230661962550, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3151501142731296008, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1180932547}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -797,7 +798,7 @@ GameObject:
   - component: {fileID: 964317604}
   - component: {fileID: 964317603}
   m_Layer: 5
-  m_Name: MarcadorDir (1)
+  m_Name: MarcadorEsq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1085,21 +1086,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3151501142731296008, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
   m_PrefabInstance: {fileID: 87184913}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1180932547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180932541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e8e614526219cf41b8c3e06a97082b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MeroStats
-  FoodA: 0
-  FoodB: 0
-  Poison: 0
 --- !u!1 &1385726212
 GameObject:
   m_ObjectHideFlags: 0
