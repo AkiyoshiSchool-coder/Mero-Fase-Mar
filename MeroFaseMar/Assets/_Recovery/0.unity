@@ -254,16 +254,19 @@ PrefabInstance:
       value: Mero
       objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
-      propertyPath: barraTap
-      value: 
-      objectReference: {fileID: 1709927579}
-    - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: barraTime
       value: 
       objectReference: {fileID: 1823636555}
+    - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: barraPress
+      value: 
+      objectReference: {fileID: 1709927579}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2220960240111314292, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 162890138}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
 --- !u!1 &162890137
@@ -275,7 +278,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 162890138}
-  - component: {fileID: 162890139}
   m_Layer: 0
   m_Name: EscapeMeter
   m_TagString: Untagged
@@ -291,28 +293,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162890137}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8000002, y: 0.72, z: 0}
-  m_LocalScale: {x: 1.2, y: 0.36, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0.6, z: 0}
+  m_LocalScale: {x: 1, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1823636556}
   - {fileID: 1709927580}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1180932546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &162890139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162890137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c4ffb3be95f5ce4f8eddd51c3d59d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FollowMero
-  player: {fileID: 1180932541}
 --- !u!1 &315514898
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &620840390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,6 +1334,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3151501142731296008, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
   m_PrefabInstance: {fileID: 87184913}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1180932546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2220960240111314292, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+  m_PrefabInstance: {fileID: 87184913}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1385726212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,7 +1462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1709927580
 Transform:
   m_ObjectHideFlags: 0
@@ -1478,7 +1472,7 @@ Transform:
   m_GameObject: {fileID: 1709927579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.87, z: -1}
+  m_LocalPosition: {x: 0, y: -0.65, z: -1}
   m_LocalScale: {x: 0, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1533,7 +1527,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9168735068763562810, guid: f7c56d2d723539e4fa6cbc32d782ef79, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1610,7 +1604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1823636556
 Transform:
   m_ObjectHideFlags: 0
@@ -1675,7 +1669,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9168735068763562810, guid: f7c56d2d723539e4fa6cbc32d782ef79, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.035300493, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2084,7 +2078,6 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1769334006}
   - {fileID: 87184913}
-  - {fileID: 162890138}
   - {fileID: 1385726216}
   - {fileID: 1975739952}
   - {fileID: 315514899}

@@ -17,10 +17,16 @@ public class MeroMovement : MonoBehaviour
     private bool canMove = true;
     private int escapeCount = 0;
     public GameObject redeMero;
+    public GameObject barraTime, barraTap;
+    private MoveBarrinha codeBTime, codeBTap;
+    private float timer = 0;
+    
     void Awake()
     {
         moveAction = InputSystem.actions.FindAction("Move");
         escapeAction = InputSystem.actions.FindAction("Escape");
+        codeBTime = barraTime.GetComponent<MoveBarrinha>();
+        codeBTap = barraTap.GetComponent<MoveBarrinha>();
     }
 
     void Update()
@@ -32,18 +38,39 @@ public class MeroMovement : MonoBehaviour
         if(escapeAction.WasPerformedThisFrame())
         {
             escapeCount++;
+            codeBTap.MoveBarra(1);
             Debug.Log(escapeCount);
         }
         if(escapeCount >= 5)
         {
-            canMove = true;
-            redeMero.SetActive(false);
-            escapeCount = 0;
+            EscapeReset();
         }
         if(startMoving)
         {
             Movement();
         }
+        if(!canMove)
+        {
+            timer += Time.deltaTime;
+            codeBTime.MoveBarra(-Time.deltaTime);
+            if(timer>5)
+            {
+                EscapeReset();
+                Debug.Log("MERO MORREU PRA REDE");
+                timer = 0;
+            }
+        }
+    }
+
+    void EscapeReset()
+    {
+        canMove = true;
+        redeMero.SetActive(false);
+        codeBTap.ResetBarra(0);
+        codeBTime.ResetBarra(1);
+        barraTime.SetActive(false);
+        barraTap.SetActive(false);
+        escapeCount = 0;
     }
 
     void Movement()
@@ -85,10 +112,13 @@ public class MeroMovement : MonoBehaviour
 
     void PresoNaRede()
     {
+        codeBTap.ResetBarra(0);
+        codeBTime.ResetBarra(1);
         canMove = false;
         redeMero.SetActive(true);
+        barraTime.SetActive(true);
+        barraTap.SetActive(true);
         escapeCount = 0;
         Debug.Log("Pego na rede");
-
     }
 }
