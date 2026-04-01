@@ -8,7 +8,8 @@ using UnityEngine.UI;
 
 public class FoodSpawner : MonoBehaviour
 {
-    public List<UnityEngine.Vector3> Foods = new List<UnityEngine.Vector3>();
+    public List<UnityEngine.Vector3> FoodsPos = new List<UnityEngine.Vector3>();
+    public List<GameObject> Foods = new List<GameObject>();
     public GameObject FoodA;
     public GameObject FoodB;
     public GameObject Mero;
@@ -78,15 +79,18 @@ public class FoodSpawner : MonoBehaviour
         {
             RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
 
-            Instantiate(FoodA, RandomPos, UnityEngine.Quaternion.identity);
-            Foods.Add(RandomPos); 
+            var TempFood = Instantiate(FoodA, RandomPos, UnityEngine.Quaternion.identity);
+            FoodsPos.Add(RandomPos); 
+            Foods.Add(TempFood);
+
         }
         else if(random == 0)
         {
             RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
 
-            Instantiate(FoodB, RandomPos, UnityEngine.Quaternion.identity);
-            Foods.Add(RandomPos); 
+            var TempFood = Instantiate(FoodB, RandomPos, UnityEngine.Quaternion.identity);
+            FoodsPos.Add(RandomPos); 
+            Foods.Add(TempFood);
         }
     }
 

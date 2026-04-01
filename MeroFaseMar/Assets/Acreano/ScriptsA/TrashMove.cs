@@ -4,9 +4,12 @@ using UnityEngine;
 public class TrashMove : MonoBehaviour
 {
     [SerializeField]private GameObject foodSpawn;
+    [SerializeField]private FoodScript foodScript;
+    
     [SerializeField]private FoodSpawner FS;
     [SerializeField]private int foodDecider;
     [SerializeField]private float Speed;
+    private UnityEngine.Vector3 FoodPosition;
 
     void Awake()
     {
@@ -16,7 +19,9 @@ public class TrashMove : MonoBehaviour
 
     void Start()
     {
-        foodDecider = Random.Range(0,FS.Foods.Count);
+        foodDecider = Random.Range(0,FS.FoodsPos.Count);
+        FoodPosition = FS.FoodsPos[foodDecider];
+        FS.FoodsPos.Remove(FS.FoodsPos[foodDecider]);
     }
     void Update()
     {
@@ -25,6 +30,15 @@ public class TrashMove : MonoBehaviour
 
     void FollowFood()
     {
-        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FS.Foods[foodDecider],Speed);
+        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FoodPosition,Speed);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag.Contains("Food"))
+        {
+            foodScript = collision.gameObject.GetComponent<FoodScript>();
+            foodScript.IsInfected = true;
+            Destroy(gameObject);
+        }
     }
 }
