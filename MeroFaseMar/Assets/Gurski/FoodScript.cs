@@ -17,6 +17,7 @@ public class FoodScript : MonoBehaviour
     [SerializeField] private GameObject barra;
     [SerializeField] private GameObject Mero;
     [SerializeField] private MeroStats merostats;
+    [SerializeField] private PoisonDamage poison;
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
 
@@ -25,6 +26,7 @@ public class FoodScript : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         Mero = GameObject.Find("Mero");
         merostats = Mero.GetComponent<MeroStats>();
+        poison = Mero.GetComponent<PoisonDamage>();
         cursor = GameObject.Find("cursor");
         barra = GameObject.Find("BarraNível");
         foodSpawn = GameObject.Find("Spawner");
@@ -59,6 +61,12 @@ public class FoodScript : MonoBehaviour
                 Debug.Log("comida A");
                 merostats.FoodA++;
 
+                if(IsInfected)
+                {
+                    merostats.Poison += 1;
+                    poison.BarsMove();
+                }
+
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
@@ -69,14 +77,16 @@ public class FoodScript : MonoBehaviour
                 Debug.Log("comida B");
                 merostats.FoodB++;
 
+                if(IsInfected)
+                {
+                    merostats.Poison += 1;
+                    poison.BarsMove();
+                }
+
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
                 cs.localPosition = new Vector3(cs.localPosition.x + 48.7f, cs.localPosition.y, cs.localPosition.z);
-            }
-            if(IsInfected)
-            {
-                merostats.Poison += 1;
             }
             barraCode.FoodCount();
             Destroy(gameObject);
