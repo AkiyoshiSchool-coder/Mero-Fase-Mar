@@ -9,14 +9,18 @@ public class MeroMovement : MonoBehaviour
     float speed = 5f;
     public InputActionAsset InputActions;
     private InputAction moveAction;
+    private InputAction escapeAction;
     Vector2 direction;
     Vector2 mouseworld;
     private float meroRotation;
     private bool startMoving = false;
+    private bool canMove = true;
+    private int escapeCount = 0;
+    public GameObject redeMero;
     void Awake()
     {
         moveAction = InputSystem.actions.FindAction("Move");
-        
+        escapeAction = InputSystem.actions.FindAction("Escape");
     }
 
     void Update()
@@ -24,6 +28,17 @@ public class MeroMovement : MonoBehaviour
         if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
+        }
+        if(escapeAction.WasPerformedThisFrame())
+        {
+            escapeCount++;
+            Debug.Log(escapeCount);
+        }
+        if(escapeCount >= 5)
+        {
+            canMove = true;
+            redeMero.SetActive(false);
+            escapeCount = 0;
         }
         if(startMoving)
         {
@@ -37,7 +52,10 @@ public class MeroMovement : MonoBehaviour
         direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
         meroRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, meroRotation - 90);
-        transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
+        if(canMove)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
+        }
         if(transform.position.x > 34.3f)
         {
             transform.position = new Vector3(34.3f, transform.position.y, transform.position.z);
@@ -54,5 +72,23 @@ public class MeroMovement : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, -18.8f, transform.position.z);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.name.Contains("Rede"))
+        {
+            Destroy(other.gameObject);
+            PresoNaRede();
+        }
+    }
+
+    void PresoNaRede()
+    {
+        canMove = false;
+        redeMero.SetActive(true);
+        escapeCount = 0;
+        Debug.Log("Pego na rede");
+
     }
 }
