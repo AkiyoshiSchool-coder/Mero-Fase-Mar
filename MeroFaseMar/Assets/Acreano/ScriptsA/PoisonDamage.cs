@@ -19,7 +19,7 @@ public class PoisonDamage : MonoBehaviour
 
     public void BarsMove()
     {
-        BarraDir.transform.position = new UnityEngine.Vector3(BarraDir.transform.position.x - BarMovement/4,BarraDir.transform.position.y, BarraDir.transform.position.z);
-        BarraEsq.transform.position = new UnityEngine.Vector3(BarraEsq.transform.position.x + BarMovement/4,BarraEsq.transform.position.y, BarraEsq.transform.position.z);
+        BarraDir.transform.position = new UnityEngine.Vector3(BarraDir.transform.position.x - BarMovement/2,BarraDir.transform.position.y, BarraDir.transform.position.z);
+        BarraEsq.transform.position = new UnityEngine.Vector3(BarraEsq.transform.position.x + BarMovement/2,BarraEsq.transform.position.y, BarraEsq.transform.position.z);
     }
 }
