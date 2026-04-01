@@ -74,6 +74,10 @@ public class FoodScript : MonoBehaviour
 
                 cs.localPosition = new Vector3(cs.localPosition.x + 48.7f, cs.localPosition.y, cs.localPosition.z);
             }
+            if(IsInfected)
+            {
+                merostats.Poison += 1;
+            }
             barraCode.FoodCount();
             Destroy(gameObject);
 

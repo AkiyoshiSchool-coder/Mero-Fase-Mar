@@ -10,7 +10,6 @@ public class MeroStats : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
