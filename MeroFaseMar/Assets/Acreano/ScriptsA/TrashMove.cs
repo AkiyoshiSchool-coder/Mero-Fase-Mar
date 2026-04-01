@@ -6,6 +6,7 @@ public class TrashMove : MonoBehaviour
     [SerializeField]private GameObject foodSpawn;
     [SerializeField]private FoodSpawner FS;
     [SerializeField]private int foodDecider;
+    [SerializeField]private float Speed;
 
     void Awake()
     {
@@ -24,6 +25,6 @@ public class TrashMove : MonoBehaviour
 
     void FollowFood()
     {
-        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FS.Foods[foodDecider],0.1f);
+        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FS.Foods[foodDecider],Speed);
     }
 }
