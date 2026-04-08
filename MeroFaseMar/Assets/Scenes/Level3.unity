@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: BarraEsq
       value: 
       objectReference: {fileID: 1987731161}
+    - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: qntd
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: barraTap
       value: 
@@ -2167,7 +2171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7787659404399645463, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
       propertyPath: qntd
-      value: 5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7787659404399645463, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
       propertyPath: player
