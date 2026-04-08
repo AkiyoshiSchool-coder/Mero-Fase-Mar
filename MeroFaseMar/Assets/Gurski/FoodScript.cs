@@ -59,11 +59,8 @@ public class FoodScript : MonoBehaviour
             if(gameObject.CompareTag("FoodA"))
             {
                 Debug.Log("comida A");
-                merostats.FoodA++;
-                merostats.FoodB--;
-                if(merostats.FoodB <0)
-                    merostats.FoodB = 0;
-
+                merostats.FoodCount++;
+                
                 if(IsInfected)
                 {
                     merostats.Poison += 1;
@@ -78,10 +75,8 @@ public class FoodScript : MonoBehaviour
             else if(gameObject.CompareTag("FoodB"))
             {
                 Debug.Log("comida B");
-                merostats.FoodB++;
-                merostats.FoodA--;
-                if(merostats.FoodA <0)
-                    merostats.FoodA = 0;
+                merostats.FoodCount--;
+                
                 if(IsInfected)
                 {
                     merostats.Poison += 1;

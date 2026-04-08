@@ -281,6 +281,18 @@ PrefabInstance:
       propertyPath: BarraEsq
       value: 
       objectReference: {fileID: 964317601}
+    - target: {fileID: 4333045775212785828, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: BarMovement
+      value: 48.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: qntd
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: Poison
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: barraTap
       value: 
@@ -566,7 +578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7820499311561741716, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1001
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 7820499311561741716, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
       propertyPath: m_SizeDelta.y
@@ -870,7 +882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5163237789427398708, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1741,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 3982002910674260756, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787659404399645463, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
+      propertyPath: qntd
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7787659404399645463, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
       propertyPath: player

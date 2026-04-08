@@ -34,7 +34,7 @@ public class MeroMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(timer);
+        // Debug.Log(timer);
         if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
