@@ -1,8 +1,12 @@
 using UnityEngine;
 
-public class PescadorScript : MonoBehaviour
+public class DiverScript : MonoBehaviour
 {
-    public GameObject mero;
+    private GameObject mero;
+    public GameObject gameMgr;
+    private GameManager gameManager;
+    private MeroStats meroStats;
+    private PoisonDamage poison;
     [SerializeField] private int speed = 4;
     [SerializeField] private bool notScared = true;
     private float pescadorRotation;
@@ -10,6 +14,10 @@ public class PescadorScript : MonoBehaviour
     void Start()
     {
         mero = GameObject.Find("Mero");
+        meroStats = mero.GetComponent<MeroStats>();
+        poison = mero.GetComponent<PoisonDamage>();
+        gameManager = gameMgr.GetComponent<GameManager>();
+
     }
 
     void Update()
@@ -43,12 +51,26 @@ public class PescadorScript : MonoBehaviour
     {
         if(collider.name == "Mero")
         {
-            Debug.Log("Game Over!");
+            if(gameObject.name == "Pescador(Clone)")
+            {
+                Debug.Log("game over");
+                gameManager.GameOver();
+            }
+            else if(gameObject.name == "Pesquisador(Clone)")
+            {
+                Debug.Log("cura");
+                poison.Heal();
+                meroStats.Poison = 0;
+                Destroy(gameObject);
+            }
         }
-        if(collider.tag == "Boom")
+        if(collider.CompareTag("Boom"))
         {
-            Debug.Log("a");
-            RunAway();
+            if(gameObject.name == "Pescador(Clone)")
+            {
+                Debug.Log("a");
+                RunAway();
+            }
         }
     }
 

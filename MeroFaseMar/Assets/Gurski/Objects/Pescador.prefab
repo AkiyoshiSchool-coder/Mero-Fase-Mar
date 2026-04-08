@@ -101,8 +101,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1131339688555972057}
   - component: {fileID: 1334960206863075039}
-  - component: {fileID: 2514947633222957764}
   - component: {fileID: 1517353523292682621}
+  - component: {fileID: 2514947633222957764}
   - component: {fileID: 8062374771415115905}
   m_Layer: 0
   m_Name: Pescador
@@ -186,6 +186,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1517353523292682621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853795661525284708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0297595e4ab1f32458471ad4ec155363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PescadorScript
+  gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
+  speed: 4
+  notScared: 1
 --- !u!70 &2514947633222957764
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -223,20 +238,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &1517353523292682621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853795661525284708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0297595e4ab1f32458471ad4ec155363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PescadorScript
-  mero: {fileID: 0}
-  speed: 4
 --- !u!50 &8062374771415115905
 Rigidbody2D:
   serializedVersion: 5

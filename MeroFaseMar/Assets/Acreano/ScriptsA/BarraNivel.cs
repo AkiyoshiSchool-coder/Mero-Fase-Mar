@@ -1,12 +1,20 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class BarraNivel : MonoBehaviour
 {
     private int teste = 0;
-    public GameObject victory;
-    public GameObject player;
+    Scene scene;
+    public GameObject gameMgr;
+    private GameManager gameManager;
+
+    void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+        gameManager = gameMgr.GetComponent<GameManager>();
+    }
 
     public void FoodCount()
     {
@@ -15,7 +23,18 @@ public class BarraNivel : MonoBehaviour
         if(teste>=50)
         {
             Debug.Log("Você venceu");
-            // Instantiate(victory, player.transform.position, Quaternion.identity);
+            if(scene.name == "Level1")
+            {
+                gameManager.Level2();
+            }
+            else if(scene.name == "Level2")
+            {
+                gameManager.Level3();
+            }
+            else if(scene.name == "Level3")
+            {
+                gameManager.Victory();
+            }
         }
     }
 }

@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeroMovement
   InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
   redeMero: {fileID: 6406353230661962550}
   barraTime: {fileID: 0}
   barraTap: {fileID: 0}
@@ -300,6 +301,7 @@ MonoBehaviour:
   FoodA: 0
   FoodB: 0
   Poison: 0
+  gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
 --- !u!114 &4333045775212785828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PoisonDamage
   BarraEsq: {fileID: 0}
   BarraDir: {fileID: 0}
+  startPosEsq: {x: 0, y: 0, z: 0}
+  startPosDir: {x: 0, y: 0, z: 0}
   BarMovement: 48
 --- !u!1 &6406353230661962550
 GameObject:

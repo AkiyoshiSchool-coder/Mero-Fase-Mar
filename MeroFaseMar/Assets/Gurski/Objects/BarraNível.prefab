@@ -88,5 +88,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f032bd414c0660448a388832ebcf6d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarraNivel
-  victory: {fileID: 341531988926055975, guid: 9059b9a8f15b11641adc9922a9e8a755, type: 3}
-  player: {fileID: 0}
+  gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}

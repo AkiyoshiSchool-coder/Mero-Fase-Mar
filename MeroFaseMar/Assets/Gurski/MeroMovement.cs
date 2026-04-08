@@ -14,8 +14,10 @@ public class MeroMovement : MonoBehaviour
     Vector2 mouseworld;
     private float meroRotation;
     private bool startMoving = false;
-    private bool canMove = true;
+    private bool isStuck = false;
     private int escapeCount = 0;
+    public GameObject gameMgr;
+    private GameManager gameManager;
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
     private MoveBarrinha codeBTime, codeBTap;
@@ -27,10 +29,12 @@ public class MeroMovement : MonoBehaviour
         escapeAction = InputSystem.actions.FindAction("Escape");
         codeBTime = barraTime.GetComponent<MoveBarrinha>();
         codeBTap = barraTap.GetComponent<MoveBarrinha>();
+        gameManager = gameMgr.GetComponent<GameManager>();
     }
 
     void Update()
     {
+        Debug.Log(timer);
         if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
@@ -43,34 +47,22 @@ public class MeroMovement : MonoBehaviour
         }
         if(escapeCount >= 5)
         {
-            EscapeReset();
+            Rede(false);
         }
         if(startMoving)
         {
             Movement();
         }
-        if(!canMove)
+        if(isStuck)
         {
             timer += Time.deltaTime;
             codeBTime.MoveBarra(-Time.deltaTime);
             if(timer>5)
             {
-                EscapeReset();
-                Debug.Log("MERO MORREU PRA REDE");
-                timer = 0;
+                Rede(false);
+                gameManager.GameOver();
             }
         }
-    }
-
-    void EscapeReset()
-    {
-        canMove = true;
-        redeMero.SetActive(false);
-        codeBTap.ResetBarra(0);
-        codeBTime.ResetBarra(1);
-        barraTime.SetActive(false);
-        barraTap.SetActive(false);
-        escapeCount = 0;
     }
 
     void Movement()
@@ -79,7 +71,7 @@ public class MeroMovement : MonoBehaviour
         direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
         meroRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, meroRotation - 90);
-        if(canMove)
+        if(!isStuck)
         {
             transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
         }
@@ -106,19 +98,19 @@ public class MeroMovement : MonoBehaviour
         if(other.name.Contains("Rede"))
         {
             Destroy(other.gameObject);
-            PresoNaRede();
+            Rede(true);
         }
     }
 
-    void PresoNaRede()
+    void Rede(bool preso)
     {
+        timer = 0;
         codeBTap.ResetBarra(0);
         codeBTime.ResetBarra(1);
-        canMove = false;
-        redeMero.SetActive(true);
-        barraTime.SetActive(true);
-        barraTap.SetActive(true);
+        isStuck = preso;
+        redeMero.SetActive(preso);
+        barraTime.SetActive(preso);
+        barraTap.SetActive(preso);
         escapeCount = 0;
-        Debug.Log("Pego na rede");
     }
 }

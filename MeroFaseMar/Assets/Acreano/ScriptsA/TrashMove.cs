@@ -31,6 +31,10 @@ public class TrashMove : MonoBehaviour
     void FollowFood()
     {
         transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FoodPosition,Speed);
+        if(transform.position == FoodPosition)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

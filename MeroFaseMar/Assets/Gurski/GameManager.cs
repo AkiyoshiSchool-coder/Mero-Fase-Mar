@@ -1,8 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
+    public InputActionAsset InputActions;
+    private InputAction level1action, level2action, level3action;
+
     private string cena;
     void Awake()
     {
@@ -11,10 +15,29 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("CenaInicial", 5, 2);
+        InvokeRepeating("CenaInicial", 1, 2);
+        level1action = InputSystem.actions.FindAction("Level1");
+        level2action = InputSystem.actions.FindAction("Level2");
+        level3action = InputSystem.actions.FindAction("Level3");
     }
 
-    void CenaInicial()
+    void Update()
+    {
+        if(level1action.WasPressedThisFrame())
+        {
+            Level1();
+        }
+        if(level2action.WasPressedThisFrame())
+        {
+            Level2();
+        }
+        if(level3action.WasPressedThisFrame())
+        {
+            Level3();
+        }
+    }
+
+    public void CenaInicial()
     {
         SceneManager.LoadScene("MenuInicial");
         Debug.Log("kkkk");
@@ -35,5 +58,25 @@ public class GameManager : MonoBehaviour
     public void Level1()
     {
         SceneManager.LoadScene("Level1");
+    }
+
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+
+    public void Victory()
+    {
+        SceneManager.LoadScene("Vitoria");
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(cena);
     }
 }
