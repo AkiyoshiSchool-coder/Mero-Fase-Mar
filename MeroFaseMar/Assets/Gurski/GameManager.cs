@@ -79,4 +79,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(cena);
     }
+
+    public void EndGame()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
+        Application.Quit();
+        #endif
+    }
 }
