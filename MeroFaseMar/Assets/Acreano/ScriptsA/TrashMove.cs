@@ -33,7 +33,9 @@ public class TrashMove : MonoBehaviour
         transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FoodPosition,Speed);
         if(transform.position == FoodPosition)
         {
-            Destroy(gameObject);
+            foodDecider = Random.Range(0,FS.FoodsPos.Count);
+            FoodPosition = FS.FoodsPos[foodDecider];
+            FS.FoodsPos.Remove(FS.FoodsPos[foodDecider]);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

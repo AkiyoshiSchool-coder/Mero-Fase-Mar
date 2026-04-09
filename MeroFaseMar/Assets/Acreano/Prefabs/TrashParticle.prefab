@@ -110,7 +110,7 @@ MonoBehaviour:
   foodScript: {fileID: 0}
   FS: {fileID: 0}
   foodDecider: 0
-  Speed: 0.01
+  Speed: 0.1
 --- !u!58 &5222615379017541184
 CircleCollider2D:
   m_ObjectHideFlags: 0
