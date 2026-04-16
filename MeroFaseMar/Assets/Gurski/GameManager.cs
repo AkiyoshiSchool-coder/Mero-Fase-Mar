@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public InputActionAsset InputActions;
     private InputAction level1action, level2action, level3action;
-
     private string cena;
     void Awake()
     {
@@ -15,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("CenaInicial", 1, 2);
+        InvokeRepeating("CenaInicial", 0.2f, 2);
         level1action = InputSystem.actions.FindAction("Level1");
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
@@ -40,7 +39,6 @@ public class GameManager : MonoBehaviour
     public void CenaInicial()
     {
         SceneManager.LoadScene("MenuInicial");
-        Debug.Log("kkkk");
         CancelInvoke("CenaInicial");
     }
 
@@ -48,6 +46,11 @@ public class GameManager : MonoBehaviour
     {
         cena = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("GameOver");
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(cena);
     }
 
     public void ReturnScene()
@@ -75,9 +78,34 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Vitoria");
     }
 
-    public void Retry()
+    public void Narrativa()
     {
-        SceneManager.LoadScene(cena);
+        SceneManager.LoadScene("Narrativa");
+    }
+
+    public void Controles()
+    {
+        SceneManager.LoadScene("Controles");
+    }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Créditos");
+    }
+
+    public void SaibaMais()
+    {
+        SceneManager.LoadScene("SaibaMais");
+    }
+
+    public void Acessibilidade()
+    {
+        SceneManager.LoadScene("Acessibilidade");
+    }
+
+    public void Voltar()
+    {
+        SceneManager.LoadScene("MenuInicial");
     }
 
     public void EndGame()
