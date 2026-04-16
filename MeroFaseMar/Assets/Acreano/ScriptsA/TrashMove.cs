@@ -30,7 +30,7 @@ public class TrashMove : MonoBehaviour
 
     void FollowFood()
     {
-        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FoodPosition,Speed);
+        transform.position = UnityEngine.Vector3.MoveTowards(transform.position, FoodPosition,Speed*Time.deltaTime);
         if(transform.position == FoodPosition)
         {
             foodDecider = Random.Range(0,FS.FoodsPos.Count);

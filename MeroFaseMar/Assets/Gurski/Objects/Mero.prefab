@@ -220,6 +220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeroBoom
   boom: {fileID: 6645644014765317942, guid: 07be45cf27ee5a9498c6af91b6319c23, type: 3}
+  Sounds:
+  - {fileID: 730709385150232104, guid: 854f9d1cad66fe148893e9ef39f70ff6, type: 3}
+  - {fileID: 5516071335409471600, guid: 4ca0424a6cc8a5e4d852e6c5c16d5eb9, type: 3}
+  - {fileID: 4016724700866644725, guid: 47f0b418a0801424b84c6f1c3c179975, type: 3}
+  - {fileID: 109240744940196287, guid: 71ea9348a9d926e4298044273cb03aba, type: 3}
   InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   noAbrigo: 0
 --- !u!70 &8262630833375765872
@@ -298,8 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e8e614526219cf41b8c3e06a97082b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeroStats
-  FoodA: 0
-  FoodB: 0
+  FoodCount: 0
+  qntd: 0
   Poison: 0
   gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
 --- !u!114 &4333045775212785828
