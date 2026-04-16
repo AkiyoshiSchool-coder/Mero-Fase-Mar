@@ -608,7 +608,7 @@ GameObject:
   - component: {fileID: 1168548040}
   - component: {fileID: 1168548039}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Logo IFPR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 1593230926}
   - component: {fileID: 1593230925}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Logo Meros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 2034106252}
   - component: {fileID: 2034106251}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
