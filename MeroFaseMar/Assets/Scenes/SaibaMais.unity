@@ -177,18 +177,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Desde 2002, meros, Epinephelus itajara, s\xE3o protegidos por lei. A morat\xF3ria
-    (Portaria IBAMA N 121/2022) foi a primeira para uma esp\xE9cie de peixe marinho,
+    (Portaria IBAMA N\xB0 121/2022) foi a primeira para uma esp\xE9cie de peixe marinho,
     proibindo sua captura, beneficiamento, transporte ou venda.\n\nRenovada por outras
     tr\xEAs vezes, (Portaria 42, de 19 de setembro de 2007; Instru\xE7\xE3o Normativa
-    Interministerial N 13 (2012); Instru\xE7\xE3o Normativa Interministerial N 13
-    (2015)) a proibi\xE7\xE3o assegurou a prote\xE7\xE3o da esp\xE9cie at\xE9 2023.\n\nEm
-    2024, meros seguem protegidos indefinidamente pela Portaria MMA No 148, de 7
-    de junho de 2022. Pescar ou comercializar o peixe mero s\xE3o pr\xE1ticas consideradas
-    crime ambiental e infratores est\xE3o sujeitos \xE0 deten\xE7\xE3o de um a tr\xEAs
-    anos, multa, ou ambas as penas cumulativas (Lei No 9.605 de 12/02/98 e Decreto
-    No 6.514 de 22/07/08).\n\nSe voc\xEA presenciar a pesca, transporte, beneficiamento
-    ou com\xE9rcio ilegal de meros, denuncie. Em caso de d\xFAvida entre em contato
-    pelo telefone ou WhatsApp (21) 99644-7157 ou pelo e-mail contato@merosdobrasil.org. "
+    Interministerial N\xB0 13 (2012); Instru\xE7\xE3o Normativa Interministerial
+    N\xB0 13 (2015)) a proibi\xE7\xE3o assegurou a prote\xE7\xE3o da esp\xE9cie at\xE9
+    2023.\n\nEm 2024, meros seguem protegidos indefinidamente pela Portaria MMA N\xB0
+    148, de 7 de junho de 2022. Pescar ou comercializar o peixe mero s\xE3o pr\xE1ticas
+    consideradas crime ambiental e infratores est\xE3o sujeitos \xE0 deten\xE7\xE3o
+    de um a tr\xEAs anos, multa, ou ambas as penas cumulativas (Lei N\xB0 9.605 de
+    12/02/98 e Decreto N\xB0 6.514 de 22/07/08).\n\nSe voc\xEA presenciar a pesca,
+    transporte, beneficiamento ou com\xE9rcio ilegal de meros, denuncie. Em caso
+    de d\xFAvida entre em contato pelo telefone ou WhatsApp (21) 99644-7157 ou pelo
+    e-mail contato@merosdobrasil.org. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

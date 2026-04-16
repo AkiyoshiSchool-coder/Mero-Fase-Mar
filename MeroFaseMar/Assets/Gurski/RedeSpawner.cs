@@ -3,10 +3,12 @@ using UnityEngine;
 public class RedeSpawner : MonoBehaviour
 {
     public GameObject rede;
+    private int barcoDuration = 28;
     [SerializeField] float timer;
+    private float xSpeed = 3f;
     void Start()
     {
-        Destroy(gameObject, 28);
+        Destroy(gameObject, barcoDuration);
         InvokeRepeating("Rede", 4, Random.Range(4f, 10f));
     }
 
@@ -23,6 +25,6 @@ public class RedeSpawner : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(3*Time.deltaTime, 0, 0);
+        transform.Translate(xSpeed*Time.deltaTime, 0, 0);
     }
 }

@@ -7,10 +7,11 @@ public class DiverScript : MonoBehaviour
     private GameManager gameManager;
     private MeroStats meroStats;
     private PoisonDamage poison;
-    [SerializeField] private int speed = 4;
+    [SerializeField] private int speed = 12;
     [SerializeField] private bool notScared = true;
     private float pescadorRotation;
     Vector2 direction;
+    private float escapeTime = 5;
     void Start()
     {
         mero = GameObject.Find("Mero");
@@ -36,13 +37,13 @@ public class DiverScript : MonoBehaviour
         }
         else if(notScared == false)
         {
-            transform.Translate(Vector3.up * Time.deltaTime * speed*3); // forward evapora
+            transform.Translate(Vector3.up * Time.deltaTime * speed); // forward evapora
         }
     }
 
     void RunAway()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, escapeTime);
         notScared = false;
         transform.rotation = Quaternion.Euler(0, 0, pescadorRotation + 90);
     }
