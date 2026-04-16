@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,6 +6,7 @@ using UnityEngine.InputSystem;
 public class MeroBoom : MonoBehaviour
 {
     public GameObject boom;
+    public List<GameObject> Sounds = new List<GameObject>();
     public InputActionAsset InputActions;
     private InputAction boomAction;
     [SerializeField] private bool noAbrigo;
@@ -21,6 +23,8 @@ public class MeroBoom : MonoBehaviour
             if(boomAction.WasPressedThisFrame())
             {
                 Instantiate(boom, transform.position, Quaternion.identity);
+                int decider = Random.Range(0,4);
+                Instantiate(Sounds[decider], transform.position, Quaternion.identity);
                 timer = 0.5f;
             }
         }
