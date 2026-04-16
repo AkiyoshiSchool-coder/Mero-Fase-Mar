@@ -142,4 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1944f09f46b3f940bc1797703ede0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundDestroyer
-  time: 10
+  time: 5

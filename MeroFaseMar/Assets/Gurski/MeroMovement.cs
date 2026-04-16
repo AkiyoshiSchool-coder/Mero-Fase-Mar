@@ -1,6 +1,7 @@
 // using UnityEditor.ShaderGraph.Internal;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -21,6 +22,7 @@ public class MeroMovement : MonoBehaviour
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
     private MoveBarrinha codeBTime, codeBTap;
+    public GameObject Sound;
     private float timer = 0;
     
     void Awake()
@@ -38,6 +40,7 @@ public class MeroMovement : MonoBehaviour
         if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
+            Instantiate(Sound,transform.position,quaternion.identity);
         }
         if(escapeAction.WasPerformedThisFrame())
         {
