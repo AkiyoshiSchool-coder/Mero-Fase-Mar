@@ -105,5 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DiverSpawner
   diver: {fileID: 1034998847598144091, guid: 0b240a9356a6a2a49859fcf209301470, type: 3}
-  startTime: 10
-  repeatTime: 15
+  startTime: 15
+  repeatTime: 10
