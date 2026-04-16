@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using Unity.Mathematics;
 
 public class FoodScript : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class FoodScript : MonoBehaviour
     [SerializeField] private PoisonDamage poison;
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
+    public GameObject Sound;
 
     void Awake()
     {
@@ -88,6 +90,7 @@ public class FoodScript : MonoBehaviour
 
                 cs.localPosition = new Vector3(cs.localPosition.x + 48.7f, cs.localPosition.y, cs.localPosition.z);
             }
+            Instantiate(Sound,collider.transform.position,Quaternion.identity);
             barraCode.FoodCount();
             Destroy(gameObject);
 

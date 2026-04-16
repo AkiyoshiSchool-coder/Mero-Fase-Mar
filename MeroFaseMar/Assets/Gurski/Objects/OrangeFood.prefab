@@ -141,6 +141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ab40401c2b0b741af6e99325706e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodScript
-  cursor: {fileID: 0}
+  IsInfected: 0
+  foodSpawn: {fileID: 0}
+  FS: {fileID: 0}
   cs: {fileID: 0}
   barra: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
+  Mero: {fileID: 0}
+  merostats: {fileID: 0}
+  poison: {fileID: 0}
+  Sound: {fileID: 7735936709142701022, guid: 6e685bc34c554204cab936739fd003b7, type: 3}
