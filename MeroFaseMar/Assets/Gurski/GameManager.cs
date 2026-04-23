@@ -67,6 +67,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level2");
     }
+    public void Cutscene12()
+    {
+        SceneManager.LoadScene("LevelCutscene1-2");
+    }
+    public void Cutscene23()
+    {
+        SceneManager.LoadScene("LevelCutscene2-3");
+    }
 
     public void Level3()
     {
