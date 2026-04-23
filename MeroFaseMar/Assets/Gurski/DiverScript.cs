@@ -7,7 +7,8 @@ public class DiverScript : MonoBehaviour
     private GameManager gameManager;
     private MeroStats meroStats;
     private PoisonDamage poison;
-    [SerializeField] private int speed = 12;
+    [SerializeField] private float speed = 4;
+    [SerializeField] private float scaredSpeedMultiplier;
     [SerializeField] private bool notScared = true;
     private float pescadorRotation;
     Vector2 direction;
@@ -18,7 +19,6 @@ public class DiverScript : MonoBehaviour
         meroStats = mero.GetComponent<MeroStats>();
         poison = mero.GetComponent<PoisonDamage>();
         gameManager = gameMgr.GetComponent<GameManager>();
-
     }
 
     void Update()
@@ -37,7 +37,7 @@ public class DiverScript : MonoBehaviour
         }
         else if(notScared == false)
         {
-            transform.Translate(Vector3.up * Time.deltaTime * speed); // forward evapora
+            transform.Translate(Vector3.up * Time.deltaTime * speed*scaredSpeedMultiplier); // forward evapora
         }
     }
 

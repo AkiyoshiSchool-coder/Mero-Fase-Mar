@@ -199,7 +199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PescadorScript
   gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
-  speed: 4
+  speed: 3.6
+  scaredSpeedMultiplier: 2.5
   notScared: 1
 --- !u!70 &2514947633222957764
 CapsuleCollider2D:
