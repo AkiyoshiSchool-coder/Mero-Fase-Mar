@@ -6,32 +6,38 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CenaInicio.unity
+    path: Assets/Scenes/Menu/CenaInicio.unity
     guid: 383220d5ae30e7747ad8223924962679
   - enabled: 1
-    path: Assets/Scenes/MenuInicial.unity
+    path: Assets/Scenes/Menu/MenuInicial.unity
     guid: 18fef02747d334146855258af483e165
   - enabled: 1
-    path: Assets/Scenes/Narrativa.unity
+    path: Assets/Scenes/Menu/Narrativa.unity
     guid: 3bba8b6366f3d6f41858cff9ce345a5c
   - enabled: 1
-    path: Assets/Scenes/Controles.unity
+    path: Assets/Scenes/Menu/Controles.unity
     guid: 8020a5d1942a84b4989810715ce6f8f3
   - enabled: 1
-    path: "Assets/Scenes/Cr\xE9ditos.unity"
+    path: "Assets/Scenes/Menu/Cr\xE9ditos.unity"
     guid: e2b8c1d93a83c2b43970ac2ab4ebff6f
   - enabled: 1
-    path: Assets/Scenes/SaibaMais.unity
+    path: Assets/Scenes/Menu/SaibaMais.unity
     guid: ad00b63b9213c5f43b7d78b61153feae
   - enabled: 1
-    path: Assets/Scenes/Acessibilidade.unity
+    path: Assets/Scenes/Menu/Acessibilidade.unity
     guid: 5c199a3f3886f8543bedac9282b85ecf
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/LevelCutscene1-2.unity
+    guid: 500a1662fe26d27479ca7785ea5479af
+  - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: b48531c41af2040478c457802ec287c2
+  - enabled: 1
+    path: Assets/Scenes/LevelCutscene2-3.unity
+    guid: 025aee8b77f4e7547ad7b420fc87dbfd
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 950a1dda0958311478d9081104c17d02
