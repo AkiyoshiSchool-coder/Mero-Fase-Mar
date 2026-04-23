@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7735936709142701022
+--- !u!1 &824774859435624923
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4779823490146875055}
-  - component: {fileID: 8404411509910814436}
-  - component: {fileID: 907603671023563909}
+  - component: {fileID: 5427048472130697141}
+  - component: {fileID: 8270581668353578535}
   m_Layer: 0
-  m_Name: gulp
+  m_Name: RedeSplash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4779823490146875055
+--- !u!4 &5427048472130697141
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7735936709142701022}
+  m_GameObject: {fileID: 824774859435624923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9011, y: 0.74641, z: 0}
+  m_LocalPosition: {x: -31.82938, y: 17.14374, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &8404411509910814436
+--- !u!82 &8270581668353578535
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7735936709142701022}
+  m_GameObject: {fileID: 824774859435624923}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1d2995fd2312c394fae1f8f3e94fcc6f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3766f4967fc7e21488a9b3a8f4a25fef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.245
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -130,16 +129,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &907603671023563909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7735936709142701022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1944f09f46b3f940bc1797703ede0ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoundDestroyer
-  time: 5

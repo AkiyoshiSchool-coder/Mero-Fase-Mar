@@ -22,7 +22,9 @@ public class MeroMovement : MonoBehaviour
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
     private MoveBarrinha codeBTime, codeBTap;
-    public GameObject Sound;
+    public GameObject MeroSound;
+    public GameObject RedeSound;
+    public GameObject RedeVerifier;
     private float timer = 0;
     
     void Awake()
@@ -40,7 +42,7 @@ public class MeroMovement : MonoBehaviour
         if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
-            Instantiate(Sound,transform.position,quaternion.identity);
+            Instantiate(MeroSound,transform.position,quaternion.identity);
         }
         if(escapeAction.WasPerformedThisFrame())
         {
@@ -50,6 +52,10 @@ public class MeroMovement : MonoBehaviour
         }
         if(escapeCount >= 5)
         {
+            if(RedeVerifier != null)
+            {
+                Destroy(RedeVerifier);
+            }
             Rede(false);
         }
         if(startMoving)
@@ -107,6 +113,10 @@ public class MeroMovement : MonoBehaviour
 
     void Rede(bool preso)
     {
+        if(preso)
+        {
+            RedeVerifier = Instantiate(RedeSound,transform.position,quaternion.identity);
+        }
         timer = 0;
         codeBTap.ResetBarra(0);
         codeBTime.ResetBarra(1);
