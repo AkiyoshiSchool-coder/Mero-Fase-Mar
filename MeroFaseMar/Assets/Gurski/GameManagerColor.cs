@@ -3,20 +3,20 @@ using System.Collections.Generic;
 
 public class GameManagerColor : MonoBehaviour
 {
-    public List<UnityEngine.Color> colorIndex = new List<UnityEngine.Color>();
+    public static List<Color> colorIndex = new List<Color>();
 
     void Awake()
     {
-        colorIndex[0] = Color.orangeRed;
-        colorIndex[1] = Color.green;
+        colorIndex.Add(Color.paleVioletRed);
+        colorIndex.Add(Color.paleGreen);
     }
 
-    public void getColor(int index, Color spritecolor)
+    public static void setColor(int index, Color spritecolor)
     {
         colorIndex[index] = spritecolor;
     }
 
-    public Color sendColor(int num)
+    public static Color getColor(int num)
     {
         return colorIndex[num];
     }
