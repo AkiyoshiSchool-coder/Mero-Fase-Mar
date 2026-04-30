@@ -5,9 +5,10 @@ public class GameManagerColor : MonoBehaviour
 {
     public List<UnityEngine.Color> colorIndex = new List<UnityEngine.Color>();
 
-    void Start()
+    void Awake()
     {
-        
+        colorIndex[0] = Color.orangeRed;
+        colorIndex[1] = Color.green;
     }
 
     public void getColor(int index, Color spritecolor)

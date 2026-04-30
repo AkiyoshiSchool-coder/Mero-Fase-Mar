@@ -326,6 +326,7 @@ MonoBehaviour:
   colorManager: {fileID: 0}
   index: 3
   imageIndex: 1
+  cor: {r: 0, g: 0, b: 0, a: 1}
   sprite: {fileID: 412195591}
 --- !u!114 &412195594
 MonoBehaviour:
@@ -688,6 +689,7 @@ MonoBehaviour:
   colorManager: {fileID: 0}
   index: 1
   imageIndex: 0
+  cor: {r: 0, g: 0, b: 0, a: 1}
   sprite: {fileID: 1280109331}
 --- !u!114 &1280109334
 MonoBehaviour:
