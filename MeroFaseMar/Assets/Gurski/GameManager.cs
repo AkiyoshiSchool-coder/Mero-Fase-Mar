@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
     public InputActionAsset InputActions;
-    private InputAction level1action, level2action, level3action;
+    private InputAction level1action, level2action, level3action, menuaction;
     private string cena;
     void Awake()
     {
@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         level1action = InputSystem.actions.FindAction("Level1");
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
+        menuaction = InputSystem.actions.FindAction("MainMenu");
     }
 
     void Update()
@@ -33,6 +34,10 @@ public class GameManager : MonoBehaviour
         if(level3action.WasPressedThisFrame())
         {
             Level3();
+        }
+        if(menuaction.WasPressedThisFrame())
+        {
+            CenaInicial();
         }
     }
 

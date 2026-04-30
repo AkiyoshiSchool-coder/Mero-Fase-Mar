@@ -1,14 +1,17 @@
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AcessibilityFood : MonoBehaviour
 {
-    private Color[] colorList = {Color.yellow, Color.orange, Color.red, Color.green,
-        Color.cyan, Color.blue, Color.hotPink, Color.brown};
+    private Color[] colorList = {Color.yellow, Color.orangeRed, Color.cyan, 
+        Color.green, Color.blue, Color.hotPink, Color.brown};
+    public GameObject gameManager;
+    public GameManagerColor colorManager;
     public int index;
+    public int imageIndex; // inspector
     private int limit;
+    public Color cor;
 
     public Image sprite;
 
@@ -16,6 +19,9 @@ public class AcessibilityFood : MonoBehaviour
     {
         sprite.color = colorList[index];
         limit = colorList.Length;
+        colorManager = gameManager.GetComponent<GameManagerColor>();
+        cor = colorManager.sendColor(imageIndex);
+        sprite.color = cor;
     }
 
     public void changeColor()
@@ -26,5 +32,6 @@ public class AcessibilityFood : MonoBehaviour
             index = 0;
         }
         sprite.color = colorList[index];
+        colorManager.getColor(imageIndex, colorList[index]);
     }
 }

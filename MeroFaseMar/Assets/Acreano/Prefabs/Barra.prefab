@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5869203698153995636}
   - component: {fileID: 7304604723269910369}
   - component: {fileID: 1609970236098856901}
+  - component: {fileID: 8649732674409922308}
   m_Layer: 5
   m_Name: Underline
   m_TagString: Untagged
@@ -79,9 +80,9 @@ MonoBehaviour:
   m_enableVertexGradient: 1
   m_colorMode: 1
   m_fontColorGradient:
-    topLeft: {r: 1, g: 0.42864966, b: 0, a: 1}
+    topLeft: {r: 1, g: 0.42745098, b: 0, a: 1}
     topRight: {r: 0, g: 0.7924528, b: 0.008236075, a: 1}
-    bottomLeft: {r: 1, g: 0.42864966, b: 0, a: 1}
+    bottomLeft: {r: 1, g: 0.42745098, b: 0, a: 1}
     bottomRight: {r: 0, g: 0.7924528, b: 0.008236075, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
@@ -137,6 +138,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8649732674409922308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615535451466841436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197440342b86c1a4cb51eec11fd22db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcessibilityBarraColor
+  colorA: {r: 0, g: 0, b: 0, a: 0}
+  colorB: {r: 0, g: 0, b: 0, a: 0}
+  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
+  colorManager: {fileID: 0}
 --- !u!1 &7030386935989167718
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2239745644460441258}
   - component: {fileID: 389725931111617527}
-  - component: {fileID: 5296317689798809573}
+  - component: {fileID: 2839753566600482966}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
---- !u!114 &5296317689798809573
+--- !u!114 &2839753566600482966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,6 +55,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7650843780210637395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af861090ef8a0544843f4eef3d58703, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c44f6f95fe4ded43859ab4a5e81d7c8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AcessibilityFood
+  m_EditorClassIdentifier: Assembly-CSharp::GameManagerColor
+  colorIndex:
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}

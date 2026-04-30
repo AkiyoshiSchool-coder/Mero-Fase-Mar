@@ -1,14 +1,20 @@
 using UnityEngine;
+using TMPro;
 
 public class AcessibilityBarraColor : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private TextMeshProUGUI barra;
+    public Color colorA, colorB;
+    public GameObject gameManager;
+    public GameManagerColor colorManager;
     void Start()
     {
-        
+        barra = gameObject.GetComponent<TextMeshProUGUI>();
+        colorManager = gameManager.GetComponent<GameManagerColor>();
+
+        barra.colorGradient = new VertexGradient(colorManager.sendColor(0), colorManager.sendColor(1), colorManager.sendColor(0), colorManager.sendColor(1));
     }
 
-    // Update is called once per frame
     void Update()
     {
         
