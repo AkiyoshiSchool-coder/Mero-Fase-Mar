@@ -200,7 +200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DiverScript
   gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
   speed: 4
+  scaredSpeedMultiplier: 0
   notScared: 1
+  damageSound: {fileID: 2143235622126119125, guid: 7b41808eaf783d648a852f27f887f9f2, type: 3}
+  healingSound: {fileID: 1127641707238364023, guid: 83c17370e2c99ad4a9126b917bb68e3b, type: 3}
 --- !u!70 &2318826239705828522
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

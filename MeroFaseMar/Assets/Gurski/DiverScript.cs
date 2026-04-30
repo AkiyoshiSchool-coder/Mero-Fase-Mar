@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class DiverScript : MonoBehaviour
@@ -12,6 +13,7 @@ public class DiverScript : MonoBehaviour
     [SerializeField] private bool notScared = true;
     private float pescadorRotation;
     Vector2 direction;
+    public GameObject damageSound,healingSound;
     private float escapeTime = 5;
     void Start()
     {
@@ -55,12 +57,14 @@ public class DiverScript : MonoBehaviour
             if(gameObject.name == "Pescador(Clone)")
             {
                 Debug.Log("game over");
+                Instantiate(damageSound,transform.position,Quaternion.identity);
                 gameManager.GameOver();
             }
             else if(gameObject.name == "Pesquisador(Clone)")
             {
                 Debug.Log("cura");
                 poison.Heal();
+                Instantiate(healingSound,transform.position,Quaternion.identity);
                 meroStats.Poison = 0;
                 Destroy(gameObject);
             }
