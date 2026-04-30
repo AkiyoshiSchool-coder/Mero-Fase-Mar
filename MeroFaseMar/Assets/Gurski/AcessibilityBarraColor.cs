@@ -12,11 +12,7 @@ public class AcessibilityBarraColor : MonoBehaviour
         barra = gameObject.GetComponent<TextMeshProUGUI>();
         colorManager = gameManager.GetComponent<GameManagerColor>();
 
-        barra.colorGradient = new VertexGradient(colorManager.sendColor(0), colorManager.sendColor(1), colorManager.sendColor(0), colorManager.sendColor(1));
+        barra.colorGradient = new VertexGradient(GameManagerColor.getColor(0), GameManagerColor.getColor(1), GameManagerColor.getColor(0), GameManagerColor.getColor(1));
     }
 
-    void Update()
-    {
-        
-    }
 }
