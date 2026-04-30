@@ -39,6 +39,7 @@ public class FoodScript : MonoBehaviour
     void Start()
     {
         cs.anchoredPosition = new Vector2(cs.anchoredPosition.x, cs.anchoredPosition.y);
+        Destroy(gameObject, 30);
     }
 
     void Update()
