@@ -202,6 +202,8 @@ MonoBehaviour:
   speed: 3.6
   scaredSpeedMultiplier: 2.5
   notScared: 1
+  damageSound: {fileID: 2143235622126119125, guid: 7b41808eaf783d648a852f27f887f9f2, type: 3}
+  healingSound: {fileID: 1127641707238364023, guid: 83c17370e2c99ad4a9126b917bb68e3b, type: 3}
 --- !u!70 &2514947633222957764
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
