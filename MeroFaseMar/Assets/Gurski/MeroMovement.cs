@@ -21,7 +21,7 @@ public class MeroMovement : MonoBehaviour
     private GameManager gameManager;
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
-    private MoveBarrinha codeBTime, codeBTap;
+    private MoveBarrinha codeBarraTime, codeBarraTap;
     [SerializeField] private float horizontalLimit, verticalLimit;
     public GameObject MeroSound;
     public GameObject RedeSound;
@@ -32,8 +32,8 @@ public class MeroMovement : MonoBehaviour
     {
         moveAction = InputSystem.actions.FindAction("Move");
         escapeAction = InputSystem.actions.FindAction("Escape");
-        codeBTime = barraTime.GetComponent<MoveBarrinha>();
-        codeBTap = barraTap.GetComponent<MoveBarrinha>();
+        codeBarraTime = barraTime.GetComponent<MoveBarrinha>();
+        codeBarraTap = barraTap.GetComponent<MoveBarrinha>();
         gameManager = gameMgr.GetComponent<GameManager>();
     }
 
@@ -48,7 +48,7 @@ public class MeroMovement : MonoBehaviour
         if(escapeAction.WasPerformedThisFrame())
         {
             escapeCount++;
-            codeBTap.MoveBarra(1);
+            codeBarraTap.MoveBarra(1);
             Debug.Log(escapeCount);
         }
         if(escapeCount >= 5)
@@ -66,7 +66,7 @@ public class MeroMovement : MonoBehaviour
         if(isStuck)
         {
             timer += Time.deltaTime;
-            codeBTime.MoveBarra(-Time.deltaTime);
+            codeBarraTime.MoveBarra(-Time.deltaTime);
             if(timer>5)
             {
                 Rede(false);
@@ -119,8 +119,8 @@ public class MeroMovement : MonoBehaviour
             RedeVerifier = Instantiate(RedeSound,transform.position,quaternion.identity);
         }
         timer = 0;
-        codeBTap.ResetBarra(0);
-        codeBTime.ResetBarra(1);
+        codeBarraTap.ResetBarra(0);
+        codeBarraTime.ResetBarra(1);
         isStuck = preso;
         redeMero.SetActive(preso);
         barraTime.SetActive(preso);

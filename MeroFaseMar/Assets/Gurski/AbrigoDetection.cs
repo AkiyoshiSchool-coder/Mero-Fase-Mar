@@ -17,7 +17,7 @@ public class AbrigoDetection : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.CompareTag("head"))
+        if(collision.CompareTag("Head"))
         {
             mero.Abrigo(true);
         }
@@ -25,7 +25,7 @@ public class AbrigoDetection : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("head"))
+        if(collision.CompareTag("Head"))
         {
             mero.Abrigo(false);
         }

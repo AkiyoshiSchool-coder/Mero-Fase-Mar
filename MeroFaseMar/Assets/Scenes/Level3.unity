@@ -2165,7 +2165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: startTime
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: diverSound
@@ -2173,7 +2173,7 @@ PrefabInstance:
       objectReference: {fileID: 7655293902981075512, guid: fd36696acbe04e44791e5cf575615732, type: 3}
     - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: repeatTime
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8786907322573477780, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: m_LocalPosition.x
