@@ -1165,6 +1165,8 @@ MonoBehaviour:
   FoodA: {fileID: 3327296857486405652, guid: 39d6d304161eb764c8c0e998fbd8fec8, type: 3}
   FoodB: {fileID: 3403562119263904250, guid: 980c0df42dc96a64b92e1fafdd4ec2dd, type: 3}
   Mero: {fileID: 1180932541}
+  cursor: {fileID: 8700111455247487829}
+  barraNivel: {fileID: 3920020528112835725}
   operators: 0
 --- !u!4 &620840391
 Transform:
@@ -2337,6 +2339,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
+--- !u!1 &3920020528112835725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
+  m_PrefabInstance: {fileID: 3920020528112835724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8700111455247487827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2437,6 +2444,11 @@ PrefabInstance:
 --- !u!224 &8700111455247487828 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
+  m_PrefabInstance: {fileID: 8700111455247487827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8700111455247487829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 731591691293518012, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
   m_PrefabInstance: {fileID: 8700111455247487827}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

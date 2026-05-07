@@ -12,9 +12,10 @@ public class FoodSpawner : MonoBehaviour
     public List<GameObject> Foods = new List<GameObject>();
     public GameObject FoodA;
     public GameObject FoodB;
-    public GameObject Mero;
+    [SerializeField] private GameObject Mero, cursor, barraNivel;
     [SerializeField] int operators = 0;
-
+    private GameObject TempFood;
+    private FoodScript TempFoodScript;
     private UnityEngine.Vector3 RandomPos;
 
     private float posX, posY;
@@ -79,7 +80,7 @@ public class FoodSpawner : MonoBehaviour
         {
             RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
 
-            var TempFood = Instantiate(FoodA, RandomPos, UnityEngine.Quaternion.identity);
+            TempFood = Instantiate(FoodA, RandomPos, UnityEngine.Quaternion.identity);
             FoodsPos.Add(RandomPos); 
             Foods.Add(TempFood);
 
@@ -88,10 +89,12 @@ public class FoodSpawner : MonoBehaviour
         {
             RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
 
-            var TempFood = Instantiate(FoodB, RandomPos, UnityEngine.Quaternion.identity);
+            TempFood = Instantiate(FoodB, RandomPos, UnityEngine.Quaternion.identity);
             FoodsPos.Add(RandomPos); 
             Foods.Add(TempFood);
         }
+        TempFoodScript = TempFood.GetComponent<FoodScript>();
+        TempFoodScript.Init(Mero, cursor, barraNivel, gameObject);
     }
 
 }

@@ -17,7 +17,6 @@ public class FoodScript : MonoBehaviour
     [SerializeField] private FoodSpawner FS;
     [SerializeField] private RectTransform cs;
     [SerializeField] private GameObject barra;
-    [SerializeField] private GameObject Mero;
     [SerializeField] private MeroStats merostats;
     [SerializeField] private PoisonDamage poison;
     [SerializeField] private GameObject skullImage;
@@ -29,16 +28,16 @@ public class FoodScript : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Mero = GameObject.Find("Mero");
-        merostats = Mero.GetComponent<MeroStats>();
-        poison = Mero.GetComponent<PoisonDamage>();
-        cursor = GameObject.Find("cursor");
-        barra = GameObject.Find("BarraNível");
-        foodSpawn = GameObject.Find("Spawner");
-        barraCode = barra.GetComponent<BarraNivel>();
-        cs = cursor.GetComponent<RectTransform>();
-        FS = foodSpawn.GetComponent<FoodSpawner>();
-        colorManager = gameManager.GetComponent<GameManagerColor>();
+        // //Mero = GameObject.Find("Mero");
+        // merostats = Mero.GetComponent<MeroStats>();
+        // poison = Mero.GetComponent<PoisonDamage>();
+        // //cursor = GameObject.Find("cursor");
+        // //barra = GameObject.Find("BarraNível");
+        // //foodSpawn = GameObject.Find("Spawner");
+        // barraCode = barra.GetComponent<BarraNivel>();
+        // cs = cursor.GetComponent<RectTransform>();
+        // FS = foodSpawn.GetComponent<FoodSpawner>();
+        // colorManager = gameManager.GetComponent<GameManagerColor>();
         
     }
     void Start()
@@ -68,7 +67,6 @@ public class FoodScript : MonoBehaviour
         {
             if(gameObject.CompareTag("FoodA"))
             {
-                Debug.Log("comida A");
                 merostats.FoodCount++;
                 
                 if(IsInfected)
@@ -84,7 +82,6 @@ public class FoodScript : MonoBehaviour
             }
             else if(gameObject.CompareTag("FoodB"))
             {
-                Debug.Log("comida B");
                 merostats.FoodCount--;
                 
                 if(IsInfected)
@@ -114,5 +111,18 @@ public class FoodScript : MonoBehaviour
         {
             spriteRenderer.color = GameManagerColor.getColor(1);
         }
+    }
+
+    public void Init(GameObject mero, GameObject curs, GameObject barraXp, GameObject spawner)
+    {
+        cursor = curs;
+        barra = barraXp;
+        foodSpawn = spawner;
+
+        merostats = mero.GetComponent<MeroStats>();
+        poison = mero.GetComponent<PoisonDamage>();
+        barraCode = barra.GetComponent<BarraNivel>();
+        cs = cursor.GetComponent<RectTransform>();
+        FS = foodSpawn.GetComponent<FoodSpawner>();
     }
 }
