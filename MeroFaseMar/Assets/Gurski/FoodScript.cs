@@ -20,6 +20,7 @@ public class FoodScript : MonoBehaviour
     [SerializeField] private MeroStats merostats;
     [SerializeField] private PoisonDamage poison;
     [SerializeField] private GameObject skullImage;
+    [SerializeField] private GameObject FoodImage;
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
     public GameObject Sound;
@@ -47,6 +48,7 @@ public class FoodScript : MonoBehaviour
     private void FoodInfect()
     {
         spriteRenderer.color = Color.HSVToRGB(0.75f,1f,0.65f);
+        FoodImage.SetActive(false);
         skullImage.SetActive(true);
     }
 
