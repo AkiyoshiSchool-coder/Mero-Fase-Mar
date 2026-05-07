@@ -207,6 +207,8 @@ MonoBehaviour:
   redeMero: {fileID: 6406353230661962550}
   barraTime: {fileID: 0}
   barraTap: {fileID: 0}
+  horizontalLimit: 34.3
+  verticalLimit: 18.8
   MeroSound: {fileID: 1055658843376008608, guid: ef96a68f8659a934d839f92e97178a1e, type: 3}
   RedeSound: {fileID: 824774859435624923, guid: ba71a0078005a934b8ad8f68104e75bc, type: 3}
   RedeVerifier: {fileID: 0}

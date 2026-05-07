@@ -3,7 +3,6 @@ using UnityEngine;
 public class MeroStats : MonoBehaviour
 {
     public int FoodCount;
-    public int qntd;
     public int Poison;
     public GameObject gameMgr;
     private GameManager gameManager;

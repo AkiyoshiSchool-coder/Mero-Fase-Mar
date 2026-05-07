@@ -22,6 +22,7 @@ public class MeroMovement : MonoBehaviour
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
     private MoveBarrinha codeBTime, codeBTap;
+    [SerializeField] private float horizontalLimit, verticalLimit;
     public GameObject MeroSound;
     public GameObject RedeSound;
     public GameObject RedeVerifier;
@@ -84,21 +85,21 @@ public class MeroMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
         }
-        if(transform.position.x > 34.3f)
+        if(transform.position.x > horizontalLimit)
         {
-            transform.position = new Vector3(34.3f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(horizontalLimit, transform.position.y, transform.position.z);
         }
-        else if(transform.position.x < -34.3f)
+        else if(transform.position.x < -horizontalLimit)
         {
-            transform.position = new Vector3(-34.3f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-horizontalLimit, transform.position.y, transform.position.z);
         }
-        if(transform.position.y > 18.8f)
+        if(transform.position.y > verticalLimit)
         {
-            transform.position = new Vector3(transform.position.x, 18.8f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, verticalLimit, transform.position.z);
         }
-        else if(transform.position.y < -18.8f)
+        else if(transform.position.y < -verticalLimit)
         {
-            transform.position = new Vector3(transform.position.x, -18.8f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, -verticalLimit, transform.position.z);
         }
     }
 
