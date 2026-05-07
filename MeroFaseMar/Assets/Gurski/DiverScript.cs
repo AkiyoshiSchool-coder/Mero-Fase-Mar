@@ -49,13 +49,11 @@ public class DiverScript : MonoBehaviour
         {
             if(gameObject.name == "Pescador(Clone)")
             {
-                Debug.Log("game over");
                 Instantiate(damageSound,transform.position,Quaternion.identity);
                 gameManager.GameOver();
             }
             else if(gameObject.name == "Pesquisador(Clone)")
             {
-                Debug.Log("cura");
                 poison.Heal();
                 Instantiate(healingSound,transform.position,Quaternion.identity);
                 meroStats.Poison = 0;

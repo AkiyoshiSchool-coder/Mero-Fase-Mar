@@ -6,10 +6,20 @@ public class GameManager : MonoBehaviour
 {
     public InputActionAsset InputActions;
     private InputAction level1action, level2action, level3action, menuaction;
+    private static GameManager instance;
     private string cena;
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
+
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Start()
