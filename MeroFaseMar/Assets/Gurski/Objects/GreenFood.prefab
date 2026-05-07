@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FoodScript
   IsInfected: 0
   foodSpawn: {fileID: 0}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
   FS: {fileID: 0}
   cs: {fileID: 0}
   barra: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
