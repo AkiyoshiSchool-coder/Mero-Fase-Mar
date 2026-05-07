@@ -20,21 +20,21 @@ public class FollowCamera : MonoBehaviour
     //limite do mapa
     private void Border()
     {
-        if(transform.position.x > 17.6f)
-        {
-            transform.position = new Vector3(17.6f, transform.position.y, transform.position.z);
-        }
-        if(transform.position.x < -17.6f)
-        {
-            transform.position = new Vector3(-17.6f, transform.position.y, transform.position.z);
-        }
-        if(transform.position.y > 9.9f)
-        {
-            transform.position = new Vector3(transform.position.x, 9.9f, transform.position.z);
-        }
-        if(transform.position.y < -9.9f)
-        {
-            transform.position = new Vector3(transform.position.x, -9.9f, transform.position.z);
-        }
+        // if(transform.position.x > 17.6f)
+        // {
+        //     transform.position = new Vector3(17.6f, transform.position.y, transform.position.z);
+        // }
+        // if(transform.position.x < -17.6f)
+        // {
+        //     transform.position = new Vector3(-17.6f, transform.position.y, transform.position.z);
+        // }
+        // if(transform.position.y > 9.9f)
+        // {
+        //     transform.position = new Vector3(transform.position.x, 9.9f, transform.position.z);
+        // }
+        // if(transform.position.y < -9.9f)
+        // {
+        //     transform.position = new Vector3(transform.position.x, -9.9f, transform.position.z);
+        // }
     }
 }
