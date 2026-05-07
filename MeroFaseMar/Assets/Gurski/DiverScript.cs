@@ -72,9 +72,9 @@ public class DiverScript : MonoBehaviour
         }
     }
 
-    public void Init(GameObject gameObject)
+    public void Init(GameObject gameobj)
     {
-        mero = gameObject;
+        mero = gameobj;
         Debug.Log(mero.name);
         meroStats = mero.GetComponent<MeroStats>();
         poison = mero.GetComponent<PoisonDamage>();

@@ -880,10 +880,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PesquisadorSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5163237789427398708, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.22
