@@ -1832,6 +1832,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8160885916129557572, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
+      propertyPath: mero
+      value: 
+      objectReference: {fileID: 1180932541}
+    - target: {fileID: 8160885916129557572, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
       propertyPath: diverSound
       value: 
       objectReference: {fileID: 2238634324621827378, guid: 9445fb0492518b74b87ea988ac5c526e, type: 3}
@@ -2163,6 +2167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PescadorSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
+      propertyPath: mero
+      value: 
+      objectReference: {fileID: 1180932541}
     - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: startTime
       value: 3

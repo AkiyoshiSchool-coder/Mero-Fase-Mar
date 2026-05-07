@@ -37,7 +37,6 @@ public class FoodScript : MonoBehaviour
         barraCode = barra.GetComponent<BarraNivel>();
         cs = cursor.GetComponent<RectTransform>();
         FS = foodSpawn.GetComponent<FoodSpawner>();
-        gameManager = GameObject.Find("GameManager"); //maldita unity
         colorManager = gameManager.GetComponent<GameManagerColor>();
         
     }

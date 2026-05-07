@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DiverScript : MonoBehaviour
 {
-    private GameObject mero;
+    [SerializeField] private GameObject mero;
     public GameObject gameMgr;
     private GameManager gameManager;
     private MeroStats meroStats;
@@ -15,13 +15,6 @@ public class DiverScript : MonoBehaviour
     Vector2 direction;
     public GameObject damageSound,healingSound;
     private float escapeTime = 5;
-    void Start()
-    {
-        mero = GameObject.Find("Mero");
-        meroStats = mero.GetComponent<MeroStats>();
-        poison = mero.GetComponent<PoisonDamage>();
-        gameManager = gameMgr.GetComponent<GameManager>();
-    }
 
     void Update()
     {
@@ -52,7 +45,7 @@ public class DiverScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.name == "Mero")
+        if(collider.CompareTag("Head"))
         {
             if(gameObject.name == "Pescador(Clone)")
             {
@@ -77,6 +70,15 @@ public class DiverScript : MonoBehaviour
                 RunAway();
             }
         }
+    }
+
+    public void Init(GameObject gameObject)
+    {
+        mero = gameObject;
+        Debug.Log(mero.name);
+        meroStats = mero.GetComponent<MeroStats>();
+        poison = mero.GetComponent<PoisonDamage>();
+        gameManager = gameMgr.GetComponent<GameManager>();
     }
 
 

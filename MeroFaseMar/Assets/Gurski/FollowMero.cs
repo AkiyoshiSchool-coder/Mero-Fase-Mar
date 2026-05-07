@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class FollowMero : MonoBehaviour
+public class FollowMero : MonoBehaviour 
 {
-    private Vector3 offset;
-    public GameObject player;
+    [SerializeField] private Vector3 offset;
+    public GameObject player;        // CODIGO DA BARRINHA DA REDE
     void Start()
     {
         offset = new Vector3(1.8f, 0.72f, 0);
