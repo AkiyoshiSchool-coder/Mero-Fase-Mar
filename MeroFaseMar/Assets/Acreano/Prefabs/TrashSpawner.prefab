@@ -105,5 +105,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawner
   trashParticle: {fileID: 2832248732016877227, guid: 6c0ff5ded52bd0d46be751b1f53f4fe1, type: 3}
-  StartTime: 5
+  StartTime: 7
   Cooldown: 3

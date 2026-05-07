@@ -13,8 +13,8 @@ public class TrashMove : MonoBehaviour
 
     void Awake()
     {
-        foodSpawn = GameObject.Find("Spawner");
-        FS = foodSpawn.GetComponent<FoodSpawner>();
+       // foodSpawn = GameObject.Find("Spawner");
+       // FS = foodSpawn.GetComponent<FoodSpawner>();
     }
 
     void Start()
@@ -46,5 +46,10 @@ public class TrashMove : MonoBehaviour
             foodScript.IsInfected = true;
             Destroy(gameObject);
         }
+    }
+
+    public void Init(FoodSpawner foodspawncode)
+    {
+        FS = foodspawncode;
     }
 }

@@ -1554,7 +1554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1585440756077517605, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
       propertyPath: m_TagString
-      value: beacon2
+      value: beacon1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
+      propertyPath: StartTime
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1806,6 +1810,10 @@ PrefabInstance:
     - target: {fileID: 1585440756077517605, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
       propertyPath: m_Name
       value: TrashSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
+      propertyPath: StartTime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

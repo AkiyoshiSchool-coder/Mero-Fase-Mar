@@ -7,21 +7,19 @@ public class TrashSpawner : MonoBehaviour
     [SerializeField]private GameObject trashParticle;
     public float StartTime;
     public float Cooldown;
+    [SerializeField] private GameObject recentTrash;
+    [SerializeField] private FoodSpawner foodSpawn;
     void Start()
     {
-        if(gameObject.tag == "beacon1")
+        if(gameObject.CompareTag("beacon1"))
         {
             InvokeRepeating("TrashSpawn", StartTime, Cooldown);
         }
-        if(gameObject.tag == "beacon2")
-        {
-            InvokeRepeating("TrashSpawn", StartTime+1.5f, Cooldown);
-        }
     }
-
 
     private void TrashSpawn()
     {
-        Instantiate(trashParticle,transform.position,Quaternion.identity);
+        recentTrash = Instantiate(trashParticle,transform.position,Quaternion.identity);
+        recentTrash.GetComponent<TrashMove>().Init(foodSpawn);
     }
 }

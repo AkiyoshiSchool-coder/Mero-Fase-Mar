@@ -6,7 +6,7 @@ public class SoundDestroyer : MonoBehaviour
     public int time;
     void Start()
     {
-        Destroy(gameObject,time);
+        Destroy(gameObject, time);
     }
 
     // Update is called once per frame

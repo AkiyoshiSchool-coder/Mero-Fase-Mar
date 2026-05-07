@@ -27,18 +27,7 @@ public class FoodScript : MonoBehaviour
     public Sprite sprite;
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        // //Mero = GameObject.Find("Mero");
-        // merostats = Mero.GetComponent<MeroStats>();
-        // poison = Mero.GetComponent<PoisonDamage>();
-        // //cursor = GameObject.Find("cursor");
-        // //barra = GameObject.Find("BarraNível");
-        // //foodSpawn = GameObject.Find("Spawner");
-        // barraCode = barra.GetComponent<BarraNivel>();
-        // cs = cursor.GetComponent<RectTransform>();
-        // FS = foodSpawn.GetComponent<FoodSpawner>();
-        // colorManager = gameManager.GetComponent<GameManagerColor>();
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();   
     }
     void Start()
     {

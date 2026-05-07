@@ -10,7 +10,6 @@ TagManager:
   - Boom
   - Abrigo
   - beacon1
-  - beacon2
   layers:
   - Default
   - TransparentFX
