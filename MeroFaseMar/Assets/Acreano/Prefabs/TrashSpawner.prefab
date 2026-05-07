@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1607281163401980068}
   m_Layer: 0
   m_Name: TrashSpawner
-  m_TagString: beacon1
+  m_TagString: beacon2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
