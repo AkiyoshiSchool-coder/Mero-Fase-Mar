@@ -3,6 +3,7 @@ using UnityEngine;
 public class DiverSpawner : MonoBehaviour
 {
     public GameObject diver;
+    [SerializeField] private GameObject currentDiver;
     public GameObject diverSound;
     [SerializeField] private DiverScript diverScript;
     [SerializeField] private GameObject mero;
@@ -10,12 +11,12 @@ public class DiverSpawner : MonoBehaviour
     void Start()
     {
         InvokeRepeating("Diver", startTime, repeatTime);
-        diverScript = diver.GetComponent<DiverScript>();
     }
 
     void Diver()
     {
-        Instantiate(diver, transform.position, Quaternion.identity);
+        currentDiver = Instantiate(diver, transform.position, Quaternion.identity);
+        diverScript = currentDiver.GetComponent<DiverScript>();
         diverScript.Init(mero);
         Instantiate(diverSound,transform.position,Quaternion.identity);
     }
