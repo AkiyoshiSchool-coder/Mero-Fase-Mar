@@ -137,5 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   diver: {fileID: 2853795661525284708, guid: 19dc5239abedc8140930f879c110e37e, type: 3}
-  startTime: 10
-  repeatTime: 15
+  diverSound: {fileID: 7655293902981075512, guid: fd36696acbe04e44791e5cf575615732, type: 3}
+  startTime: 1
+  repeatTime: 5
