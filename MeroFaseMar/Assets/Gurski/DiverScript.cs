@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DiverScript : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class DiverScript : MonoBehaviour
     {
         if(collider.CompareTag("Head"))
         {
-            if(gameObject.name == "Pescador(Clone)")
+            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name != "LevelCutscene2-3")
             {
                 Instantiate(damageSound,transform.position,Quaternion.identity);
                 gameManager.GameOver();
@@ -57,8 +58,8 @@ public class DiverScript : MonoBehaviour
                 poison.Heal();
                 Instantiate(healingSound,transform.position,Quaternion.identity);
                 meroStats.Poison = 0;
-                Destroy(gameObject);
             }
+            Destroy(gameObject);
         }
         if(collider.CompareTag("Boom"))
         {
@@ -66,6 +67,7 @@ public class DiverScript : MonoBehaviour
             {
                 Debug.Log("a");
                 RunAway();
+                meroStats.PescadorAumenta(1);
             }
         }
     }
