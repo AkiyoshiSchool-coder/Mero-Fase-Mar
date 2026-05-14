@@ -27,19 +27,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Acessibilidade.unity
     guid: 5c199a3f3886f8543bedac9282b85ecf
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Levels/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/LevelCutscene1-2.unity
+    path: Assets/Scenes/Levels/LevelCutscene1-2.unity
     guid: 500a1662fe26d27479ca7785ea5479af
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Levels/Level2.unity
     guid: b48531c41af2040478c457802ec287c2
   - enabled: 1
-    path: Assets/Scenes/LevelCutscene2-3.unity
+    path: Assets/Scenes/Levels/LevelCutscene2-3.unity
     guid: 025aee8b77f4e7547ad7b420fc87dbfd
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/Levels/Level3.unity
     guid: 950a1dda0958311478d9081104c17d02
   - enabled: 1
     path: Assets/Scenes/Vitoria.unity

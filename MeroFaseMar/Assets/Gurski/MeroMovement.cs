@@ -23,6 +23,8 @@ public class MeroMovement : MonoBehaviour
     private MoveBarrinha codeBarraTime, codeBarraTap;
     [SerializeField] private float horizontalLimit, verticalLimit;
     public GameObject MeroSound;
+    public GameObject MeroSound2;
+
     public GameObject RedeSound;
     public GameObject RedeVerifier;
     private float timer = 0;
@@ -42,7 +44,10 @@ public class MeroMovement : MonoBehaviour
         if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
-            Instantiate(MeroSound,transform.position,quaternion.identity);
+            if(MeroSound2 == null)
+            {
+                MeroSound2 = Instantiate(MeroSound,transform.position,quaternion.identity);
+            }
         }
         if(escapeAction.WasPerformedThisFrame())
         {

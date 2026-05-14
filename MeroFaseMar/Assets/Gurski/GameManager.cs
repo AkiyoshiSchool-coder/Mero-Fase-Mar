@@ -8,10 +8,9 @@ public class GameManager : MonoBehaviour
     private InputAction level1action, level2action, level3action, menuaction;
     private static GameManager instance;
     private string cena;
+
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-
         if(instance == null)
         {
             instance = this;
@@ -20,6 +19,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
