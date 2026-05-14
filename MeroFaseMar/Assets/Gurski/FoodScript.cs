@@ -26,6 +26,7 @@ public class FoodScript : MonoBehaviour
     public GameObject Sound;
     private GameManagerColor colorManager;
     public Sprite sprite;
+    [SerializeField] private float comidinhas;
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();   
@@ -69,7 +70,7 @@ public class FoodScript : MonoBehaviour
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
-                cs.localPosition = new Vector3(cs.localPosition.x - 48.7f, cs.localPosition.y, cs.localPosition.z);
+                cs.localPosition = new Vector3(cs.localPosition.x - (comidinhas/100) * 487f, cs.localPosition.y, cs.localPosition.z);
             }
             else if(gameObject.CompareTag("FoodB"))
             {
@@ -84,7 +85,7 @@ public class FoodScript : MonoBehaviour
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
-                cs.localPosition = new Vector3(cs.localPosition.x + 48.7f, cs.localPosition.y, cs.localPosition.z);
+                cs.localPosition = new Vector3(cs.localPosition.x + (comidinhas/100) * 487f, cs.localPosition.y, cs.localPosition.z);
             }
             Instantiate(Sound,collider.transform.position,Quaternion.identity);
             barraCode.FoodCount();

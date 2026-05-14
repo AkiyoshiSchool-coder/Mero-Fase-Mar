@@ -149,13 +149,13 @@ MonoBehaviour:
   FS: {fileID: 0}
   cs: {fileID: 0}
   barra: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
-  Mero: {fileID: 0}
   merostats: {fileID: 0}
   poison: {fileID: 0}
   skullImage: {fileID: 3952875438720852608}
   FoodImage: {fileID: 7326520363508761181}
   Sound: {fileID: 7735936709142701022, guid: 6e685bc34c554204cab936739fd003b7, type: 3}
   sprite: {fileID: 0}
+  comidinhas: 10
 --- !u!1 &3952875438720852608
 GameObject:
   m_ObjectHideFlags: 0
