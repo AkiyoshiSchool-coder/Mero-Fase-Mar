@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("CenaInicial", 0.2f, 1); // nunca mais mexer nessa linha
         level1action = InputSystem.actions.FindAction("Level1");
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
@@ -47,14 +46,13 @@ public class GameManager : MonoBehaviour
         }
         if(menuaction.WasPressedThisFrame())
         {
-            CenaInicial();
+            MainMenu();
         }
     }
 
-    public void CenaInicial()
+    public void MainMenu()
     {
         SceneManager.LoadScene("MenuInicial");
-        CancelInvoke("CenaInicial");
     }
 
     public void GameOver()
