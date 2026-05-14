@@ -4,6 +4,7 @@ public class MeroStats : MonoBehaviour
 {
     public int FoodCount;
     public int Poison;
+    public int PescadorCount;
     public GameObject gameMgr;
     private GameManager gameManager;
 
@@ -19,5 +20,9 @@ public class MeroStats : MonoBehaviour
             Debug.Log("Morte Bruta");
             // gameManager.GameOver();
         }
+    }
+    public void PescadorAumenta(int num)
+    {
+        PescadorCount += num;
     }
 }
