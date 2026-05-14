@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5163237789427398708}
   - component: {fileID: 1694523578811563634}
   - component: {fileID: 8160885916129557572}
+  - component: {fileID: 7828180088135823557}
   m_Layer: 0
   m_Name: PesquisadorSpawner
   m_TagString: Untagged
@@ -111,3 +112,19 @@ MonoBehaviour:
   mero: {fileID: 0}
   startTime: 15
   repeatTime: 10
+--- !u!114 &7828180088135823557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637929301562293182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfca7e5e6c863ed4489dddf7771b94c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarcoMovement
+  boatPosition: {fileID: 0}
+  leavePosition: {fileID: 0}
+  speed: 2
+  diverSpawner: {fileID: 8160885916129557572}

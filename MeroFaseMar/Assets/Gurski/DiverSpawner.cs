@@ -10,10 +10,10 @@ public class DiverSpawner : MonoBehaviour
     public int startTime, repeatTime;
     void Start()
     {
-        InvokeRepeating("Diver", startTime, repeatTime);
+
     }
 
-    void Diver()
+    public void Diver()
     {
         currentDiver = Instantiate(diver, transform.position, Quaternion.identity);
         diverScript = currentDiver.GetComponent<DiverScript>();
