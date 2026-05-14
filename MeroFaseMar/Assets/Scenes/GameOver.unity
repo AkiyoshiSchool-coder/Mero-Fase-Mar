@@ -481,7 +481,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: CenaInicial
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
