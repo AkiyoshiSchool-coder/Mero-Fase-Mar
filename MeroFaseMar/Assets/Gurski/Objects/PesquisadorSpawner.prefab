@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.46, y: 2.14, z: 0}
-  m_LocalScale: {x: 3, y: -3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,6 +108,7 @@ MonoBehaviour:
   diver: {fileID: 1034998847598144091, guid: 0b240a9356a6a2a49859fcf209301470, type: 3}
   currentDiver: {fileID: 0}
   diverSound: {fileID: 2238634324621827378, guid: 9445fb0492518b74b87ea988ac5c526e, type: 3}
+  spawn: 0
   diverScript: {fileID: 0}
   mero: {fileID: 0}
   startTime: 15
@@ -124,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfca7e5e6c863ed4489dddf7771b94c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarcoMovement
-  boatPosition: {fileID: 0}
-  leavePosition: {fileID: 0}
   speed: 2
   diverSpawner: {fileID: 8160885916129557572}
+  direction: {fileID: 0}
+  spawnCD: 12
+  spawnedDiver: 0

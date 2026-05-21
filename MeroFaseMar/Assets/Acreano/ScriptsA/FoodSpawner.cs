@@ -1,10 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class FoodSpawner : MonoBehaviour
 {

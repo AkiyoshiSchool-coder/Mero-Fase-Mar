@@ -482,6 +482,10 @@ PrefabInstance:
       propertyPath: mero
       value: 
       objectReference: {fileID: 1094734870}
+    - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
+      propertyPath: spawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8786907322573477780, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.562825

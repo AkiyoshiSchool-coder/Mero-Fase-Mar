@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
-  m_LocalScale: {x: 3, y: -3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8786907322573477780}
@@ -101,6 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8786907322573477780}
   - component: {fileID: 8090200307765046815}
+  - component: {fileID: 1102304070861155786}
   m_Layer: 0
   m_Name: PescadorSpawner
   m_TagString: Untagged
@@ -137,6 +138,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   diver: {fileID: 2853795661525284708, guid: 19dc5239abedc8140930f879c110e37e, type: 3}
+  currentDiver: {fileID: 0}
   diverSound: {fileID: 7655293902981075512, guid: fd36696acbe04e44791e5cf575615732, type: 3}
+  spawn: 0
+  diverScript: {fileID: 0}
+  mero: {fileID: 0}
   startTime: 1
   repeatTime: 5
+--- !u!114 &1102304070861155786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6169983108186466782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfca7e5e6c863ed4489dddf7771b94c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarcoMovement
+  speed: 2
+  diverSpawner: {fileID: 8090200307765046815}
+  direction: {fileID: 0}
+  spawnCD: 12
+  spawnedDiver: 0
