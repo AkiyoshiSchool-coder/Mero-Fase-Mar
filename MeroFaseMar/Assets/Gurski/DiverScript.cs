@@ -53,6 +53,11 @@ public class DiverScript : MonoBehaviour
                 Instantiate(damageSound,transform.position,Quaternion.identity);
                 gameManager.GameOver();
             }
+            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name == "LevelCutscene2-3")
+            {
+                Instantiate(damageSound,transform.position,Quaternion.identity);
+                gameManager.GameOver();
+            }
             else if(gameObject.name == "Pesquisador(Clone)")
             {
                 poison.Heal();
