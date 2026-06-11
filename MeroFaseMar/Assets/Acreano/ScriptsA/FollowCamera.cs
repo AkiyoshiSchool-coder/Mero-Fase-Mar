@@ -20,19 +20,19 @@ public class FollowCamera : MonoBehaviour
     {
         if(transform.position.x > xLimit)
         {
-            transform.position = new Vector3(17.6f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(xLimit, transform.position.y, transform.position.z);
         }
         if(transform.position.x < -xLimit)
         {
-            transform.position = new Vector3(-17.6f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-xLimit, transform.position.y, transform.position.z);
         }
         if(transform.position.y > yLimit)
         {
-            transform.position = new Vector3(transform.position.x, 9.9f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, yLimit, transform.position.z);
         }
         if(transform.position.y < -yLimit)
         {
-            transform.position = new Vector3(transform.position.x, -9.9f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, -yLimit, transform.position.z);
         }
     }
 }
