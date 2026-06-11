@@ -35,25 +35,25 @@ public class GameManager : MonoBehaviour
     {
         if(level1action.WasPressedThisFrame())
         {
-            Level1();
+            Load("Level1");
         }
         if(level2action.WasPressedThisFrame())
         {
-            Level2();
+            Load("Level2");
         }
         if(level3action.WasPressedThisFrame())
         {
-            Level3();
+            Load("Level3");
         }
         if(menuaction.WasPressedThisFrame())
         {
-            MainMenu();
+            Load("MenuInicial");
         }
     }
 
-    public void MainMenu()
+    public void Load(string sceneName)
     {
-        SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void GameOver()
@@ -65,69 +65,6 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(cena);
-    }
-
-    public void ReturnScene()
-    {
-        SceneManager.LoadScene(cena);
-    }
-
-    public void Level1()
-    {
-        SceneManager.LoadScene("Level1");
-    }
-
-    public void Level2()
-    {
-        SceneManager.LoadScene("Level2");
-    }
-    public void Cutscene12()
-    {
-        SceneManager.LoadScene("LevelCutscene1-2");
-    }
-    public void Cutscene23()
-    {
-        SceneManager.LoadScene("LevelCutscene2-3");
-    }
-
-    public void Level3()
-    {
-        SceneManager.LoadScene("Level3");
-    }
-
-    public void Victory()
-    {
-        SceneManager.LoadScene("Vitoria");
-    }
-
-    public void Narrativa()
-    {
-        SceneManager.LoadScene("Narrativa");
-    }
-
-    public void Controles()
-    {
-        SceneManager.LoadScene("Controles");
-    }
-
-    public void Creditos()
-    {
-        SceneManager.LoadScene("Créditos");
-    }
-
-    public void SaibaMais()
-    {
-        SceneManager.LoadScene("SaibaMais");
-    }
-
-    public void Acessibilidade()
-    {
-        SceneManager.LoadScene("Acessibilidade");
-    }
-
-    public void Voltar()
-    {
-        SceneManager.LoadScene("MenuInicial");
     }
 
     public void EndGame()

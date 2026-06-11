@@ -51,12 +51,12 @@ public class DiverScript : MonoBehaviour
             if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name != "LevelCutscene2-3")
             {
                 Instantiate(damageSound,transform.position,Quaternion.identity);
-                gameManager.GameOver();
+                gameManager.Load("GameOver");
             }
             if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name == "LevelCutscene2-3")
             {
                 Instantiate(damageSound,transform.position,Quaternion.identity);
-                gameManager.GameOver();
+                gameManager.Load("GameOver");
             }
             else if(gameObject.name == "Pesquisador(Clone)")
             {
