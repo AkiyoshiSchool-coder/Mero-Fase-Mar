@@ -204,14 +204,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Voltar
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MenuInicial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &25327922
