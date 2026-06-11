@@ -59,11 +59,11 @@ public class FoodScript : MonoBehaviour
         {
             if(gameObject.CompareTag("FoodA"))
             {
-                merostats.FoodCount++;
+                merostats.FoodCounter();
                 
                 if(IsInfected)
                 {
-                    merostats.Poison += 1;
+                    merostats.PoisonUpper();
                     poison.BarsMove();
                 }
 
