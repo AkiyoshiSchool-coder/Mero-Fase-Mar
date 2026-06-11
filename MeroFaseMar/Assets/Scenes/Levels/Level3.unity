@@ -358,7 +358,59 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6406353230661962550, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Name
+      value: Rede
+      objectReference: {fileID: 0}
+    - target: {fileID: 6406353230661962550, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6283461260650677411, guid: b8fcc1fa290e42e41aaeb2501cc5a019, type: 3}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Color.a
+      value: 0.9411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.79607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.67058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.64705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.41666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.41666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422166405269986528, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
@@ -595,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0697f5c1d429ca45bf956b427b9064b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedeManager
-  startTime: 15
+  startTime: 3
   repeat: 35
   redeBoat: {fileID: 3068049722718520758, guid: 22af2839a01a80041a037774a64e3ceb, type: 3}
   spawnPos: {fileID: 53970355}
