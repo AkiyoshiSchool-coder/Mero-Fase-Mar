@@ -366,24 +366,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Size.x
+      value: 7.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Size.y
+      value: 8.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6283461260650677411, guid: b8fcc1fa290e42e41aaeb2501cc5a019, type: 3}
+      objectReference: {fileID: 6015860482587357385, guid: 0882ef1404e50614ebfd6f7b0c1d7f90, type: 3}
     - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Color.a
-      value: 0.9411765
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Color.b
-      value: 0.79607844
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Color.g
-      value: 0.67058825
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Color.r
-      value: 0.64705884
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937399459223153096, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1369,6 +1381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385726216}
     m_Modifications:
+    - target: {fileID: 1609970236098856901, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
+      propertyPath: m_text
+      value: _
+      objectReference: {fileID: 0}
     - target: {fileID: 7030386935989167718, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
       propertyPath: m_Name
       value: Barra
