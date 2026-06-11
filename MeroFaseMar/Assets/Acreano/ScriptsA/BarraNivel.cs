@@ -26,15 +26,15 @@ public class BarraNivel : MonoBehaviour
             Debug.Log("Você venceu");
             if(scene.name == "Level1")
             {
-                gameManager.Cutscene12();
+                gameManager.Load("LevelCutscene1-2");
             }
             else if(scene.name == "Level2")
             {
-                gameManager.Cutscene23();
+                gameManager.Load("LevelCutscene2-3");
             }
             else if(scene.name == "Level3")
             {
-                gameManager.Victory();
+                gameManager.Load("Victory");
             }
         }
     }

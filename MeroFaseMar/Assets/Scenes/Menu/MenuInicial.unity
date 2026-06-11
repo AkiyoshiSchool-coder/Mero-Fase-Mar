@@ -341,14 +341,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Controles
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Controles
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &42943744
@@ -1129,14 +1129,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Level1
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1062353579
@@ -1262,14 +1262,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Creditos
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "Cr\xE9ditos"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1097919267
@@ -1786,14 +1786,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Narrativa
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Narrativa
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1570366864
@@ -2537,14 +2537,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SaibaMais
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: SaibaMais
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2010643787
@@ -2745,14 +2745,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Acessibilidade
-        m_Mode: 1
+        m_MethodName: Load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Acessibilidade
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2083213420
