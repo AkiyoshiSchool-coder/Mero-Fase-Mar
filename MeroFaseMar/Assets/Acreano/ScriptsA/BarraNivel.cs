@@ -34,7 +34,7 @@ public class BarraNivel : MonoBehaviour
             }
             else if(scene.name == "Level3")
             {
-                gameManager.Load("Victory");
+                gameManager.Load("Vitoria");
             }
         }
     }
