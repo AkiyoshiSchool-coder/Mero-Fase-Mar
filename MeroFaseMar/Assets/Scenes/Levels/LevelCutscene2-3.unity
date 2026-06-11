@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &236472796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: spawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8090200307765046815, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
+      propertyPath: startTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8786907322573477780, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.562825
@@ -825,8 +829,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: botao
+      value: 
+      objectReference: {fileID: 236472795}
+    - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: pescButton
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: barraTap
@@ -1360,7 +1372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -79.73}
+  m_AnchoredPosition: {x: 0, y: -106.27}
   m_SizeDelta: {x: 468.62, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2054157043
@@ -1383,7 +1395,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cuidado, os pescadores causam dano, aperte a barra de espa\xE7o"
+  m_text: "Cuidado, os pescadores causam dano, aperte o bot\xE3o esquerdo do mouse
+    para defender a Merinha"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
