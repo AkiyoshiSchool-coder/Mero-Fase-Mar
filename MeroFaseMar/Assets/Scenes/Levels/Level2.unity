@@ -286,6 +286,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+--- !u!1 &138096056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138096057}
+  m_Layer: 0
+  m_Name: Foods
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &138096057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138096056}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &271744364
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowCamera
   Follow: {fileID: 1180932541}
+  xLimit: 17.6
+  yLimit: 9.9
 --- !u!1001 &568589428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -769,6 +802,7 @@ MonoBehaviour:
   cursor: {fileID: 8700111455247487829}
   barraNivel: {fileID: 3920020528112835725}
   operators: 0
+  foodEmpty: {fileID: 138096056}
 --- !u!4 &620840391
 Transform:
   m_ObjectHideFlags: 0
@@ -1519,6 +1553,7 @@ MonoBehaviour:
   boat: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
   mero: {fileID: 1180932541}
   spawnCD: 45
+  timer: 0
 --- !u!1 &1769334005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,6 +2035,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 138096057}
   - {fileID: 620840391}
   - {fileID: 619394802}
   - {fileID: 1769334006}
