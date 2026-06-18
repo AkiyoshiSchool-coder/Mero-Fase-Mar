@@ -43,11 +43,11 @@ public class GameManager : MonoBehaviour
         }
         if(level2action.WasPressedThisFrame())
         {
-            Load("Level2");
+            Load("LevelCutscene12");
         }
         if(level3action.WasPressedThisFrame())
         {
-            Load("Level3");
+            Load("LevelCutscene23");
         }
         if(menuaction.WasPressedThisFrame())
         {

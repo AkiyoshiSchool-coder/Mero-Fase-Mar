@@ -88,7 +88,8 @@ public class MeroMovement : MonoBehaviour
         {
             if(moveAction.IsPressed())
             {
-                mouseworld = Camera.main.ScreenToWorldPoint(moveAction.ReadValue<Vector2>());
+                Vector2 mov = moveAction.ReadValue<Vector2>();
+                mouseworld = transform.position + new Vector3(mov.x, mov.y, 0);
             }
         }
         direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
