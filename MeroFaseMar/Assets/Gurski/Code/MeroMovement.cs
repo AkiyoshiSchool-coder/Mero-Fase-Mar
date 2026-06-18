@@ -80,22 +80,26 @@ public class MeroMovement : MonoBehaviour
 
     void Movement()
     {
-        if(Application.platform != RuntimePlatform.WindowsEditor)
+        if(Application.platform == RuntimePlatform.WindowsEditor)
         {
             mouseworld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            if(!isStuck)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
-            }
         }
-        else if(Application.platform == RuntimePlatform.WindowsEditor)
+        else if(Application.platform == RuntimePlatform.Android)
         {
-            mouseworld = moveAction.ReadValue<Vector2>();
-            transform.Translate(Vector3.right * speed * Time.deltaTime * mouseworld.x);
+            if(moveAction.IsPressed())
+            {
+                mouseworld = Camera.main.ScreenToWorldPoint(moveAction.ReadValue<Vector2>());
+            }
         }
         direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
         meroRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, meroRotation - 90);
+
+        if(!isStuck)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
+        }
+
         if(transform.position.x > horizontalLimit)
         {
             transform.position = new Vector3(horizontalLimit, transform.position.y, transform.position.z);
