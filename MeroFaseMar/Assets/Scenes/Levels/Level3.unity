@@ -1303,7 +1303,7 @@ MonoBehaviour:
   FoodB: {fileID: 3403562119263904250, guid: 980c0df42dc96a64b92e1fafdd4ec2dd, type: 3}
   Mero: {fileID: 1180932541}
   cursor: {fileID: 8700111455247487829}
-  barraNivel: {fileID: 0}
+  barraNivel: {fileID: 1483720018}
   operators: 0
   foodEmpty: {fileID: 1268855421}
 --- !u!4 &620840391
@@ -1987,6 +1987,11 @@ PrefabInstance:
 --- !u!224 &1483720017 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1743704717427694212, guid: f931cee26b4815140859df042adc7fbd, type: 3}
+  m_PrefabInstance: {fileID: 1483720016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1483720018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5119866674464389937, guid: f931cee26b4815140859df042adc7fbd, type: 3}
   m_PrefabInstance: {fileID: 1483720016}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1532804004 stripped
