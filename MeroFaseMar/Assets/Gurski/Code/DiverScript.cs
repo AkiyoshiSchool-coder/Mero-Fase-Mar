@@ -33,7 +33,7 @@ public class DiverScript : MonoBehaviour
         }
         else if(notScared == false)
         {
-            transform.Translate(Vector3.up * Time.deltaTime * speed*scaredSpeedMultiplier); // forward evapora
+            transform.Translate(Vector3.forward * Time.deltaTime * speed*scaredSpeedMultiplier); // forward evapora
         }
     }
 
@@ -48,15 +48,14 @@ public class DiverScript : MonoBehaviour
     {
         if(collider.CompareTag("Head"))
         {
-            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name != "LevelCutscene2-3")
+            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name != "LevelCutscene23")
             {
                 Instantiate(damageSound,transform.position,Quaternion.identity);
-                gameManager.Load("GameOver");
+                gameManager.GameOver();
             }
-            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name == "LevelCutscene2-3")
+            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name == "LevelCutscene23")
             {
                 Instantiate(damageSound,transform.position,Quaternion.identity);
-                gameManager.Load("GameOver");
             }
             else if(gameObject.name == "Pesquisador(Clone)")
             {

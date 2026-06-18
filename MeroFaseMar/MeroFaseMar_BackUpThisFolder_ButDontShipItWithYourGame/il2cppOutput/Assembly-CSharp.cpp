@@ -178,10 +178,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral10CCF8EF0AEC4640D41978BCF3C2D91536C68400
 IL2CPP_EXTERN_C String_t* _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029;
 IL2CPP_EXTERN_C String_t* _stringLiteral297053DD260F1A612E64AEB43C06286160BA63A8;
 IL2CPP_EXTERN_C String_t* _stringLiteral2FBC363BD1A524947406DE905D5460FE29330F7B;
+IL2CPP_EXTERN_C String_t* _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral330BC37D8463B5B010EF864F4DEDBCB8387FDEA8;
 IL2CPP_EXTERN_C String_t* _stringLiteral35FED4D39745662DB28D9D8B4932E35D1D851ACD;
 IL2CPP_EXTERN_C String_t* _stringLiteral378F2A2277727E3F33599E270749A10E7C2B55E1;
-IL2CPP_EXTERN_C String_t* _stringLiteral4DF80D672086FFDE24611E4808B92D27FF87268C;
 IL2CPP_EXTERN_C String_t* _stringLiteral4F3F396C1D214CDE2D3CBAFF31AFD7D1518E8CCD;
 IL2CPP_EXTERN_C String_t* _stringLiteral508450355DF2A5BB172C6D21A5C54D7806587D91;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A1BF04DA94E4927942E5859A3C439DBE92C8BC8;
@@ -195,6 +195,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAD56F9E451A89AD7E384F229B68551F65B95261E
 IL2CPP_EXTERN_C String_t* _stringLiteralC0C2CFCE4A6CE2E03CC7D057AFEA0F2E71568B15;
 IL2CPP_EXTERN_C String_t* _stringLiteralC62B61BC27E509D700023566A09D2AE606BE85A7;
 IL2CPP_EXTERN_C String_t* _stringLiteralC83B6926DE498999BC7E3D5467A98CDE9B139901;
+IL2CPP_EXTERN_C String_t* _stringLiteralDEDE5949151C884E9F6C37349C313A79D4A187A8;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1121026DDC9AE966F16E04A751E4BA1D3B20C8B;
 IL2CPP_EXTERN_C String_t* _stringLiteralE3BACD5AA50B8F16067E82006144FB266A03F4DD;
 IL2CPP_EXTERN_C String_t* _stringLiteralFCF1DE42FCB539C9CDD7799B2A3954A2ACB9FB94;
@@ -2860,6 +2861,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_m018D015E89C8CB743C54A21B4A1C5202EBF6297A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_translation, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameOver_mF1BD400E7F84A0B533A58E80ADA7CCB89C964625 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PoisonDamage_Heal_m96E2C9B5A9CDA290596765378E903479EED41990 (PoisonDamage_t516A28C22FD1BA5DCB97FED7228A0689A1762729* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_RunAway_mA360C1CF53CF8A7D4F0FE8E249E8D8273FA0008B (DiverScript_t7C40A92AA8AD5E9741573DCF3660364FD5E20BB8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroStats_PescadorAumenta_mA055414454E2B3B96BF729B7B05E034DF3E1F9DC (MeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09* __this, int32_t ___0_num, const RuntimeMethod* method) ;
@@ -2946,7 +2948,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoveBarrinha_MoveBarra_mA6C59A54AC577B8B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Rede_m476E6032FAB49401A6EE475A855E698555ED5869 (MeroMovement_tC43ED7B2FC01653D1F64EE51221DFA9BF4C6E3AA* __this, bool ___0_preso, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Movement_m6BFD2DC4A1F13729EB73141BD528BF0D354AC223 (MeroMovement_tC43ED7B2FC01653D1F64EE51221DFA9BF4C6E3AA* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_GameOver_mF1BD400E7F84A0B533A58E80ADA7CCB89C964625 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* Mouse_get_current_m410C1F9ABC5AA77353574E8815F7E63289707986_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* Pointer_get_position_m4286004169788483EEDA6AF833CEFDB04FEDF3D8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) ;
@@ -3031,12 +3032,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral10CCF8EF0AEC4640D41978BCF3C2D91536C68400);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral330BC37D8463B5B010EF864F4DEDBCB8387FDEA8);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4DF80D672086FFDE24611E4808B92D27FF87268C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral60D94F4076105528AD700327FB16790E59EF6E41);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7D341415782A02FC2C80E5EF6D3EAAE65DC089D9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC83B6926DE498999BC7E3D5467A98CDE9B139901);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDEDE5949151C884E9F6C37349C313A79D4A187A8);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -3079,7 +3080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:29>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_9 = __this->___gameManager;
 		NullCheck(L_9);
-		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_9, _stringLiteral4DF80D672086FFDE24611E4808B92D27FF87268C, NULL);
+		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_9, _stringLiteralDEDE5949151C884E9F6C37349C313A79D4A187A8, NULL);
 		return;
 	}
 
@@ -3100,7 +3101,7 @@ IL_007b:
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:33>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_13 = __this->___gameManager;
 		NullCheck(L_13);
-		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_13, _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029, NULL);
+		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_13, _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6, NULL);
 		return;
 	}
 
@@ -5308,7 +5309,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5A1BF04DA94E4927942E5859A3C439DBE92C8BC8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8DD8D6FCBA1E38E53530F55F7B9061E65C123321);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD305E7121D8B9042CB8A69D04C967DDE111161E);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC62B61BC27E509D700023566A09D2AE606BE85A7);
 		s_Il2CppMethodInitialized = true;
 	}
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
@@ -5321,7 +5321,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		L_1 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_0, _stringLiteral8DD8D6FCBA1E38E53530F55F7B9061E65C123321, NULL);
 		if (!L_1)
 		{
-			goto IL_011f;
+			goto IL_010a;
 		}
 	}
 	{
@@ -5335,7 +5335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		L_4 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_3, _stringLiteralAD305E7121D8B9042CB8A69D04C967DDE111161E, NULL);
 		if (!L_4)
 		{
-			goto IL_006c;
+			goto IL_0067;
 		}
 	}
 	{
@@ -5349,7 +5349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		L_7 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_6, _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029, NULL);
 		if (!L_7)
 		{
-			goto IL_006c;
+			goto IL_0067;
 		}
 	}
 	{
@@ -5368,10 +5368,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:54>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_13 = __this->___gameManager;
 		NullCheck(L_13);
-		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_13, _stringLiteralC62B61BC27E509D700023566A09D2AE606BE85A7, NULL);
+		GameManager_GameOver_mF1BD400E7F84A0B533A58E80ADA7CCB89C964625(L_13, NULL);
 	}
 
-IL_006c:
+IL_0067:
 	{
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:56>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14;
@@ -5383,7 +5383,7 @@ IL_006c:
 		L_16 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_15, _stringLiteralAD305E7121D8B9042CB8A69D04C967DDE111161E, NULL);
 		if (!L_16)
 		{
-			goto IL_00ca;
+			goto IL_00b5;
 		}
 	}
 	{
@@ -5397,7 +5397,7 @@ IL_006c:
 		L_19 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_18, _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029, NULL);
 		if (!L_19)
 		{
-			goto IL_00ca;
+			goto IL_00b5;
 		}
 	}
 	{
@@ -5413,101 +5413,97 @@ IL_006c:
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
 		L_24 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_20, L_22, L_23, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:59>
-		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_25 = __this->___gameManager;
+		goto IL_00ff;
+	}
+
+IL_00b5:
+	{
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:60>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
+		L_25 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_25);
-		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_25, _stringLiteralC62B61BC27E509D700023566A09D2AE606BE85A7, NULL);
-		goto IL_0114;
-	}
-
-IL_00ca:
-	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:61>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26;
-		L_26 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_26);
-		String_t* L_27;
-		L_27 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_26, NULL);
-		bool L_28;
-		L_28 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_27, _stringLiteral5A1BF04DA94E4927942E5859A3C439DBE92C8BC8, NULL);
-		if (!L_28)
+		String_t* L_26;
+		L_26 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_25, NULL);
+		bool L_27;
+		L_27 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_26, _stringLiteral5A1BF04DA94E4927942E5859A3C439DBE92C8BC8, NULL);
+		if (!L_27)
 		{
-			goto IL_0114;
+			goto IL_00ff;
 		}
 	}
 	{
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:62>
+		PoisonDamage_t516A28C22FD1BA5DCB97FED7228A0689A1762729* L_28 = __this->___poison;
+		NullCheck(L_28);
+		PoisonDamage_Heal_m96E2C9B5A9CDA290596765378E903479EED41990(L_28, NULL);
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:63>
-		PoisonDamage_t516A28C22FD1BA5DCB97FED7228A0689A1762729* L_29 = __this->___poison;
-		NullCheck(L_29);
-		PoisonDamage_Heal_m96E2C9B5A9CDA290596765378E903479EED41990(L_29, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___healingSound;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_30;
+		L_30 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_30);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
+		L_31 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_30, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_32;
+		L_32 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33;
+		L_33 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_29, L_31, L_32, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:64>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = __this->___healingSound;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
-		L_31 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_31);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
-		L_32 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_31, NULL);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_33;
-		L_33 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34;
-		L_34 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_30, L_32, L_33, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:65>
-		MeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09* L_35 = __this->___meroStats;
-		NullCheck(L_35);
-		L_35->___Poison = 0;
+		MeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09* L_34 = __this->___meroStats;
+		NullCheck(L_34);
+		L_34->___Poison = 0;
 	}
 
-IL_0114:
+IL_00ff:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:67>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36;
-		L_36 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:66>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_35;
+		L_35 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_36, NULL);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_35, NULL);
 	}
 
-IL_011f:
+IL_010a:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:69>
-		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_37 = ___0_collider;
-		NullCheck(L_37);
-		bool L_38;
-		L_38 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_37, _stringLiteral0EA4FBC49BDBBF4E11198EDA96F7B7ACF7F2A85F, NULL);
-		if (!L_38)
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:68>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_36 = ___0_collider;
+		NullCheck(L_36);
+		bool L_37;
+		L_37 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_36, _stringLiteral0EA4FBC49BDBBF4E11198EDA96F7B7ACF7F2A85F, NULL);
+		if (!L_37)
 		{
-			goto IL_015f;
+			goto IL_014a;
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:71>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_39;
-		L_39 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		NullCheck(L_39);
-		String_t* L_40;
-		L_40 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_39, NULL);
-		bool L_41;
-		L_41 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_40, _stringLiteralAD305E7121D8B9042CB8A69D04C967DDE111161E, NULL);
-		if (!L_41)
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:70>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38;
+		L_38 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_38);
+		String_t* L_39;
+		L_39 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_38, NULL);
+		bool L_40;
+		L_40 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_39, _stringLiteralAD305E7121D8B9042CB8A69D04C967DDE111161E, NULL);
+		if (!L_40)
 		{
-			goto IL_015f;
+			goto IL_014a;
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:73>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:72>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:74>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:73>
 		DiverScript_RunAway_mA360C1CF53CF8A7D4F0FE8E249E8D8273FA0008B(__this, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:75>
-		MeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09* L_42 = __this->___meroStats;
-		NullCheck(L_42);
-		MeroStats_PescadorAumenta_mA055414454E2B3B96BF729B7B05E034DF3E1F9DC(L_42, 1, NULL);
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:74>
+		MeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09* L_41 = __this->___meroStats;
+		NullCheck(L_41);
+		MeroStats_PescadorAumenta_mA055414454E2B3B96BF729B7B05E034DF3E1F9DC(L_41, 1, NULL);
 	}
 
-IL_015f:
+IL_014a:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:78>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:77>
 		return;
 	}
 }
@@ -5523,32 +5519,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_Init_m9072CF5BA2DB03C767A497
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:82>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:81>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___0_gameobj;
 		__this->___mero = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___mero), (void*)L_0);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:83>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:82>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___mero;
 		NullCheck(L_1);
 		MeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09* L_2;
 		L_2 = GameObject_GetComponent_TisMeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09_m3C01A1B475CCF2392FD521298315347E5BC0A1CE(L_1, GameObject_GetComponent_TisMeroStats_t96233C9A4BE72B0CDF8872FF218CB00A4F90FE09_m3C01A1B475CCF2392FD521298315347E5BC0A1CE_RuntimeMethod_var);
 		__this->___meroStats = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___meroStats), (void*)L_2);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:84>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:83>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___mero;
 		NullCheck(L_3);
 		PoisonDamage_t516A28C22FD1BA5DCB97FED7228A0689A1762729* L_4;
 		L_4 = GameObject_GetComponent_TisPoisonDamage_t516A28C22FD1BA5DCB97FED7228A0689A1762729_m18D16FDEA688B99493A9FBCB5594E3F189D3D197(L_3, GameObject_GetComponent_TisPoisonDamage_t516A28C22FD1BA5DCB97FED7228A0689A1762729_m18D16FDEA688B99493A9FBCB5594E3F189D3D197_RuntimeMethod_var);
 		__this->___poison = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___poison), (void*)L_4);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:85>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:84>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___gameMgr;
 		NullCheck(L_5);
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_6;
 		L_6 = GameObject_GetComponent_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_m4F2EAFB3E0C0416DA99DFB2E267D2984B15B9DF6(L_5, GameObject_GetComponent_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_m4F2EAFB3E0C0416DA99DFB2E267D2984B15B9DF6_RuntimeMethod_var);
 		__this->___gameManager = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager), (void*)L_6);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:86>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/DiverScript.cs:85>
 		return;
 	}
 }
