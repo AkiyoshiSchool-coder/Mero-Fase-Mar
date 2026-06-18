@@ -175,7 +175,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral027BDCBB9A3122059432E8EE847BCAB30A6BED78
 IL2CPP_EXTERN_C String_t* _stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78;
 IL2CPP_EXTERN_C String_t* _stringLiteral0EA4FBC49BDBBF4E11198EDA96F7B7ACF7F2A85F;
 IL2CPP_EXTERN_C String_t* _stringLiteral10CCF8EF0AEC4640D41978BCF3C2D91536C68400;
-IL2CPP_EXTERN_C String_t* _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029;
 IL2CPP_EXTERN_C String_t* _stringLiteral297053DD260F1A612E64AEB43C06286160BA63A8;
 IL2CPP_EXTERN_C String_t* _stringLiteral2FBC363BD1A524947406DE905D5460FE29330F7B;
 IL2CPP_EXTERN_C String_t* _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6;
@@ -2856,7 +2855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_Movement_m19D2B857E51B3573ABA2B56FD89B35C7BB4EDDA1 (DiverScript_t7C40A92AA8AD5E9741573DCF3660364FD5E20BB8* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_m018D015E89C8CB743C54A21B4A1C5202EBF6297A (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_translation, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
@@ -5242,7 +5241,7 @@ IL_00ca:
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
 		L_29 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
-		L_30 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		L_30 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
 		float L_31;
 		L_31 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
@@ -5305,7 +5304,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0EA4FBC49BDBBF4E11198EDA96F7B7ACF7F2A85F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5A1BF04DA94E4927942E5859A3C439DBE92C8BC8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8DD8D6FCBA1E38E53530F55F7B9061E65C123321);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD305E7121D8B9042CB8A69D04C967DDE111161E);
@@ -5346,7 +5345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiverScript_OnTriggerEnter2D_mA31AFAC3F1
 		String_t* L_6;
 		L_6 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C((&V_0), NULL);
 		bool L_7;
-		L_7 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_6, _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029, NULL);
+		L_7 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_6, _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6, NULL);
 		if (!L_7)
 		{
 			goto IL_0067;
@@ -5394,7 +5393,7 @@ IL_0067:
 		String_t* L_18;
 		L_18 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C((&V_0), NULL);
 		bool L_19;
-		L_19 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_18, _stringLiteral17FE0F9F1A5D8200065E03AB2479616F4F147029, NULL);
+		L_19 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_18, _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6, NULL);
 		if (!L_19)
 		{
 			goto IL_00b5;
@@ -6348,9 +6347,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Update_m7F29D8E933B8D21D2E67
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral330BC37D8463B5B010EF864F4DEDBCB8387FDEA8);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7D341415782A02FC2C80E5EF6D3EAAE65DC089D9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC83B6926DE498999BC7E3D5467A98CDE9B139901);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDEDE5949151C884E9F6C37349C313A79D4A187A8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE3BACD5AA50B8F16067E82006144FB266A03F4DD);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -6384,7 +6383,7 @@ IL_0018:
 	}
 	{
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/GameManager.cs:46>
-		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(__this, _stringLiteral330BC37D8463B5B010EF864F4DEDBCB8387FDEA8, NULL);
+		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(__this, _stringLiteralDEDE5949151C884E9F6C37349C313A79D4A187A8, NULL);
 	}
 
 IL_0030:
@@ -6401,7 +6400,7 @@ IL_0030:
 	}
 	{
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/GameManager.cs:50>
-		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(__this, _stringLiteral7D341415782A02FC2C80E5EF6D3EAAE65DC089D9, NULL);
+		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(__this, _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6, NULL);
 	}
 
 IL_0048:
@@ -6969,6 +6968,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Movement_m6BFD2DC4A1F13729E
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_1_ReadValue_m362E05F00FE8CF8FC52F0D673291907EC7FA6541_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:83>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
@@ -6999,7 +7000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Movement_m6BFD2DC4A1F13729E
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_7;
 		L_7 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_6, NULL);
 		__this->___mouseworld = L_7;
-		goto IL_006e;
+		goto IL_0086;
 	}
 
 IL_0033:
@@ -7010,7 +7011,7 @@ IL_0033:
 		L_8 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
 		if ((!(((uint32_t)L_8) == ((uint32_t)((int32_t)11)))))
 		{
-			goto IL_006e;
+			goto IL_0086;
 		}
 	}
 	{
@@ -7021,256 +7022,265 @@ IL_0033:
 		L_10 = InputAction_IsPressed_m40DF920F0E7D18170B62666DA2A2131AD336A301(L_9, NULL);
 		if (!L_10)
 		{
-			goto IL_006e;
+			goto IL_0086;
 		}
 	}
 	{
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:91>
-		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_11;
-		L_11 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
-		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_12 = __this->___moveAction;
-		NullCheck(L_12);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
-		L_13 = InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF(L_12, InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
-		L_14 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_13, NULL);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_11 = __this->___moveAction;
 		NullCheck(L_11);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
-		L_15 = Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5(L_11, L_14, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_16;
-		L_16 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_15, NULL);
-		__this->___mouseworld = L_16;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_12;
+		L_12 = InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF(L_11, InputAction_ReadValue_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m8D02BA85303ABD48D9963369E106B0C83A393FBF_RuntimeMethod_var);
+		V_0 = L_12;
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:92>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
+		L_13 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_13);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_13, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15 = V_0;
+		float L_16 = L_15.___x;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_17 = V_0;
+		float L_18 = L_17.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		memset((&L_19), 0, sizeof(L_19));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_19), L_16, L_18, (0.0f), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_14, L_19, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
+		L_21 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_20, NULL);
+		__this->___mouseworld = L_21;
 	}
 
-IL_006e:
+IL_0086:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:94>
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_17 = __this->___mouseworld;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
-		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_18);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
-		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
-		float L_20 = L_19.___x;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
-		L_21 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_21);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
-		L_22 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_21, NULL);
-		float L_23 = L_22.___y;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_24;
-		memset((&L_24), 0, sizeof(L_24));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_24), L_20, L_23, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_25;
-		L_25 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_17, L_24, NULL);
-		__this->___direction = L_25;
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:95>
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_26 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___direction);
-		float L_27 = L_26->___y;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_28 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___direction);
-		float L_29 = L_28->___x;
-		float L_30;
-		L_30 = atan2f(L_27, L_29);
-		__this->___meroRotation = ((float)il2cpp_codegen_multiply(L_30, (57.2957802f)));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22 = __this->___mouseworld;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_23, NULL);
+		float L_25 = L_24.___x;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_26, NULL);
+		float L_28 = L_27.___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_29;
+		memset((&L_29), 0, sizeof(L_29));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_29), L_25, L_28, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30;
+		L_30 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_22, L_29, NULL);
+		__this->___direction = L_30;
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:96>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
-		L_31 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_32 = __this->___meroRotation;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_33;
-		L_33 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)il2cpp_codegen_subtract(L_32, (90.0f))), NULL);
-		NullCheck(L_31);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_31, L_33, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:98>
-		bool L_34 = __this->___isStuck;
-		if (L_34)
-		{
-			goto IL_0130;
-		}
-	}
-	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:100>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
-		L_35 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_31 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___direction);
+		float L_32 = L_31->___y;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_33 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___direction);
+		float L_34 = L_33->___x;
+		float L_35;
+		L_35 = atan2f(L_32, L_34);
+		__this->___meroRotation = ((float)il2cpp_codegen_multiply(L_35, (57.2957802f)));
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:97>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
 		L_36 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_37 = __this->___meroRotation;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_38;
+		L_38 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)il2cpp_codegen_subtract(L_37, (90.0f))), NULL);
 		NullCheck(L_36);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
-		L_37 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_36, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_38;
-		L_38 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_37, NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_39 = __this->___mouseworld;
-		float L_40 = __this->___speed;
-		float L_41;
-		L_41 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_42;
-		L_42 = Vector2_MoveTowards_m138E823B0F25EF10A2261E57C5706232E8EA9A9A_inline(L_38, L_39, ((float)il2cpp_codegen_multiply(L_40, L_41)), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43;
-		L_43 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_42, NULL);
-		NullCheck(L_35);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_35, L_43, NULL);
-	}
-
-IL_0130:
-	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:103>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44;
-		L_44 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_44);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45;
-		L_45 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_44, NULL);
-		float L_46 = L_45.___x;
-		float L_47 = __this->___horizontalLimit;
-		if ((!(((float)L_46) > ((float)L_47))))
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_36, L_38, NULL);
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:99>
+		bool L_39 = __this->___isStuck;
+		if (L_39)
 		{
-			goto IL_0180;
+			goto IL_0148;
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:105>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48;
-		L_48 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_49 = __this->___horizontalLimit;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_50;
-		L_50 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_50);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
-		L_51 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_50, NULL);
-		float L_52 = L_51.___y;
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:101>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_40;
+		L_40 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
+		L_41 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_41);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
+		L_42 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_41, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_43;
+		L_43 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_42, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_44 = __this->___mouseworld;
+		float L_45 = __this->___speed;
+		float L_46;
+		L_46 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_47;
+		L_47 = Vector2_MoveTowards_m138E823B0F25EF10A2261E57C5706232E8EA9A9A_inline(L_43, L_44, ((float)il2cpp_codegen_multiply(L_45, L_46)), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48;
+		L_48 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_47, NULL);
+		NullCheck(L_40);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_40, L_48, NULL);
+	}
+
+IL_0148:
+	{
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:104>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_49;
+		L_49 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_49);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50;
+		L_50 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_49, NULL);
+		float L_51 = L_50.___x;
+		float L_52 = __this->___horizontalLimit;
+		if ((!(((float)L_51) > ((float)L_52))))
+		{
+			goto IL_0198;
+		}
+	}
+	{
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:106>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_53;
 		L_53 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_53);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
-		L_54 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_53, NULL);
-		float L_55 = L_54.___z;
+		float L_54 = __this->___horizontalLimit;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_55;
+		L_55 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_55);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_56;
-		memset((&L_56), 0, sizeof(L_56));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_56), L_49, L_52, L_55, NULL);
-		NullCheck(L_48);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_48, L_56, NULL);
-		goto IL_01d0;
+		L_56 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_55, NULL);
+		float L_57 = L_56.___y;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_58;
+		L_58 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_58);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
+		L_59 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_58, NULL);
+		float L_60 = L_59.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61;
+		memset((&L_61), 0, sizeof(L_61));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_61), L_54, L_57, L_60, NULL);
+		NullCheck(L_53);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_53, L_61, NULL);
+		goto IL_01e8;
 	}
 
-IL_0180:
+IL_0198:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:107>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_57;
-		L_57 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_57);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_58;
-		L_58 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_57, NULL);
-		float L_59 = L_58.___x;
-		float L_60 = __this->___horizontalLimit;
-		if ((!(((float)L_59) < ((float)((-L_60))))))
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:108>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_62;
+		L_62 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_62);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_63;
+		L_63 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_62, NULL);
+		float L_64 = L_63.___x;
+		float L_65 = __this->___horizontalLimit;
+		if ((!(((float)L_64) < ((float)((-L_65))))))
 		{
-			goto IL_01d0;
+			goto IL_01e8;
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:109>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_61;
-		L_61 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		float L_62 = __this->___horizontalLimit;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_63;
-		L_63 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_63);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_64;
-		L_64 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_63, NULL);
-		float L_65 = L_64.___y;
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:110>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_66;
 		L_66 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_66);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
-		L_67 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_66, NULL);
-		float L_68 = L_67.___z;
+		float L_67 = __this->___horizontalLimit;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_68;
+		L_68 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_68);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69;
-		memset((&L_69), 0, sizeof(L_69));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_69), ((-L_62)), L_65, L_68, NULL);
-		NullCheck(L_61);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_61, L_69, NULL);
+		L_69 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_68, NULL);
+		float L_70 = L_69.___y;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71;
+		L_71 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_71);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
+		L_72 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_71, NULL);
+		float L_73 = L_72.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_74;
+		memset((&L_74), 0, sizeof(L_74));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_74), ((-L_67)), L_70, L_73, NULL);
+		NullCheck(L_66);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_66, L_74, NULL);
 	}
 
-IL_01d0:
+IL_01e8:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:111>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_70;
-		L_70 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_70);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71;
-		L_71 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_70, NULL);
-		float L_72 = L_71.___y;
-		float L_73 = __this->___verticalLimit;
-		if ((!(((float)L_72) > ((float)L_73))))
-		{
-			goto IL_021f;
-		}
-	}
-	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:113>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_74;
-		L_74 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:112>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_75;
 		L_75 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_75);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_76;
 		L_76 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_75, NULL);
-		float L_77 = L_76.___x;
+		float L_77 = L_76.___y;
 		float L_78 = __this->___verticalLimit;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_79;
-		L_79 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_79);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_80;
-		L_80 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_79, NULL);
-		float L_81 = L_80.___z;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
-		memset((&L_82), 0, sizeof(L_82));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_82), L_77, L_78, L_81, NULL);
-		NullCheck(L_74);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_74, L_82, NULL);
-		return;
-	}
-
-IL_021f:
-	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:115>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_83;
-		L_83 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		NullCheck(L_83);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_84;
-		L_84 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_83, NULL);
-		float L_85 = L_84.___y;
-		float L_86 = __this->___verticalLimit;
-		if ((!(((float)L_85) < ((float)((-L_86))))))
+		if ((!(((float)L_77) > ((float)L_78))))
 		{
-			goto IL_026f;
+			goto IL_0237;
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:117>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_87;
-		L_87 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:114>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_79;
+		L_79 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_80;
+		L_80 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_80);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_81;
+		L_81 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_80, NULL);
+		float L_82 = L_81.___x;
+		float L_83 = __this->___verticalLimit;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_84;
+		L_84 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_84);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_85;
+		L_85 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_84, NULL);
+		float L_86 = L_85.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87;
+		memset((&L_87), 0, sizeof(L_87));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_87), L_82, L_83, L_86, NULL);
+		NullCheck(L_79);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_79, L_87, NULL);
+		return;
+	}
+
+IL_0237:
+	{
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:116>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_88;
 		L_88 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_88);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_89;
 		L_89 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_88, NULL);
-		float L_90 = L_89.___x;
+		float L_90 = L_89.___y;
 		float L_91 = __this->___verticalLimit;
+		if ((!(((float)L_90) < ((float)((-L_91))))))
+		{
+			goto IL_0287;
+		}
+	}
+	{
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:118>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_92;
 		L_92 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_93;
+		L_93 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_93);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94;
+		L_94 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_93, NULL);
+		float L_95 = L_94.___x;
+		float L_96 = __this->___verticalLimit;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_97;
+		L_97 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_97);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_98;
+		L_98 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_97, NULL);
+		float L_99 = L_98.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_100;
+		memset((&L_100), 0, sizeof(L_100));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_100), L_95, ((-L_96)), L_99, NULL);
 		NullCheck(L_92);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_93;
-		L_93 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_92, NULL);
-		float L_94 = L_93.___z;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95;
-		memset((&L_95), 0, sizeof(L_95));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_95), L_90, ((-L_91)), L_94, NULL);
-		NullCheck(L_87);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_87, L_95, NULL);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_92, L_100, NULL);
 	}
 
-IL_026f:
+IL_0287:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:119>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:120>
 		return;
 	}
 }
@@ -7285,7 +7295,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_OnTriggerEnter2D_m9217CA53D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:123>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:124>
 		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_0 = ___0_other;
 		NullCheck(L_0);
 		String_t* L_1;
@@ -7299,20 +7309,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_OnTriggerEnter2D_m9217CA53D
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:125>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:126>
 		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_3 = ___0_other;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
 		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_4, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:126>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:127>
 		MeroMovement_Rede_m476E6032FAB49401A6EE475A855E698555ED5869(__this, (bool)1, NULL);
 	}
 
 IL_0024:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:128>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:129>
 		return;
 	}
 }
@@ -7328,7 +7338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Rede_m476E6032FAB49401A6EE4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:132>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:133>
 		bool L_0 = ___0_preso;
 		if (!L_0)
 		{
@@ -7336,7 +7346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Rede_m476E6032FAB49401A6EE4
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:134>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:135>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___RedeSound;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
 		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
@@ -7355,37 +7365,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeroMovement_Rede_m476E6032FAB49401A6EE4
 
 IL_0029:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:136>
-		__this->___timer = (0.0f);
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:137>
+		__this->___timer = (0.0f);
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:138>
 		MoveBarrinha_t87F0B9803FF93770BBF9E16737EB9C16E1B30224* L_7 = __this->___codeBarraTap;
 		NullCheck(L_7);
 		MoveBarrinha_ResetBarra_mCEE78A6B430C6B18FAA82AE138754C09BAA25E00(L_7, (0.0f), NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:138>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:139>
 		MoveBarrinha_t87F0B9803FF93770BBF9E16737EB9C16E1B30224* L_8 = __this->___codeBarraTime;
 		NullCheck(L_8);
 		MoveBarrinha_ResetBarra_mCEE78A6B430C6B18FAA82AE138754C09BAA25E00(L_8, (1.0f), NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:139>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:140>
 		bool L_9 = ___0_preso;
 		__this->___isStuck = L_9;
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:140>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:141>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___redeMero;
 		bool L_11 = ___0_preso;
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, L_11, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:141>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:142>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___barraTime;
 		bool L_13 = ___0_preso;
 		NullCheck(L_12);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, L_13, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:142>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:143>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___barraTap;
 		bool L_15 = ___0_preso;
 		NullCheck(L_14);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_14, L_15, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:143>
-		__this->___escapeCount = 0;
 		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:144>
+		__this->___escapeCount = 0;
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Gurski/Code/MeroMovement.cs:145>
 		return;
 	}
 }
@@ -8407,8 +8417,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_3;
 	}
 }
-// Method Definition Index: 35115
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
+// Method Definition Index: 35113
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8417,7 +8427,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___forwardVector;
 		return L_0;
 	}
 }
