@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BarraNivel : MonoBehaviour
 {
+    [SerializeField] private float multiply;
     private float teste = 0;
     public float qntd;
     Scene scene;
@@ -20,7 +21,7 @@ public class BarraNivel : MonoBehaviour
     public void FoodCount()
     {
         teste += qntd;
-        transform.localScale = new Vector3(teste*0.0665f,0.65f,1);
+        transform.localScale = new Vector3(teste*multiply,0.65f,1);
         if(teste>=100)
         {
             Debug.Log("Você venceu");
