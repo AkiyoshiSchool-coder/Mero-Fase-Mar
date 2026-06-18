@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        if(Application.platform == RuntimePlatform.WindowsEditor)
+        {
+            Debug.Log(Application.platform);
+        }
         level1action = InputSystem.actions.FindAction("Level1");
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
