@@ -658,10 +658,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MobileHUD
       objectReference: {fileID: 0}
+    - target: {fileID: 3913132996017623084, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5756920131088052787, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911024392013670597, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911024392013670597, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911024392013670597, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911024392013670597, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: aa39be3affac93b4bb74e453d67b90f0, type: 3}
     - target: {fileID: 9075817420574143976, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_IsActive
       value: 0

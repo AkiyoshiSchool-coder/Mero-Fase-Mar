@@ -99,6 +99,9 @@ extern void GameManagerColor_setColor_m1117686E386977AFB90FC78D7EB174F0583CACD4 
 extern void GameManagerColor_getColor_m993A9AA375C4F41E2A73F5517E6DFD9161E8B886 (void);
 extern void GameManagerColor__ctor_mE19ABC6C37BB41F5ED9C076BCFA76BF38621388D (void);
 extern void GameManagerColor__cctor_m4F1A11DAC749E0A64C3BA542586DC3EFB1203F7D (void);
+extern void HideOnMobile_Start_m40C42BB3926A114E3632EC73DDDE4F442EBFDE7E (void);
+extern void HideOnMobile_Update_m8FCE498234D9E4D55DA24A8CC33A12615450A003 (void);
+extern void HideOnMobile__ctor_m485DDF3395477FD2B9DDCCF8BF033E5C138D70F4 (void);
 extern void MeroBoom_Awake_m93A3CE18B0C0CF6C0B49B65251DC16259CEB8817 (void);
 extern void MeroBoom_Update_m1F49D0C77F3FA87D161BDC97F0C3B7AD56859819 (void);
 extern void MeroBoom_FixedUpdate_m913AD9696703176E79680DA2E6DCD97756C44D80 (void);
@@ -127,7 +130,7 @@ extern void RedeSpawner_Move_m02EE8010B33651D2568194901C7B85952035EAB6 (void);
 extern void RedeSpawner__ctor_m4C814C449FE036E77692C0C8552374B280C91343 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[120] = 
+static Il2CppMethodPointer s_methodPointers[123] = 
 {
 	BarraNivel_Start_mFD38A7455503CE83ACC9845997B30BE9E35B37A1,
 	BarraNivel_FoodCount_m436DA05208D081A8608A5BE8519C9C0261F0D42E,
@@ -221,6 +224,9 @@ static Il2CppMethodPointer s_methodPointers[120] =
 	GameManagerColor_getColor_m993A9AA375C4F41E2A73F5517E6DFD9161E8B886,
 	GameManagerColor__ctor_mE19ABC6C37BB41F5ED9C076BCFA76BF38621388D,
 	GameManagerColor__cctor_m4F1A11DAC749E0A64C3BA542586DC3EFB1203F7D,
+	HideOnMobile_Start_m40C42BB3926A114E3632EC73DDDE4F442EBFDE7E,
+	HideOnMobile_Update_m8FCE498234D9E4D55DA24A8CC33A12615450A003,
+	HideOnMobile__ctor_m485DDF3395477FD2B9DDCCF8BF033E5C138D70F4,
 	MeroBoom_Awake_m93A3CE18B0C0CF6C0B49B65251DC16259CEB8817,
 	MeroBoom_Update_m1F49D0C77F3FA87D161BDC97F0C3B7AD56859819,
 	MeroBoom_FixedUpdate_m913AD9696703176E79680DA2E6DCD97756C44D80,
@@ -250,7 +256,7 @@ static Il2CppMethodPointer s_methodPointers[120] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[120] = 
+static const int32_t s_InvokerIndices[123] = 
 {
 	15309,
 	15309,
@@ -347,6 +353,9 @@ static const int32_t s_InvokerIndices[120] =
 	15309,
 	15309,
 	15309,
+	15309,
+	15309,
+	15309,
 	11318,
 	15309,
 	15309,
@@ -377,7 +386,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	120,
+	123,
 	s_methodPointers,
 	0,
 	NULL,
