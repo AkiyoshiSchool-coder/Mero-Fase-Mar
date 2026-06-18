@@ -13,7 +13,7 @@ public class MeroMovement : MonoBehaviour
     Vector2 direction;
     Vector2 mouseworld;
     private float meroRotation;
-    private bool startMoving = false;
+    // private bool startMoving = true;
     private bool isStuck = false;
     private int escapeCount = 0;
     public GameObject gameMgr;
@@ -40,15 +40,14 @@ public class MeroMovement : MonoBehaviour
 
     void Update()
     {
-        // Debug.Log(timer);
-        if(moveAction.WasPressedThisFrame())
+       /* if(moveAction.WasPressedThisFrame())
         {
             startMoving = true;
             if(MeroSound2 == null)
             {
                 MeroSound2 = Instantiate(MeroSound,transform.position,quaternion.identity);
             }
-        }
+        } */
         if(escapeAction.WasPerformedThisFrame())
         {
             escapeCount++;
@@ -63,10 +62,10 @@ public class MeroMovement : MonoBehaviour
             }
             Rede(false);
         }
-        if(startMoving)
-        {
+        // if(startMoving)
+       // {
             Movement();
-        }
+       // }
         if(isStuck)
         {
             timer += Time.deltaTime;
@@ -81,14 +80,22 @@ public class MeroMovement : MonoBehaviour
 
     void Movement()
     {
-        mouseworld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        if(Application.platform != RuntimePlatform.WindowsEditor)
+        {
+            mouseworld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            if(!isStuck)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
+            }
+        }
+        else if(Application.platform == RuntimePlatform.WindowsEditor)
+        {
+            mouseworld = moveAction.ReadValue<Vector2>();
+            transform.Translate(Vector3.right * speed * Time.deltaTime * mouseworld.x);
+        }
         direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
         meroRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, meroRotation - 90);
-        if(!isStuck)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, mouseworld, speed*Time.deltaTime);
-        }
         if(transform.position.x > horizontalLimit)
         {
             transform.position = new Vector3(horizontalLimit, transform.position.y, transform.position.z);
