@@ -2828,7 +2828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.8, y: 464.4}
+  m_AnchoredPosition: {x: 7.8, y: 464}
   m_SizeDelta: {x: 900, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108078082
@@ -2943,6 +2943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 0}
+  objectPos: {fileID: 2108078081}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

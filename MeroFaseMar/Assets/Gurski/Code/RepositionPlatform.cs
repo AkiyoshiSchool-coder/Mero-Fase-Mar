@@ -3,13 +3,11 @@ using UnityEngine.UI;
 
 public class RepositionPlatform : MonoBehaviour
 {
+    [SerializeField] private Vector2 pos;
+    public RectTransform objectPos;
+
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        objectPos.anchoredPosition = pos;
     }
 }
