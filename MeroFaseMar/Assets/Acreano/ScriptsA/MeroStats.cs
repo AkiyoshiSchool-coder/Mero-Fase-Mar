@@ -30,6 +30,7 @@ public class MeroStats : MonoBehaviour
     public void FoodCounter()
     {
         FoodCount++;
+        
         if(FoodCount >= 10-Poison || FoodCount <= -10+Poison)
         {
             Debug.Log("Morte Bruta");

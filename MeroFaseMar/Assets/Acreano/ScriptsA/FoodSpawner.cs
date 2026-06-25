@@ -19,9 +19,12 @@ public class FoodSpawner : MonoBehaviour
     private int foodContagem;
     [SerializeField] private GameObject foodEmpty;
 
+    [SerializeField] private float waitTime;
+
+
     void Start()
     {
-        InvokeRepeating("FoodSpawn", 1f, 0.6f);
+        InvokeRepeating("FoodSpawn", 1f, waitTime);
     }
 
 
