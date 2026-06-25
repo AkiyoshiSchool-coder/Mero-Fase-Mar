@@ -8,6 +8,7 @@ public class BarraNivel : MonoBehaviour
     [SerializeField] private float multiply;
     private float teste = 0;
     public float qntd;
+    [SerializeField] private int goal;
     Scene scene;
     public GameObject gameMgr;
     private GameManager gameManager;
