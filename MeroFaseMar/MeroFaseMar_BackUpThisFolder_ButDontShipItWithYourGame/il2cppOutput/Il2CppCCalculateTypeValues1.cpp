@@ -41114,6 +41114,7 @@ struct BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30  : public MonoBehavi
 	float ___multiply;
 	float ___teste;
 	float ___qntd;
+	int32_t ___goal;
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 ___scene;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameMgr;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gameManager;
