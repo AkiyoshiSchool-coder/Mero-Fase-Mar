@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 25327923}
   - component: {fileID: 25327922}
   - component: {fileID: 25327921}
+  - component: {fileID: 25327924}
   m_Layer: 5
   m_Name: Voltar
   m_TagString: Untagged
@@ -252,6 +253,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25327919}
   m_CullTransparentMesh: 1
+--- !u!114 &25327924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25327919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 30}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 25327920}
 --- !u!1 &464233691
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +371,7 @@ GameObject:
   - component: {fileID: 825117591}
   - component: {fileID: 825117593}
   - component: {fileID: 825117592}
+  - component: {fileID: 825117594}
   m_Layer: 5
   m_Name: Logo IFPR
   m_TagString: Untagged
@@ -419,6 +436,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825117590}
   m_CullTransparentMesh: 1
+--- !u!114 &825117594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825117590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 30}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 825117591}
 --- !u!1 &1092541111
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,8 +462,9 @@ GameObject:
   - component: {fileID: 1092541112}
   - component: {fileID: 1092541114}
   - component: {fileID: 1092541113}
+  - component: {fileID: 1092541115}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Titulo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,7 +486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.7999268, y: 482.40002}
+  m_AnchoredPosition: {x: 7, y: 482}
   m_SizeDelta: {x: 900, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092541113
@@ -556,6 +589,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092541111}
   m_CullTransparentMesh: 1
+--- !u!114 &1092541115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092541111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -120}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1092541112}
 --- !u!1 &1161438587
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +690,7 @@ GameObject:
   - component: {fileID: 1212557013}
   - component: {fileID: 1212557015}
   - component: {fileID: 1212557014}
+  - component: {fileID: 1212557016}
   m_Layer: 5
   m_Name: Sombra
   m_TagString: Untagged
@@ -768,6 +817,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212557012}
   m_CullTransparentMesh: 1
+--- !u!114 &1212557016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212557012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -120}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1212557013}
 --- !u!1 &1407102865
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +922,7 @@ GameObject:
   - component: {fileID: 1456035734}
   - component: {fileID: 1456035736}
   - component: {fileID: 1456035735}
+  - component: {fileID: 1456035737}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -922,6 +987,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456035733}
   m_CullTransparentMesh: 1
+--- !u!114 &1456035737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456035733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -40}
+  mobileScale: {x: 0.9, y: 0.9}
+  objectPos: {fileID: 1456035734}
 --- !u!1 &1507362093
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +1013,7 @@ GameObject:
   - component: {fileID: 1507362094}
   - component: {fileID: 1507362096}
   - component: {fileID: 1507362095}
+  - component: {fileID: 1507362097}
   m_Layer: 5
   m_Name: Logo Meros
   m_TagString: Untagged
@@ -997,6 +1078,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507362093}
   m_CullTransparentMesh: 1
+--- !u!114 &1507362097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507362093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 30}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1507362094}
 --- !u!1 &1742122150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1104,7 @@ GameObject:
   - component: {fileID: 1742122151}
   - component: {fileID: 1742122153}
   - component: {fileID: 1742122152}
+  - component: {fileID: 1742122154}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1139,6 +1236,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742122150}
   m_CullTransparentMesh: 1
+--- !u!114 &1742122154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742122150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -40}
+  mobileScale: {x: 0.81, y: 0.81}
+  objectPos: {fileID: 1742122151}
 --- !u!1 &2016567882
 GameObject:
   m_ObjectHideFlags: 0

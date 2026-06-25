@@ -1885,6 +1885,7 @@ struct BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30  : public MonoBehavi
 	float ___multiply;
 	float ___teste;
 	float ___qntd;
+	int32_t ___goal;
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 ___scene;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameMgr;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gameManager;
@@ -3020,19 +3021,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_Start_mFD38A7455503CE83ACC984
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:17>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:18>
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_0;
 		L_0 = SceneManager_GetActiveScene_m0B320EC4302F51A71495D1CCD1A0FF9C2ED1FDC8(NULL);
 		__this->___scene = L_0;
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:18>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:19>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___gameMgr;
 		NullCheck(L_1);
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_2;
 		L_2 = GameObject_GetComponent_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_m4F2EAFB3E0C0416DA99DFB2E267D2984B15B9DF6(L_1, GameObject_GetComponent_TisGameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_m4F2EAFB3E0C0416DA99DFB2E267D2984B15B9DF6_RuntimeMethod_var);
 		__this->___gameManager = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager), (void*)L_2);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:19>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:20>
 		return;
 	}
 }
@@ -3053,11 +3054,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:23>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:24>
 		float L_0 = __this->___teste;
 		float L_1 = __this->___qntd;
 		__this->___teste = ((float)il2cpp_codegen_add(L_0, L_1));
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:24>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:25>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
 		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		float L_3 = __this->___teste;
@@ -3067,7 +3068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_5), ((float)il2cpp_codegen_multiply(L_3, L_4)), (0.649999976f), (1.0f), NULL);
 		NullCheck(L_2);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_2, L_5, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:25>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:26>
 		float L_6 = __this->___teste;
 		if ((!(((float)L_6) >= ((float)(100.0f)))))
 		{
@@ -3075,10 +3076,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:27>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:28>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral60D94F4076105528AD700327FB16790E59EF6E41, NULL);
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:28>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:29>
 		Scene_tA1DC762B79745EB5140F054C884855B922318356* L_7 = (Scene_tA1DC762B79745EB5140F054C884855B922318356*)(&__this->___scene);
 		String_t* L_8;
 		L_8 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C(L_7, NULL);
@@ -3090,7 +3091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:30>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:31>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_10 = __this->___gameManager;
 		NullCheck(L_10);
 		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_10, _stringLiteralDEDE5949151C884E9F6C37349C313A79D4A187A8, NULL);
@@ -3099,7 +3100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BarraNivel_FoodCount_m436DA05208D081A860
 
 IL_007c:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:32>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:33>
 		Scene_tA1DC762B79745EB5140F054C884855B922318356* L_11 = (Scene_tA1DC762B79745EB5140F054C884855B922318356*)(&__this->___scene);
 		String_t* L_12;
 		L_12 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C(L_11, NULL);
@@ -3111,7 +3112,7 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:34>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:35>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_14 = __this->___gameManager;
 		NullCheck(L_14);
 		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_14, _stringLiteral3001DFD549DCE5672C51F1A1B003397CD7EE88B6, NULL);
@@ -3120,7 +3121,7 @@ IL_007c:
 
 IL_00a4:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:36>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:37>
 		Scene_tA1DC762B79745EB5140F054C884855B922318356* L_15 = (Scene_tA1DC762B79745EB5140F054C884855B922318356*)(&__this->___scene);
 		String_t* L_16;
 		L_16 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C(L_15, NULL);
@@ -3132,7 +3133,7 @@ IL_00a4:
 		}
 	}
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:38>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:39>
 		GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* L_18 = __this->___gameManager;
 		NullCheck(L_18);
 		GameManager_Load_m1BDCC81E14182168E089D2A921E2C89AB235547A(L_18, _stringLiteral10CCF8EF0AEC4640D41978BCF3C2D91536C68400, NULL);
@@ -3140,7 +3141,7 @@ IL_00a4:
 
 IL_00cb:
 	{
-		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:41>
+		//<source_info:C:/Mero-Fase-Mar/MeroFaseMar/Assets/Acreano/ScriptsA/BarraNivel.cs:42>
 		return;
 	}
 }

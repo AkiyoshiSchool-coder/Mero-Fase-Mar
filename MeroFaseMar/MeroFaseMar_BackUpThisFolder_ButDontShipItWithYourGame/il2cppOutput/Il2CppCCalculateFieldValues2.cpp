@@ -33253,6 +33253,7 @@ struct BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30  : public MonoBehavi
 	float ___multiply;
 	float ___teste;
 	float ___qntd;
+	int32_t ___goal;
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 ___scene;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameMgr;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gameManager;
@@ -44073,9 +44074,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8665[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8666[2] = 
 {
 	static_cast<int32_t>(offsetof(Handle_t5E550C52101EDD3CC66477987E73F87CCCFD5153, ___m_Node)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Handle_t5E550C52101EDD3CC66477987E73F87CCCFD5153, ___Version)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8668[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8668[7] = 
 {
-	static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___multiply)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___teste)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___qntd)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___scene)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___gameMgr)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___gameManager)),};
+	static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___multiply)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___teste)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___qntd)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___goal)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___scene)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___gameMgr)),static_cast<int32_t>(offsetof(BarraNivel_tC32A53EC097C7868A935C07D8063899E9C77BE30, ___gameManager)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8670[4] = 
 {
 	static_cast<int32_t>(offsetof(FollowCamera_tBCF5747A23AA21C34BB73AE89565C9674656E203, ___Follow)),static_cast<int32_t>(offsetof(FollowCamera_tBCF5747A23AA21C34BB73AE89565C9674656E203, ___offset)),static_cast<int32_t>(offsetof(FollowCamera_tBCF5747A23AA21C34BB73AE89565C9674656E203, ___xLimit)),static_cast<int32_t>(offsetof(FollowCamera_tBCF5747A23AA21C34BB73AE89565C9674656E203, ___yLimit)),};
