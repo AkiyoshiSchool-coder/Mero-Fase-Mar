@@ -40,14 +40,6 @@ public class MeroMovement : MonoBehaviour
 
     void Update()
     {
-       /* if(moveAction.WasPressedThisFrame())
-        {
-            startMoving = true;
-            if(MeroSound2 == null)
-            {
-                MeroSound2 = Instantiate(MeroSound,transform.position,quaternion.identity);
-            }
-        } */
         if(escapeAction.WasPerformedThisFrame())
         {
             escapeCount++;
@@ -62,10 +54,6 @@ public class MeroMovement : MonoBehaviour
             }
             Rede(false);
         }
-        // if(startMoving)
-       // {
-            Movement();
-       // }
         if(isStuck)
         {
             timer += Time.deltaTime;
@@ -76,6 +64,8 @@ public class MeroMovement : MonoBehaviour
                 gameManager.GameOver();
             }
         }
+
+        Movement();
     }
 
     void Movement()

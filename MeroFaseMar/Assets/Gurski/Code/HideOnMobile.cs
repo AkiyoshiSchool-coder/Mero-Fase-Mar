@@ -10,9 +10,4 @@ public class HideOnMobile : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-
-    void Update()
-    {
-        
-    }
 }

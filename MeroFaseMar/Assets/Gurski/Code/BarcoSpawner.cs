@@ -9,11 +9,6 @@ public class BarcoSpawner : MonoBehaviour
     [SerializeField] private float spawnCD;
     [SerializeField] private float timer = 0;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         timer += Time.deltaTime;

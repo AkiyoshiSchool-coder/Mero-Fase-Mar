@@ -27,6 +27,7 @@ public class FoodScript : MonoBehaviour
     private GameManagerColor colorManager;
     public Sprite sprite;
     [SerializeField] private float comidinhas;
+    
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();   
