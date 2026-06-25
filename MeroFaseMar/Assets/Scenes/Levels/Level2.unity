@@ -1050,7 +1050,7 @@ MonoBehaviour:
   barraNivel: {fileID: 1668501581}
   operators: 0
   foodEmpty: {fileID: 138096056}
-  waitTime: 0.2
+  waitTime: 0.6
 --- !u!4 &620840391
 Transform:
   m_ObjectHideFlags: 0
