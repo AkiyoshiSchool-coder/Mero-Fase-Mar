@@ -130,8 +130,9 @@ GameObject:
   - component: {fileID: 289428501}
   - component: {fileID: 289428503}
   - component: {fileID: 289428502}
+  - component: {fileID: 289428504}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Titulo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -256,6 +257,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289428500}
   m_CullTransparentMesh: 1
+--- !u!114 &289428504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289428500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -112}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 289428501}
 --- !u!1 &333467066
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,10 +281,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333467067}
+  - component: {fileID: 333467070}
   - component: {fileID: 333467069}
   - component: {fileID: 333467068}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Texto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -406,6 +423,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333467066}
   m_CullTransparentMesh: 1
+--- !u!114 &333467070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333467066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -36}
+  mobileScale: {x: 0.84, y: 0.84}
+  objectPos: {fileID: 333467067}
 --- !u!1 &510139448
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +678,7 @@ GameObject:
   - component: {fileID: 676058752}
   - component: {fileID: 676058754}
   - component: {fileID: 676058753}
+  - component: {fileID: 676058755}
   m_Layer: 5
   m_Name: Sombra
   m_TagString: Untagged
@@ -772,6 +805,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676058751}
   m_CullTransparentMesh: 1
+--- !u!114 &676058755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676058751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -112}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 676058752}
 --- !u!1 &922369884
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1030130821}
+  - component: {fileID: 1030130825}
   - component: {fileID: 1030130824}
   - component: {fileID: 1030130823}
   - component: {fileID: 1030130822}
@@ -1014,6 +1063,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030130820}
   m_CullTransparentMesh: 1
+--- !u!114 &1030130825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030130820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 30}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1030130821}
 --- !u!1 &1260216284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1260216285}
+  - component: {fileID: 1260216288}
   - component: {fileID: 1260216287}
   - component: {fileID: 1260216286}
   m_Layer: 5
@@ -1089,6 +1154,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260216284}
   m_CullTransparentMesh: 1
+--- !u!114 &1260216288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260216284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 30}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1260216285}
 --- !u!1 &1296659824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296659825}
+  - component: {fileID: 1296659828}
   - component: {fileID: 1296659827}
   - component: {fileID: 1296659826}
   m_Layer: 5
@@ -1164,6 +1245,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296659824}
   m_CullTransparentMesh: 1
+--- !u!114 &1296659828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296659824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: -36}
+  mobileScale: {x: 0.9, y: 0.9}
+  objectPos: {fileID: 1296659825}
 --- !u!1 &1299792186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1346,7 @@ GameObject:
   - component: {fileID: 1518421164}
   - component: {fileID: 1518421166}
   - component: {fileID: 1518421165}
+  - component: {fileID: 1518421167}
   m_Layer: 5
   m_Name: Logo Meros
   m_TagString: Untagged
@@ -1314,6 +1411,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518421163}
   m_CullTransparentMesh: 1
+--- !u!114 &1518421167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518421163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fea40b211c59424080de867836f412e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
+  pos: {x: 0, y: 30}
+  mobileScale: {x: 1, y: 1}
+  objectPos: {fileID: 1518421164}
 --- !u!1 &1965076450
 GameObject:
   m_ObjectHideFlags: 0
