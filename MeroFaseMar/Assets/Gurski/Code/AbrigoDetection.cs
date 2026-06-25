@@ -9,12 +9,6 @@ public class AbrigoDetection : MonoBehaviour
         mero = player.GetComponent<MeroBoom>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.CompareTag("Head"))
