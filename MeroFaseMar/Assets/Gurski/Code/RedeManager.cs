@@ -11,7 +11,6 @@ public class RedeManager : MonoBehaviour
 
     void spawnBarco()
     {
-        Debug.Log("gustavo");
         Instantiate(redeBoat, spawnPos.transform.position, Quaternion.identity);
     }
 }

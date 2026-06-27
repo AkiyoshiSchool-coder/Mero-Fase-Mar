@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 8062374771415115905}
   m_Layer: 0
   m_Name: Pescador
-  m_TagString: Untagged
+  m_TagString: Pescador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0297595e4ab1f32458471ad4ec155363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PescadorScript
+  mero: {fileID: 0}
   gameMgr: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
   speed: 3.6
   scaredSpeedMultiplier: 2.5

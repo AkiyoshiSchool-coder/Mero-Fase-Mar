@@ -10,6 +10,10 @@ TagManager:
   - Boom
   - Abrigo
   - beacon1
+  - beacon2
+  - Pescador
+  - Pesquisador
+  - Rede
   layers:
   - Default
   - TransparentFX

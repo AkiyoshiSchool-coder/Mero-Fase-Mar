@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7209421137174649419}
   m_Layer: 0
   m_Name: Rede
-  m_TagString: Untagged
+  m_TagString: Rede
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

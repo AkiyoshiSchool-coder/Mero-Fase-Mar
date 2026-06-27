@@ -31,9 +31,9 @@ public class DiverScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, pescadorRotation - 90);
             transform.position = Vector2.MoveTowards(transform.position, mero.transform.position, speed*Time.deltaTime);
         }
-        else if(notScared == false)
+        else
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * speed*scaredSpeedMultiplier); // forward evapora
+            transform.Translate(Vector3.up * Time.deltaTime * speed*scaredSpeedMultiplier); // forward evapora
         }
     }
 
@@ -48,16 +48,19 @@ public class DiverScript : MonoBehaviour
     {
         if(collider.CompareTag("Head"))
         {
-            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name != "LevelCutscene23")
+            if(gameObject.CompareTag("Pescador"))
             {
-                Instantiate(damageSound,transform.position,Quaternion.identity);
-                gameManager.GameOver();
+                if(SceneManager.GetActiveScene().name == "LevelCutscene23")
+                {
+                    Instantiate(damageSound,transform.position,Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(damageSound,transform.position,Quaternion.identity);
+                    gameManager.GameOver();
+                }
             }
-            if(gameObject.name == "Pescador(Clone)" && SceneManager.GetActiveScene().name == "LevelCutscene23")
-            {
-                Instantiate(damageSound,transform.position,Quaternion.identity);
-            }
-            else if(gameObject.name == "Pesquisador(Clone)")
+            else if(gameObject.CompareTag("Pesquisador"))
             {
                 poison.Heal();
                 Instantiate(healingSound,transform.position,Quaternion.identity);
@@ -65,11 +68,11 @@ public class DiverScript : MonoBehaviour
             }
             Destroy(gameObject);
         }
+
         if(collider.CompareTag("Boom"))
         {
-            if(gameObject.name == "Pescador(Clone)")
+            if(gameObject.CompareTag("Pescador"))
             {
-                Debug.Log("a");
                 RunAway();
                 meroStats.PescadorAumenta(1);
             }

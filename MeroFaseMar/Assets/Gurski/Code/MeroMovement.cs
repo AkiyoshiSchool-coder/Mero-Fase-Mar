@@ -111,7 +111,7 @@ public class MeroMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.name.Contains("Rede"))
+        if(other.CompareTag("Rede"))
         {
             Destroy(other.gameObject);
             Rede(true);
