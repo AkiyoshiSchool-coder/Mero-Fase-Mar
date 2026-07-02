@@ -1926,7 +1926,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2387,9 +2387,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1893032704819533849, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893032704819533849, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -172.00002
+      objectReference: {fileID: 0}
     - target: {fileID: 3913132996017623084, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_Name
       value: MobileHUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
