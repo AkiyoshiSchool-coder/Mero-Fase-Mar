@@ -7,8 +7,8 @@ public class GameManagerColor : MonoBehaviour
 
     void Awake()
     {
-        colorIndex.Add(Color.paleVioletRed);
         colorIndex.Add(Color.paleGreen);
+        colorIndex.Add(Color.lightCoral);
     }
 
     public static void setColor(int index, Color spritecolor)
