@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 9040532304946246417}
   - component: {fileID: 201620523322905239}
   - component: {fileID: 4519967048708200703}
+  - component: {fileID: 1898218259343074387}
   m_Layer: 31
   m_Name: OrangeFood
   m_TagString: FoodA
@@ -247,6 +248,18 @@ MonoBehaviour:
   Sound: {fileID: 7735936709142701022, guid: 6e685bc34c554204cab936739fd003b7, type: 3}
   sprite: {fileID: 0}
   comidinhas: 10
+--- !u!114 &1898218259343074387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327296857486405652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66751d529a82234dbd1799fa696fd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodColor
 --- !u!1 &4698068288394715978
 GameObject:
   m_ObjectHideFlags: 0
