@@ -46,6 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  pauseMenu: {fileID: 2181384622438448348, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
+  playerMap:
+    m_Name: Player Map
+    m_Id: ed71ca2f-7c61-4949-a908-df1075202158
+    m_Asset: {fileID: 0}
+    m_Actions: []
+    m_Bindings: []
 --- !u!114 &2839753566600482966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +65,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c44f6f95fe4ded43859ab4a5e81d7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManagerColor
-  colorIndex:
-  - {r: 1, g: 0.27058825, b: 0, a: 1}
-  - {r: 0, g: 1, b: 0, a: 1}

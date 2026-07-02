@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     private InputAction level1action, level2action, level3action, menuaction;
     private static GameManager instance;
     private string cena;
+    public GameObject pauseMenu;
+    private InputActionMap playerMap;
 
     void Awake()
     {
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
         menuaction = InputSystem.actions.FindAction("MainMenu");
+        playerMap = InputActions.FindActionMap("Player");
     }
 
     void Update()
@@ -69,10 +72,24 @@ public class GameManager : MonoBehaviour
 
     public void Pause(bool pause)
     {
-        pauseMenu.SetActive(pause)
+        pauseMenu.SetActive(pause);
+        if(pause)
         {
-            
+            Time.timeScale = 0;
+            playerMap.Disable();
         }
+        else
+        {
+            Time.timeScale = 1;
+            playerMap.Enable();
+        }
+    }
+
+    public void UnpauseMap()
+    {
+        Time.timeScale = 1;
+        InputActions.FindActionMap("Player").Enable();
+        InputActions.FindActionMap("UI").Disable();
     }
 
     public void EndGame()
