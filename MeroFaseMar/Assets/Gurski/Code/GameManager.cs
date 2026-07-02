@@ -67,6 +67,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(cena);
     }
 
+    public void Pause(bool pause)
+    {
+        pauseMenu.SetActive(pause)
+        {
+            
+        }
+    }
+
     public void EndGame()
     {
         #if UNITY_EDITOR
