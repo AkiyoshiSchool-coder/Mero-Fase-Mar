@@ -12,6 +12,7 @@ public class MeroBoom : MonoBehaviour
     private GameObject currentBoom;
     [SerializeField] private bool noAbrigo;
     private float timer = 0;
+
     void Awake()
     {
         boomAction = InputSystem.actions.FindAction("Attack");
@@ -24,7 +25,7 @@ public class MeroBoom : MonoBehaviour
             if(boomAction.WasPressedThisFrame())
             {
                 currentBoom = Instantiate(boom, transform.position, Quaternion.identity);
-                currentBoom.transform.SetParent(gameObject.transform);
+                currentBoom.transform.SetParent(gameObject.transform); // boom segue o mero
                 int decider = Random.Range(0,4);
                 Instantiate(Sounds[decider], transform.position, Quaternion.identity);
                 timer = 1f;
