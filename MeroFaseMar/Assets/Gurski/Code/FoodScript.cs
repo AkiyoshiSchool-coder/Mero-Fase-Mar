@@ -13,7 +13,6 @@ public class FoodScript : MonoBehaviour
     public bool IsInfected = false;
     private GameObject cursor;
     [SerializeField] private GameObject foodSpawn;
-    [SerializeField] private GameObject gameManager;
     [SerializeField] private FoodSpawner FS;
     [SerializeField] private RectTransform cs;
     [SerializeField] private GameObject barra;
@@ -24,7 +23,6 @@ public class FoodScript : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
     public GameObject Sound;
-    private GameManagerColor colorManager;
     public Sprite sprite;
     [SerializeField] private float comidinhas;
     
@@ -35,7 +33,6 @@ public class FoodScript : MonoBehaviour
     void Start()
     {
         cs.anchoredPosition = new Vector2(cs.anchoredPosition.x, cs.anchoredPosition.y);
-        AcessibilityColor();
         Destroy(gameObject, 30);
     }
 
@@ -92,17 +89,6 @@ public class FoodScript : MonoBehaviour
             barraCode.FoodCount();
             Destroy(gameObject);
 
-        }
-    }
-    private void AcessibilityColor()
-    {
-        if(gameObject.CompareTag("FoodA"))
-        {
-            spriteRenderer.color = GameManagerColor.getColor(0);
-        }
-        if(gameObject.CompareTag("FoodB"))
-        {
-            spriteRenderer.color = GameManagerColor.getColor(1);
         }
     }
 

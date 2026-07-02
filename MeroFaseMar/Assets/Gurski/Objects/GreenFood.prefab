@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5038786814198634527}
   - component: {fileID: 3630712560736193472}
   - component: {fileID: 1224116354970888989}
+  - component: {fileID: 3099592405908207930}
   m_Layer: 0
   m_Name: GreenFood
   m_TagString: FoodB
@@ -156,6 +157,18 @@ MonoBehaviour:
   Sound: {fileID: 7735936709142701022, guid: 6e685bc34c554204cab936739fd003b7, type: 3}
   sprite: {fileID: 0}
   comidinhas: 10
+--- !u!114 &3099592405908207930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403562119263904250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66751d529a82234dbd1799fa696fd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodColor
 --- !u!1 &3952875438720852608
 GameObject:
   m_ObjectHideFlags: 0
