@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 412195592}
   - component: {fileID: 412195591}
   - component: {fileID: 412195594}
-  - component: {fileID: 412195593}
+  - component: {fileID: 412195596}
   m_Layer: 5
   m_Name: ImageB
   m_TagString: Untagged
@@ -329,31 +329,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412195589}
   m_CullTransparentMesh: 1
---- !u!114 &412195593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412195589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af861090ef8a0544843f4eef3d58703, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AcessibilityFood
-  colorList:
-  - {r: 0.9333334, g: 0.8666667, b: 0.509804, a: 1}
-  - {r: 0.8470589, g: 0.7490196, b: 0.8470589, a: 1}
-  - {r: 0.6862745, g: 0.9333334, b: 0.9333334, a: 1}
-  - {r: 0.5960785, g: 0.9843138, b: 0.5960785, a: 1}
-  - {r: 0.4980392, g: 1, b: 0.8313726, a: 1}
-  - {r: 1, g: 0.4980392, b: 0.3137255, a: 1}
-  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
-  colorManager: {fileID: 0}
-  index: 3
-  imageIndex: 1
-  cor: {r: 0, g: 0, b: 0, a: 1}
-  sprite: {fileID: 412195591}
 --- !u!114 &412195594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +373,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 412195593}
+      - m_Target: {fileID: 412195596}
         m_TargetAssemblyTypeName: AcessibilityFood, Assembly-CSharp
         m_MethodName: changeColor
         m_Mode: 1
@@ -425,6 +400,32 @@ MonoBehaviour:
   pos: {x: 0, y: -59}
   mobileScale: {x: 1, y: 1}
   objectPos: {fileID: 412195590}
+--- !u!114 &412195596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412195589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af861090ef8a0544843f4eef3d58703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcessibilityFood
+  colorList:
+  - {r: 0.9333334, g: 0.8666667, b: 0.509804, a: 1}
+  - {r: 0.8470589, g: 0.7490196, b: 0.8470589, a: 1}
+  - {r: 0.6862745, g: 0.9333334, b: 0.9333334, a: 1}
+  - {r: 0.5960785, g: 0.9843138, b: 0.5960785, a: 1}
+  - {r: 0.9411765, g: 0.5019608, b: 0.5019608, a: 1}
+  - {r: 0.3921569, g: 0.5843138, b: 0.9294118, a: 1}
+  - {r: 0.7372549, g: 0.5607843, b: 0.5607843, a: 1}
+  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
+  colorManager: {fileID: 0}
+  index: 4
+  imageIndex: 1
+  cor: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: 412195591}
 --- !u!1 &779323458
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +667,7 @@ GameObject:
   - component: {fileID: 1280109332}
   - component: {fileID: 1280109331}
   - component: {fileID: 1280109334}
-  - component: {fileID: 1280109333}
+  - component: {fileID: 1280109336}
   m_Layer: 5
   m_Name: ImageA
   m_TagString: Untagged
@@ -731,32 +732,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280109329}
   m_CullTransparentMesh: 1
---- !u!114 &1280109333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280109329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af861090ef8a0544843f4eef3d58703, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AcessibilityFood
-  colorList:
-  - {r: 0.9333334, g: 0.8666667, b: 0.509804, a: 1}
-  - {r: 0.8470589, g: 0.7490196, b: 0.8470589, a: 1}
-  - {r: 1, g: 0.5176471, b: 0.34509805, a: 1}
-  - {r: 0.5960785, g: 0.9843138, b: 0.5960785, a: 1}
-  - {r: 0.3529412, g: 0.41960788, b: 0.6509804, a: 1}
-  - {r: 0.5254902, g: 0.427451, b: 0.41960788, a: 1}
-  - {r: 0.70980394, g: 0.83921576, b: 1, a: 1}
-  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
-  colorManager: {fileID: 0}
-  index: 1
-  imageIndex: 0
-  cor: {r: 0, g: 0, b: 0, a: 1}
-  sprite: {fileID: 1280109331}
 --- !u!114 &1280109334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,7 +776,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1280109333}
+      - m_Target: {fileID: 1280109336}
         m_TargetAssemblyTypeName: AcessibilityFood, Assembly-CSharp
         m_MethodName: changeColor
         m_Mode: 1
@@ -828,6 +803,32 @@ MonoBehaviour:
   pos: {x: 0, y: -50}
   mobileScale: {x: 1, y: 1}
   objectPos: {fileID: 1280109330}
+--- !u!114 &1280109336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280109329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af861090ef8a0544843f4eef3d58703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcessibilityFood
+  colorList:
+  - {r: 0.9333334, g: 0.8666667, b: 0.509804, a: 1}
+  - {r: 0.8470589, g: 0.7490196, b: 0.8470589, a: 1}
+  - {r: 0.6862745, g: 0.9333334, b: 0.9333334, a: 1}
+  - {r: 0.5960785, g: 0.9843138, b: 0.5960785, a: 1}
+  - {r: 0.9411765, g: 0.5019608, b: 0.5019608, a: 1}
+  - {r: 0.3921569, g: 0.5843138, b: 0.9294118, a: 1}
+  - {r: 0.7372549, g: 0.5607843, b: 0.5607843, a: 1}
+  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
+  colorManager: {fileID: 0}
+  index: 3
+  imageIndex: 0
+  cor: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: 1280109331}
 --- !u!1 &1368290479
 GameObject:
   m_ObjectHideFlags: 0
