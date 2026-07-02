@@ -1248,7 +1248,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7820499311561741716, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8700111455247487828}
+    - targetCorrespondingSourceObject: {fileID: 7820499311561741716, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1055653940}
+    - targetCorrespondingSourceObject: {fileID: 7820499311561741716, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 964317602}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1061bd096812d5441b9d9070efd25af5, type: 3}
 --- !u!224 &957976668 stripped
@@ -1281,16 +1290,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964317601}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1385726216}
+  m_Father: {fileID: 957976668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23, y: 0.08429631}
   m_AnchorMax: {x: 0.23, y: 0.08429631}
-  m_AnchoredPosition: {x: 33.399536, y: -1.3999939}
+  m_AnchoredPosition: {x: -215.00049, y: 23.509491}
   m_SizeDelta: {x: 5, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964317603
@@ -1356,16 +1365,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055653939}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1385726216}
+  m_Father: {fileID: 957976668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.77000004, y: 0.08429631}
   m_AnchorMax: {x: 0.77000004, y: 0.08429631}
-  m_AnchoredPosition: {x: -31.400024, y: -0.5}
+  m_AnchoredPosition: {x: 216.99988, y: 24.409485}
   m_SizeDelta: {x: 5, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055653941
@@ -1726,9 +1735,6 @@ RectTransform:
   - {fileID: 638330355}
   - {fileID: 1743268943}
   - {fileID: 957976668}
-  - {fileID: 8700111455247487828}
-  - {fileID: 1055653940}
-  - {fileID: 964317602}
   - {fileID: 1533991194}
   - {fileID: 509713642}
   m_Father: {fileID: 0}
@@ -2303,7 +2309,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1385726216}
+    m_TransformParent: {fileID: 957976668}
     m_Modifications:
     - target: {fileID: 731591691293518012, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_Name
@@ -2323,7 +2329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.06262963
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2331,7 +2337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.06262963
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2375,7 +2381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.799988
+      value: 20.799988
       objectReference: {fileID: 0}
     - target: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
