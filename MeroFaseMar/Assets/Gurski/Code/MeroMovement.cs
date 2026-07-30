@@ -10,24 +10,27 @@ public class MeroMovement : MonoBehaviour
     public InputActionAsset InputActions;
     private InputAction moveAction;
     private InputAction escapeAction;
+
     Vector2 direction;
     Vector2 mouseworld;
     private float meroRotation;
-    // private bool startMoving = true;
+
     private bool isStuck = false;
     private int escapeCount = 0;
+
     public GameObject gameMgr;
     private GameManager gameManager;
+
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
     private MoveBarrinha codeBarraTime, codeBarraTap;
-    [SerializeField] private float horizontalLimit, verticalLimit;
-    public GameObject MeroSound;
-    public GameObject MeroSound2;
-
     public GameObject RedeSound;
     public GameObject RedeVerifier;
     private float timer = 0;
+
+    [SerializeField] private float horizontalLimit, verticalLimit;
+    public GameObject MeroSound;
+    public GameObject MeroSound2;
     
     void Awake()
     {
@@ -82,8 +85,9 @@ public class MeroMovement : MonoBehaviour
                 mouseworld = transform.position + new Vector3(mov.x, mov.y, 0);
             }
         }
+
         direction = mouseworld - new Vector2(transform.position.x, transform.position.y);
-        meroRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        meroRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg * Time.timeScale;
         transform.rotation = Quaternion.Euler(0, 0, meroRotation - 90);
 
         if(!isStuck)
