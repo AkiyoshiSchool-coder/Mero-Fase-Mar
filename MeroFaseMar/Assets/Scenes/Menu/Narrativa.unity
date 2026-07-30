@@ -668,10 +668,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s sair da correnteza, a Merinha finalmente chega ao mar. L\xE1,
-    ela precisa se alimentar para crescer saud\xE1vel e ir aos cost\xF5es rochosos
-    se reproduzir. No entanto, h\xE1 muitos perigos neste novo ambiente, como a polui\xE7\xE3o
-    e pescadores desinformados. "
+  m_text: "Ap\xF3s sair da correnteza, Merinha finalmente chega ao mar, dando in\xEDcio
+    \xE0 sua fase adulta. Neste novo ambiente, ela precisa se alimentar para crescer
+    saud\xE1vel e ir aos cost\xF5es rochosos se reproduzir. No entanto, h\xE1 muitos
+    perigos neste novo ambiente, como a polui\xE7\xE3o marinha e pescadores desinformados.
+    \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
