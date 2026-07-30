@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{271702c4-5859-42b6-9918-f7df8db19b37}">
+		<property name="assetPath">
+			<value>bum4certo.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.98002083333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5d09bfc1-e4c9-4ccc-8e08-afc01b0c490f}</destination>
+		</relationship>
+	</object>
+</objects>
