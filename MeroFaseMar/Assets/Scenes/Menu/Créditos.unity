@@ -1151,9 +1151,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Equipe de Desenvolvimento\nPedro Akiyoshi Merlin Remza - Desenvolvimento\nPedro
-    Gurski Ferraz - Desenvolvimento\nThalia da Silva Nascimento - Arte\nHenrique
-    Maia Staff - Arte\nLara Judithe Paszeuck Eyros - Arte\n\nOrienta\xE7\xE3o Acad\xEAmica\nProf\xAA.
+  m_text: "Equipe de Desenvolvimento\nHenrique Maia Staff - Arte\nLara Judithe Paszeuck
+    Eyros - Arte\nPedro Akiyoshi Merlin Remza - Desenvolvimento\nPedro Gurski Ferraz
+    - Desenvolvimento\nThalia da Silva Nascimento - Arte\n\nOrienta\xE7\xE3o Acad\xEAmica\nProf\xAA.
     Carla Hamel Wojcik Garcia, Prof\xAA. Denise Maria Vecino Sato, \nProf. F\xE1bio
     Luiz Pessoa Albini e Prof\xAA M\xF4nia Naomy Nakagawa\n\nApoio Projeto Meros
     do Brasil"
