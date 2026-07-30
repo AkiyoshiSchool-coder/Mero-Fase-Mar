@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class MeroBoom : MonoBehaviour
 {
     public GameObject boom;
-    public List<GameObject> Sounds = new List<GameObject>();
     public InputActionAsset InputActions;
     private InputAction boomAction;
     private GameObject currentBoom;
@@ -26,8 +25,6 @@ public class MeroBoom : MonoBehaviour
             {
                 currentBoom = Instantiate(boom, transform.position, Quaternion.identity);
                 currentBoom.transform.SetParent(gameObject.transform); // boom segue o mero
-                int decider = Random.Range(0,4);
-                Instantiate(Sounds[decider], transform.position, Quaternion.identity);
                 timer = 1f;
             }
         }

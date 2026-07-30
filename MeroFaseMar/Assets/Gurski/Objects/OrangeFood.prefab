@@ -245,7 +245,6 @@ MonoBehaviour:
   poison: {fileID: 0}
   skullImage: {fileID: 4698068288394715978}
   FoodImage: {fileID: 1547181636882442810}
-  Sound: {fileID: 7735936709142701022, guid: 6e685bc34c554204cab936739fd003b7, type: 3}
   sprite: {fileID: 0}
   comidinhas: 10
 --- !u!114 &1898218259343074387
@@ -275,11 +274,11 @@ MonoBehaviour:
   CollisionTag: Head
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 656153882
+      Data2: 1275284228
+      Data3: -1071907678
+      Data4: 454028948
+    Path: event:/meroeating
   Event: 
   EventPlayTrigger: 5
   EventStopTrigger: 0
@@ -289,8 +288,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4698068288394715978
 GameObject:
   m_ObjectHideFlags: 0

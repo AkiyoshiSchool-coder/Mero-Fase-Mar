@@ -154,7 +154,7 @@ MonoBehaviour:
   poison: {fileID: 0}
   skullImage: {fileID: 3952875438720852608}
   FoodImage: {fileID: 7326520363508761181}
-  Sound: {fileID: 7735936709142701022, guid: 6e685bc34c554204cab936739fd003b7, type: 3}
+  Sound: {fileID: 0}
   sprite: {fileID: 0}
   comidinhas: 10
 --- !u!114 &3099592405908207930
