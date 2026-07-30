@@ -22,7 +22,6 @@ public class FoodScript : MonoBehaviour
     [SerializeField] private GameObject FoodImage;
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
-    public GameObject Sound;
     public Sprite sprite;
     [SerializeField] private float comidinhas;
     
@@ -85,7 +84,6 @@ public class FoodScript : MonoBehaviour
 
                 cs.localPosition = new Vector3(cs.localPosition.x + (comidinhas/100) * 487f, cs.localPosition.y, cs.localPosition.z);
             }
-            Instantiate(Sound,collider.transform.position,Quaternion.identity);
             barraCode.FoodCount();
             Destroy(gameObject);
 
