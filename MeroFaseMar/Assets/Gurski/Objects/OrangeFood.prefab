@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 201620523322905239}
   - component: {fileID: 4519967048708200703}
   - component: {fileID: 1898218259343074387}
+  - component: {fileID: -20740216015125196}
   m_Layer: 31
   m_Name: OrangeFood
   m_TagString: FoodA
@@ -237,7 +238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FoodScript
   IsInfected: 0
   foodSpawn: {fileID: 0}
-  gameManager: {fileID: 7650843780210637395, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
   FS: {fileID: 0}
   cs: {fileID: 0}
   barra: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
@@ -260,6 +260,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66751d529a82234dbd1799fa696fd57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodColor
+--- !u!114 &-20740216015125196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327296857486405652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: Head
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &4698068288394715978
 GameObject:
   m_ObjectHideFlags: 0
