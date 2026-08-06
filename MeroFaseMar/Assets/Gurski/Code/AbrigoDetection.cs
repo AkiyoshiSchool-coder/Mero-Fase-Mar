@@ -4,6 +4,7 @@ public class AbrigoDetection : MonoBehaviour
 {
     public GameObject player;
     private MeroBoom mero;
+    
     void Start()
     {
         mero = player.GetComponent<MeroBoom>();

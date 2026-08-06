@@ -86,7 +86,6 @@ public class FoodScript : MonoBehaviour
             }
             barraCode.FoodCount();
             Destroy(gameObject);
-
         }
     }
 

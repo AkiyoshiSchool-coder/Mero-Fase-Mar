@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 264a39e574cdb0e4298b1937beac178b
+guid: e4f4c90af2dd37e4faf8c50118b600cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 380265336731528786
-    second: MenuMeroMar_0
-  - first:
-      213: 8163596190301770702
-    second: MenuMeroMar_1
+      213: 6589278070150375459
+    second: Joystick sem fundo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MenuMeroMar_0
+      name: Joystick sem fundo_0
       rect:
         serializedVersion: 2
-        x: 89
-        y: 188
-        width: 7314
-        height: 4121
+        x: 0
+        y: 1
+        width: 309
+        height: 309
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25ee64c1f49f64500800000000000000
-      internalID: 380265336731528786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MenuMeroMar_1
-      rect:
-        serializedVersion: 2
-        x: 7422
-        y: 526
-        width: 9
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec35ba48b7bea4170800000000000000
-      internalID: 8163596190301770702
+      spriteID: 328a5994e71d17b50800000000000000
+      internalID: 6589278070150375459
       vertices: []
       indices: 
       edges: []
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MenuMeroMar_0: 380265336731528786
-      MenuMeroMar_1: 8163596190301770702
+      Joystick sem fundo_0: 6589278070150375459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
