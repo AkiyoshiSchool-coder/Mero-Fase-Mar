@@ -13,8 +13,7 @@ public class DiverScript : MonoBehaviour
     [SerializeField] private float scaredSpeedMultiplier;
     [SerializeField] private bool notScared = true;
     private float pescadorRotation;
-    Vector2 direction;
-    public GameObject damageSound,healingSound;
+    private Vector2 direction;
     private float escapeTime = 5;
 
     void Update()
@@ -28,12 +27,12 @@ public class DiverScript : MonoBehaviour
         {
             direction = mero.transform.position - transform.position;
             pescadorRotation = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, pescadorRotation - 90);
+            transform.rotation = Quaternion.Euler(0, 0, pescadorRotation - 90); // olha pro peixe
             transform.position = Vector2.MoveTowards(transform.position, mero.transform.position, speed*Time.deltaTime);
         }
         else
         {
-            transform.Translate(Vector3.up * Time.deltaTime * speed*scaredSpeedMultiplier); // forward evapora
+            transform.Translate(Vector3.up * Time.deltaTime * speed*scaredSpeedMultiplier); // vector3.forward evapora
         }
     }
 
@@ -41,7 +40,7 @@ public class DiverScript : MonoBehaviour
     {
         Destroy(gameObject, escapeTime);
         notScared = false;
-        transform.rotation = Quaternion.Euler(0, 0, pescadorRotation + 90);
+        transform.rotation = Quaternion.Euler(0, 0, pescadorRotation + 90); // vira de costas pro peixe
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -50,20 +49,14 @@ public class DiverScript : MonoBehaviour
         {
             if(gameObject.CompareTag("Pescador"))
             {
-                if(SceneManager.GetActiveScene().name == "LevelCutscene23")
+                if(SceneManager.GetActiveScene().name != "LevelCutscene23")
                 {
-                    Instantiate(damageSound,transform.position,Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(damageSound,transform.position,Quaternion.identity);
                     gameManager.GameOver();
                 }
             }
             else if(gameObject.CompareTag("Pesquisador"))
             {
                 poison.Heal();
-                Instantiate(healingSound,transform.position,Quaternion.identity);
                 meroStats.Poison = 0;
             }
             Destroy(gameObject);

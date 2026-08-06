@@ -12,7 +12,7 @@ public class FollowCamera : MonoBehaviour
 
     void Update()
     {
-        gameObject.transform.position = Follow.transform.position +offset;
+        gameObject.transform.position = Follow.transform.position + offset;
         // Border();
     }
 

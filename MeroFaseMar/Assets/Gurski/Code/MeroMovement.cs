@@ -24,13 +24,10 @@ public class MeroMovement : MonoBehaviour
     public GameObject redeMero;
     public GameObject barraTime, barraTap;
     private MoveBarrinha codeBarraTime, codeBarraTap;
-    public GameObject RedeSound;
     public GameObject RedeVerifier;
     private float timer = 0;
 
     [SerializeField] private float horizontalLimit, verticalLimit;
-    public GameObject MeroSound;
-    public GameObject MeroSound2;
     
     void Awake()
     {
@@ -124,10 +121,6 @@ public class MeroMovement : MonoBehaviour
 
     void Rede(bool preso)
     {
-        if(preso)
-        {
-            RedeVerifier = Instantiate(RedeSound,transform.position,quaternion.identity);
-        }
         timer = 0;
         codeBarraTap.ResetBarra(0);
         codeBarraTime.ResetBarra(1);

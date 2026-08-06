@@ -10,6 +10,7 @@ public class BarcoMovement : MonoBehaviour
     [SerializeField] private float spawnCD;
     [SerializeField] private bool spawnedDiver = false;
     private float timer = 0;
+    
     void Start()
     {
         transform.up = direction.transform.position - transform.position;

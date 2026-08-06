@@ -3,7 +3,6 @@ using UnityEngine;
 public class RedeSpawner : MonoBehaviour
 {
     public GameObject rede;
-    public GameObject RedeSound;
     private int barcoDuration = 28;
     [SerializeField] float timer;
     private float xSpeed = 3f;
@@ -22,7 +21,6 @@ public class RedeSpawner : MonoBehaviour
     void Rede()
     {
         Instantiate(rede, transform.position, Quaternion.identity);
-        Instantiate(RedeSound,transform.position,Quaternion.identity);
     }
 
     private void Move()
