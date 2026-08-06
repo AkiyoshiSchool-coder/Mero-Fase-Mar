@@ -16,7 +16,6 @@ public class FoodSpawner : MonoBehaviour
     private UnityEngine.Vector3 RandomPos;
     private float posX, posY;
     private int random;
-    private int foodContagem;
     [SerializeField] private GameObject foodEmpty;
 
     [SerializeField] private float waitTime;
@@ -96,8 +95,6 @@ public class FoodSpawner : MonoBehaviour
         TempFood.transform.SetParent(foodEmpty.transform);
         TempFoodScript = TempFood.GetComponent<FoodScript>();
         TempFoodScript.Init(Mero, cursor, barraNivel, gameObject);
-        foodContagem++;
-        Debug.Log(foodContagem);
     }
 
 }
