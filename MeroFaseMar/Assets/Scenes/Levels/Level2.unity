@@ -2106,22 +2106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashSpawner (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1585440756077517605, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
-      propertyPath: m_TagString
-      value: beacon1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
-      propertyPath: StartTime
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
       propertyPath: foodSpawn
       value: 
       objectReference: {fileID: 620840390}
-    - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
-      propertyPath: recentTrash
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2258,18 +2246,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 1585440756077517605, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
-      propertyPath: m_TagString
-      value: beacon1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
-      propertyPath: StartTime
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1607281163401980068, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
       propertyPath: foodSpawn
       value: 
       objectReference: {fileID: 620840390}
+    - target: {fileID: 3018899833025328001, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470279819880614954, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4972366127006415459, guid: 370b98edcb53ba44a9965e6e5d90151e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
