@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenu;
     private InputActionMap playerMap;
     private int currentButtonLevel;
-    private int levelsUnlocked = 1;
+    [SerializeField] private int levelsUnlocked = 1;
 
     void Awake()
     {
@@ -66,10 +66,6 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("LevelCutscene12");
         }
-        else
-        {
-            Debug.Log("Requisito: " + 2 + " - Atual: " + levelsUnlocked);
-        }
     }
 
     public void LoadLevel3()
@@ -77,10 +73,6 @@ public class GameManager : MonoBehaviour
         if(levelsUnlocked >= 3)
         {
             SceneManager.LoadScene("LevelCutscene23");
-        }
-        else
-        {
-            Debug.Log("Requisito: " + 3 + " - Atual: " + levelsUnlocked);
         }
     }
 
