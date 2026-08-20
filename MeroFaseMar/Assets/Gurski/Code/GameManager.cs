@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private string cena;
     public GameObject pauseMenu;
     private InputActionMap playerMap;
+    private int currentButtonLevel;
+    private int levelsUnlocked = 1;
 
     void Awake()
     {
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         if(level1action.WasPressedThisFrame())
         {
-            Load("Level1");
+            Load("SeletorFase");
         }
         if(level2action.WasPressedThisFrame())
         {
@@ -56,6 +58,38 @@ public class GameManager : MonoBehaviour
     public void Load(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void LoadLevel2()
+    {
+        if(levelsUnlocked >= 2)
+        {
+            SceneManager.LoadScene("LevelCutscene12");
+        }
+        else
+        {
+            Debug.Log("Requisito: " + 2 + " - Atual: " + levelsUnlocked);
+        }
+    }
+
+    public void LoadLevel3()
+    {
+        if(levelsUnlocked >= 3)
+        {
+            SceneManager.LoadScene("LevelCutscene23");
+        }
+        else
+        {
+            Debug.Log("Requisito: " + 3 + " - Atual: " + levelsUnlocked);
+        }
+    }
+
+    public void LevelUp(int level)
+    {
+        if(level > levelsUnlocked)
+        {
+            levelsUnlocked = level;
+        }
     }
 
     public void GameOver()
