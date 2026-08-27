@@ -1,16 +1,16 @@
-using System.Collections;
-using NUnit.Framework.Constraints;
-using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections;
 
-public class TrashSpawnerMovement : MonoBehaviour
+public class FoodMovemment : MonoBehaviour
 {
-    [SerializeField] private GameObject P1,P2,P3;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private int Decider;
     [SerializeField] private float Speed;
+    [SerializeField] private GameObject Offset,Offset1,Offset2;
     [SerializeField] private bool CheckMove;
     [SerializeField] private bool isMoving;
     [SerializeField] private float FloatTime;
+
     void Update()
     {
         if(CheckMove)
@@ -25,15 +25,15 @@ public class TrashSpawnerMovement : MonoBehaviour
         {
             case 1:
             Debug.Log("A");
-                transform.position = Vector3.MoveTowards(transform.position, P1.transform.position ,Speed*Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position,  Offset.transform.position,Speed*Time.deltaTime);
                 break;
             case 2:
             Debug.Log("B");
-                transform.position = Vector3.MoveTowards(transform.position, P2.transform.position ,Speed*Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position,Offset1.transform.position ,Speed*Time.deltaTime);
                 break;
             case 3:
             Debug.Log("C");
-                transform.position = Vector3.MoveTowards(transform.position, P3.transform.position ,Speed*Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, Offset2.transform.position ,Speed*Time.deltaTime);
                 break;
         }
     }

@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: BarraEsq
       value: 
       objectReference: {fileID: 133341342}
+    - target: {fileID: 4375830771158669775, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: pescButton
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: barraTap
       value: 

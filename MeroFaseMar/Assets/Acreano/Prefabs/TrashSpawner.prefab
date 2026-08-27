@@ -163,6 +163,7 @@ MonoBehaviour:
   Speed: 0.2
   CheckMove: 1
   isMoving: 0
+  FloatTime: 3
 --- !u!1 &3050382200774587059
 GameObject:
   m_ObjectHideFlags: 0
