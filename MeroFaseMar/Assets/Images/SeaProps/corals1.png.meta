@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 89877d4a7d707fe4496d9b735bbc2db5
+guid: a3f86ebf219eee542bb761029fa399c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8305510476272537965
-    second: Pedra_0
+      213: 2852131680228493250
+    second: corals1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 192
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pedra_0
+      name: corals1_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 36
-        width: 746
-        height: 721
+        x: 426
+        y: 512
+        width: 322
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d61928016c9134370800000000000000
-      internalID: 8305510476272537965
+      spriteID: 2c748a4e6aec49720800000000000000
+      internalID: 2852131680228493250
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pedra_0: 8305510476272537965
+      corals1_0: 2852131680228493250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
