@@ -20,6 +20,9 @@ public class FoodSpawner : MonoBehaviour
 
     [SerializeField] private float waitTime;
 
+    [SerializeField] private float PosX1,PosY1,PosX2,PosY2,PosXLimit1,PosXLimit2, PosYLimit1,PosYLimit2;
+
+
 
     void Start()
     {
@@ -29,8 +32,8 @@ public class FoodSpawner : MonoBehaviour
 
     void RandomPositionDefine()
     {
-        posX = Random.Range(9.01f, 17.6f);
-        posY = Random.Range(5.12f, 9.76f);
+        posX = Random.Range(PosX1, PosX2); //9.01f, 17.6f
+        posY = Random.Range(PosY1, PosY2); //5.12f, 9.76f
 
         operators = Random.Range(1, 5); // 1 ++ 2 -+ 3 +- 4 --
         if(operators == 2)
@@ -50,11 +53,11 @@ public class FoodSpawner : MonoBehaviour
         {
             if(Mero.transform.position.x < 0)
             {
-                posX = Random.Range(9.02f,18.04f);    
+                posX = Random.Range(PosXLimit1,PosXLimit2);   //9.02f,18.04f 
             }
             if(Mero.transform.position.x > 0)
             {
-                posX = Random.Range(-18.04f,-9.02f);    
+                posX = Random.Range(-PosXLimit2,-PosXLimit1);    //-18.04f,-9.02f
             }
             
         }
@@ -62,11 +65,11 @@ public class FoodSpawner : MonoBehaviour
         {
             if(Mero.transform.position.y >0)
             {
-                posY = Random.Range(-10.24f,-5.12f);
+                posY = Random.Range(-PosYLimit1,-PosYLimit2); //-10.24f,-5.12f
             }
             if(Mero.transform.position.y < 0)
             {
-                posY = Random.Range(5.12f,10.25f);
+                posY = Random.Range(PosYLimit2,PosYLimit1); //5.12f,10.25f
             }
             
         }
