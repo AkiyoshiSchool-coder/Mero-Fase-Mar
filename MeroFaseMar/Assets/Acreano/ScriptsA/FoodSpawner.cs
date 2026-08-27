@@ -77,7 +77,7 @@ public class FoodSpawner : MonoBehaviour
         RandomPositionDefine();
         if(random == 1)
         {
-            RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
+            RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -4);
 
             TempFood = Instantiate(FoodA, RandomPos, UnityEngine.Quaternion.identity);
             FoodsPos.Add(RandomPos); 
@@ -86,7 +86,7 @@ public class FoodSpawner : MonoBehaviour
         }
         else if(random == 0)
         {
-            RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -1);
+            RandomPos = new UnityEngine.Vector3(Mero.transform.position.x + posX, Mero.transform.position.y + posY, -4);
 
             TempFood = Instantiate(FoodB, RandomPos, UnityEngine.Quaternion.identity);
             FoodsPos.Add(RandomPos); 
