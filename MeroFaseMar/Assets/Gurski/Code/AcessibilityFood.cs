@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class AcessibilityFood : MonoBehaviour
 {
-    public Color[] colorList = {Color.lightGoldenRod, Color.thistle, Color.paleTurquoise, 
+    public Color[] colorList = {Color.lightGoldenRod, Color.thistle, 
         Color.paleGreen, Color.lightCoral, Color.cornflowerBlue, Color.rosyBrown};
     public GameObject gameManager;
     public GameManagerColor colorManager;
@@ -17,7 +17,7 @@ public class AcessibilityFood : MonoBehaviour
 
     void Start()
     {
-        limit = 7;
+        limit = colorList.Length;
         colorManager = gameManager.GetComponent<GameManagerColor>();
         cor = GameManagerColor.getColor(imageIndex);
         sprite.color = cor;
