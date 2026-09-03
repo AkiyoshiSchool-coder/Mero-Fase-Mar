@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaterParallax
   target: {fileID: 0}
   resetPosition: {fileID: 0}
-  speed: 0.8
+  speed: 0.2
 --- !u!1 &2817033142067621985
 GameObject:
   m_ObjectHideFlags: 0
