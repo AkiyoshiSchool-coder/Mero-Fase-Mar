@@ -10,8 +10,8 @@ public class RandomizeSprite : MonoBehaviour
     void Start()
     {
         randomRotation = Random.Range(0f, 360.1f);
-        randomScale = Random.Range(0.8f, 1.2f);
-        objectSprite.sprite = sprites[Random.Range(0, 4)];
+        randomScale = Random.Range(0.4f, 0.75f);
+        objectSprite.sprite = sprites[Random.Range(0, sprites.Length)];
         gameObject.transform.localScale = new Vector3(randomScale, randomScale, 1);
         gameObject.transform.Rotate(0, 0, randomRotation, Space.World);
     }
