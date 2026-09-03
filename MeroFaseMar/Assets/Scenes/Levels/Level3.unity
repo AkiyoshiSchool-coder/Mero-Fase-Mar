@@ -1204,14 +1204,14 @@ MonoBehaviour:
   operators: 0
   foodEmpty: {fileID: 1268855421}
   waitTime: 0.6
-  PosX1: 0
-  PosY1: 0
-  PosX2: 0
-  PosY2: 0
-  PosXLimit1: 0
-  PosXLimit2: 0
-  PosYLimit1: 0
-  PosYLimit2: 0
+  PosX1: 9.01
+  PosY1: 5.12
+  PosX2: 17.6
+  PosY2: 9.76
+  PosXLimit1: 9.02
+  PosXLimit2: 18.04
+  PosYLimit1: 10.24
+  PosYLimit2: 5.12
 --- !u!4 &620840391
 Transform:
   m_ObjectHideFlags: 0
