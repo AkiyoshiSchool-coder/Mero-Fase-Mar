@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.46, y: 2.14, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: -1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,10 +81,10 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.070588216, g: 0.38234907, b: 0.7294118, a: 1}
+  m_Sprite: {fileID: 7808028151744729215, guid: 9a00964d143857247abac026c0edb2c0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -107,7 +107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DiverSpawner
   diver: {fileID: 1034998847598144091, guid: 0b240a9356a6a2a49859fcf209301470, type: 3}
   currentDiver: {fileID: 0}
-  diverSound: {fileID: 2238634324621827378, guid: 9445fb0492518b74b87ea988ac5c526e, type: 3}
   spawn: 0
   diverScript: {fileID: 0}
   mero: {fileID: 0}

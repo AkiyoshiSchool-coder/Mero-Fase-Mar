@@ -4104,7 +4104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &620840390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6536,11 +6536,11 @@ PrefabInstance:
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1496325855}
+      objectReference: {fileID: 1496325856}
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: resetPosition
       value: 
-      objectReference: {fileID: 1277499727}
+      objectReference: {fileID: 1277499728}
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: spawnPosition
       value: 
@@ -12606,7 +12606,7 @@ MonoBehaviour:
   boat: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
   mero: {fileID: 1180932541}
   spawnCD: 45
-  timer: 0
+  timer: 40
 --- !u!1 &1778624963
 GameObject:
   m_ObjectHideFlags: 0
