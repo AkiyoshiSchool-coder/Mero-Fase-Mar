@@ -497,6 +497,10 @@ PrefabInstance:
       propertyPath: Poison
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6294838009554721652, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6406353230661962550, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4104,7 +4108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &620840390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9314,7 +9318,7 @@ Transform:
   m_GameObject: {fileID: 1277499727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 60, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

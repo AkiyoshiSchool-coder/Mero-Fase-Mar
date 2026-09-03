@@ -520,11 +520,11 @@ PrefabInstance:
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1567564538}
+      objectReference: {fileID: 1567564539}
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: resetPosition
       value: 
-      objectReference: {fileID: 210751609}
+      objectReference: {fileID: 210751610}
     - target: {fileID: 7241481732963132769, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
