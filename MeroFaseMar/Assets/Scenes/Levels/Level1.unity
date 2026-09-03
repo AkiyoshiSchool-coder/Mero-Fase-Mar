@@ -5460,8 +5460,8 @@ MonoBehaviour:
   PosY2: 9.76
   PosXLimit1: 9.02
   PosXLimit2: 18.04
-  PosYLimit1: -10.24
-  PosYLimit2: -5.12
+  PosYLimit1: 10.24
+  PosYLimit2: 5.12
 --- !u!4 &620840391
 Transform:
   m_ObjectHideFlags: 0
