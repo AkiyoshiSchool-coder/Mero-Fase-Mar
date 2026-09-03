@@ -47,12 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   InputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   pauseMenu: {fileID: 2181384622438448348, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
-  playerMap:
-    m_Name: Player Map
-    m_Id: ed71ca2f-7c61-4949-a908-df1075202158
-    m_Asset: {fileID: 0}
-    m_Actions: []
-    m_Bindings: []
+  levelsUnlocked: 3
 --- !u!114 &2839753566600482966
 MonoBehaviour:
   m_ObjectHideFlags: 0
