@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
@@ -174,7 +174,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -203,8 +203,6 @@ MonoBehaviour:
   speed: 4
   scaredSpeedMultiplier: 0
   notScared: 1
-  damageSound: {fileID: 2143235622126119125, guid: 7b41808eaf783d648a852f27f887f9f2, type: 3}
-  healingSound: {fileID: 1127641707238364023, guid: 83c17370e2c99ad4a9126b917bb68e3b, type: 3}
 --- !u!70 &2318826239705828522
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

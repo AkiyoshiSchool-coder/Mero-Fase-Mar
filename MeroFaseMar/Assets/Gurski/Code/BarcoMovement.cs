@@ -14,6 +14,7 @@ public class BarcoMovement : MonoBehaviour
     void Start()
     {
         transform.up = direction.transform.position - transform.position;
+        transform.Rotate(0, 0, 90);
     }
 
     void Update()

@@ -497,6 +497,10 @@ PrefabInstance:
       propertyPath: Poison
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6294838009554721652, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6406353230661962550, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6536,11 +6540,11 @@ PrefabInstance:
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1496325855}
+      objectReference: {fileID: 1496325856}
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: resetPosition
       value: 
-      objectReference: {fileID: 1277499727}
+      objectReference: {fileID: 1277499728}
     - target: {fileID: 5535860738716742460, guid: e0013925ac18fff42b751981164055fe, type: 3}
       propertyPath: spawnPosition
       value: 
@@ -9314,7 +9318,7 @@ Transform:
   m_GameObject: {fileID: 1277499727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 60, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12606,7 +12610,7 @@ MonoBehaviour:
   boat: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
   mero: {fileID: 1180932541}
   spawnCD: 45
-  timer: 0
+  timer: 40
 --- !u!1 &1778624963
 GameObject:
   m_ObjectHideFlags: 0
