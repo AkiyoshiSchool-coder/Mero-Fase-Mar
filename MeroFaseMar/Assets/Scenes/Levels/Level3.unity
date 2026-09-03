@@ -13043,6 +13043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MobileHUD
       objectReference: {fileID: 0}
+    - target: {fileID: 5756920131088052787, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 786
@@ -13050,6 +13054,10 @@ PrefabInstance:
     - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075817420574143976, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
