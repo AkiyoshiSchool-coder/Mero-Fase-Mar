@@ -24,15 +24,12 @@ public class TrashSpawnerMovement : MonoBehaviour
         switch (Decider)
         {
             case 1:
-            Debug.Log("A");
                 transform.position = Vector3.MoveTowards(transform.position, P1.transform.position ,Speed*Time.deltaTime);
                 break;
             case 2:
-            Debug.Log("B");
                 transform.position = Vector3.MoveTowards(transform.position, P2.transform.position ,Speed*Time.deltaTime);
                 break;
             case 3:
-            Debug.Log("C");
                 transform.position = Vector3.MoveTowards(transform.position, P3.transform.position ,Speed*Time.deltaTime);
                 break;
         }

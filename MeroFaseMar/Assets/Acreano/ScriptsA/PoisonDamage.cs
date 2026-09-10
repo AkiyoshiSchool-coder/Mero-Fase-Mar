@@ -15,15 +15,13 @@ public class PoisonDamage : MonoBehaviour
         startPosDir = BarraDir.transform.position;
     }
 
-    void Update()
-    {
-        
-    }
-
     public void BarsMove()
     {
-        BarraDir.transform.position = new UnityEngine.Vector3(BarraDir.transform.position.x - BarMovement,BarraDir.transform.position.y, BarraDir.transform.position.z);
-        BarraEsq.transform.position = new UnityEngine.Vector3(BarraEsq.transform.position.x + BarMovement,BarraEsq.transform.position.y, BarraEsq.transform.position.z);
+        BarraDir.transform.position = new UnityEngine.Vector3(BarraDir.transform.position.x - 
+        BarMovement,BarraDir.transform.position.y, BarraDir.transform.position.z);
+
+        BarraEsq.transform.position = new UnityEngine.Vector3(BarraEsq.transform.position.x + 
+        BarMovement,BarraEsq.transform.position.y, BarraEsq.transform.position.z);
     }
 
     public void Heal()

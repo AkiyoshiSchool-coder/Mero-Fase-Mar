@@ -65,7 +65,7 @@ public class MeroMovement : MonoBehaviour
             if(timer>5)
             {
                 Rede(false);
-                gameManager.GameOver();
+                GameManager.instance.GameOver();
             }
         }
 

@@ -7,10 +7,9 @@ public class GameManager : MonoBehaviour
     public InputActionAsset InputActions;
     private InputAction level1action, level2action, level3action, menuaction;
     public static GameManager instance;
-    private string cena;
+    public string cena;
     public GameObject pauseMenu;
     private InputActionMap playerMap;
-    private int currentButtonLevel;
     [SerializeField] private int levelsUnlocked = 1;
 
     void Awake()
@@ -35,6 +34,14 @@ public class GameManager : MonoBehaviour
         playerMap = InputActions.FindActionMap("Player");
     }
 
+    void Update()
+    {
+        if(level3action.WasPressedThisFrame())
+        {
+            SceneManager.LoadScene("Level3");
+        }
+    }
+
     public void Load(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -42,7 +49,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel2()
     {
-        if(levelsUnlocked >= 2)
+        if(GameManager.instance.levelsUnlocked >= 2)
         {
             SceneManager.LoadScene("LevelCutscene12");
         }
@@ -50,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel3()
     {
-        if(levelsUnlocked >= 3)
+        if(GameManager.instance.levelsUnlocked >= 3)
         {
             SceneManager.LoadScene("LevelCutscene23");
         }
@@ -66,13 +73,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        cena = SceneManager.GetActiveScene().name;
+        GameManager.instance.cena = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("GameOver");
     }
 
     public void Retry()
     {
-        SceneManager.LoadScene(cena);
+        SceneManager.LoadScene(GameManager.instance.cena);
     }
 
     public void Pause(bool pause)
