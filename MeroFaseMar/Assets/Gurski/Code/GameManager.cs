@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
     public InputActionAsset InputActions;
-    private InputAction level1action, level2action, level3action, menuaction;
+   // private InputAction level1action, level2action, level3action, menuaction;
     public static GameManager instance;
     public string cena;
     public GameObject pauseMenu;
@@ -27,20 +27,32 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        level1action = InputSystem.actions.FindAction("Level1");
+        /* level1action = InputSystem.actions.FindAction("Level1");
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
-        menuaction = InputSystem.actions.FindAction("MainMenu");
+        menuaction = InputSystem.actions.FindAction("MainMenu"); */
         playerMap = InputActions.FindActionMap("Player");
     }
 
-    void Update()
+   /* void Update()
     {
+        if(level1action.WasPressedThisFrame())
+        {
+            SceneManager.LoadScene("Level1");
+        }
+        if(level2action.WasPressedThisFrame())
+        {
+            SceneManager.LoadScene("Level3");
+        }
         if(level3action.WasPressedThisFrame())
         {
             SceneManager.LoadScene("Level3");
         }
-    }
+        if(menuaction.WasPressedThisFrame())
+        {
+            SceneManager.LoadScene("Level3");
+        }
+    } */
 
     public void Load(string sceneName)
     {
