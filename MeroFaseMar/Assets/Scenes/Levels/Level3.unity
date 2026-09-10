@@ -14721,7 +14721,7 @@ MonoBehaviour:
   boat: {fileID: 6169983108186466782, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
   mero: {fileID: 1180932541}
   spawnCD: 60
-  timer: 0
+  timer: 55
 --- !u!4 &1619986022
 Transform:
   m_ObjectHideFlags: 0
