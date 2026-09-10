@@ -24,15 +24,12 @@ public class FoodMovemment : MonoBehaviour
         switch (Decider)
         {
             case 1:
-            Debug.Log("A");
                 transform.position = Vector3.MoveTowards(transform.position,  Offset.transform.position,Speed*Time.deltaTime);
                 break;
             case 2:
-            Debug.Log("B");
                 transform.position = Vector3.MoveTowards(transform.position,Offset1.transform.position ,Speed*Time.deltaTime);
                 break;
             case 3:
-            Debug.Log("C");
                 transform.position = Vector3.MoveTowards(transform.position, Offset2.transform.position ,Speed*Time.deltaTime);
                 break;
         }

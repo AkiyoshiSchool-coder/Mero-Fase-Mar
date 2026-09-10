@@ -3968,9 +3968,9 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3978,14 +3978,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4111,6 +4103,20 @@ MonoBehaviour:
   Follow: {fileID: 1180932541}
   xLimit: 17.6
   yLimit: 9.9
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1001 &519485483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12938,6 +12944,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1415564111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 561.10504
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 392.4547
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409085893563970396, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962928973390883967, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
+      propertyPath: m_Name
+      value: AmbienceSound
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5555f63fb3c6f0845b0faba85d387fe6, type: 3}
 --- !u!1 &1446193838
 GameObject:
   m_ObjectHideFlags: 0
@@ -19486,3 +19549,4 @@ SceneRoots:
   - {fileID: 732926817}
   - {fileID: 1619986022}
   - {fileID: 252868607}
+  - {fileID: 1415564111}

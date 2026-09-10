@@ -82,6 +82,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3686141748965797503, guid: 4c01c1f551bcb894da914f881e82fc22, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6279867425961617304, guid: 4c01c1f551bcb894da914f881e82fc22, type: 3}
       propertyPath: m_Name
       value: Ambience
@@ -166,6 +170,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2409085893563970396}
     m_Modifications:
+    - target: {fileID: 1504494230419969518, guid: ce1624eae3307ca46b809a497f3a23aa, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3790081602018547653, guid: ce1624eae3307ca46b809a497f3a23aa, type: 3}
       propertyPath: m_Name
       value: Bubbles
