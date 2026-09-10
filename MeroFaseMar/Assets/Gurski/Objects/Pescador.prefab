@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9452326, a: 1}
@@ -104,6 +104,8 @@ GameObject:
   - component: {fileID: 1517353523292682621}
   - component: {fileID: 2514947633222957764}
   - component: {fileID: 8062374771415115905}
+  - component: {fileID: 2899103801286752574}
+  - component: {fileID: -4220325669852619002}
   m_Layer: 0
   m_Name: Pescador
   m_TagString: Pescador
@@ -174,7 +176,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0, g: 0.37647063, b: 0.5411765, a: 1}
@@ -203,8 +205,6 @@ MonoBehaviour:
   speed: 3.6
   scaredSpeedMultiplier: 2.5
   notScared: 1
-  damageSound: {fileID: 2143235622126119125, guid: 7b41808eaf783d648a852f27f887f9f2, type: 3}
-  healingSound: {fileID: 1127641707238364023, guid: 83c17370e2c99ad4a9126b917bb68e3b, type: 3}
 --- !u!70 &2514947633222957764
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -269,3 +269,65 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2899103801286752574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853795661525284708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 585617940
+      Data2: 1302674036
+      Data3: 2004727484
+      Data4: -2040030858
+    Path: event:/Diving fisher
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &-4220325669852619002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853795661525284708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: Head
+  EventReference:
+    Guid:
+      Data1: -628912280
+      Data2: 1286233764
+      Data3: 554673037
+      Data4: 1191618365
+    Path: event:/Harpoon
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

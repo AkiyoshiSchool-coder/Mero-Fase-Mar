@@ -503,37 +503,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &53970355
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 53970356}
-  m_Layer: 0
-  m_Name: SpawnRede
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &53970356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53970355}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.697594, y: 18.632765, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79327747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,7 +1848,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1823546549}
-  - {fileID: 1991752685}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &252868608
@@ -1894,10 +1862,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0697f5c1d429ca45bf956b427b9064b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedeManager
-  startTime: 5
-  repeat: 35
+  startTime: 20
+  repeat: 50
   redeBoat: {fileID: 3068049722718520758, guid: 22af2839a01a80041a037774a64e3ceb, type: 3}
-  spawnPos: {fileID: 53970355}
+  spawnPos: {fileID: 1823546548}
 --- !u!1 &271390577
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,7 +6253,7 @@ MonoBehaviour:
   spawnPos: {fileID: 809592493}
   boatDirection: {fileID: 2087042846}
   boat: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
-  mero: {fileID: 0}
+  mero: {fileID: 1180932541}
   spawnCD: 55
   timer: 10
 --- !u!4 &732926817
@@ -16686,7 +16654,7 @@ Transform:
   m_GameObject: {fileID: 1823546548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.97, y: 26, z: 0}
+  m_LocalPosition: {x: -60, y: 26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18058,37 +18026,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987731161}
   m_CullTransparentMesh: 1
---- !u!1 &1991752684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1991752685}
-  m_Layer: 0
-  m_Name: BarcoExit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1991752685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991752684}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.8, y: -26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 252868607}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992650281
 GameObject:
   m_ObjectHideFlags: 0
@@ -19545,7 +19482,6 @@ SceneRoots:
   - {fileID: 35802122}
   - {fileID: 1385726216}
   - {fileID: 1975739952}
-  - {fileID: 53970356}
   - {fileID: 732926817}
   - {fileID: 1619986022}
   - {fileID: 252868607}

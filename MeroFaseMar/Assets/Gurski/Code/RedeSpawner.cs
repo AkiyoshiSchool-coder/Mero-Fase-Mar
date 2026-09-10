@@ -3,7 +3,7 @@ using UnityEngine;
 public class RedeSpawner : MonoBehaviour
 {
     public GameObject rede;
-    private int barcoDuration = 28;
+    public int barcoDuration = 40;
     [SerializeField] float timer;
     private float xSpeed = 3f;
     void Start()

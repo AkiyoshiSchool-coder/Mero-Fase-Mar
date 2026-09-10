@@ -27,6 +27,8 @@ public class MeroMovement : MonoBehaviour
     public GameObject RedeVerifier;
     private float timer = 0;
 
+    private GameObject redeObj;
+
     [SerializeField] private float horizontalLimit, verticalLimit;
     
     void Awake()
@@ -52,6 +54,7 @@ public class MeroMovement : MonoBehaviour
             {
                 Destroy(RedeVerifier);
             }
+            Destroy(redeObj);
             Rede(false);
         }
         if(isStuck)
@@ -114,7 +117,9 @@ public class MeroMovement : MonoBehaviour
     {
         if(other.CompareTag("Rede"))
         {
-            Destroy(other.gameObject);
+            redeObj = other.gameObject;
+            redeObj.SetActive(false);
+            Destroy(redeObj, 5f);
             Rede(true);
         }
     }
