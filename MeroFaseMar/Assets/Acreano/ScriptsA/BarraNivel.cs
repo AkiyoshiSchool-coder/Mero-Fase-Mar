@@ -31,12 +31,12 @@ public class BarraNivel : MonoBehaviour
             if(scene.name == "Level1")
             {
                 gameManager.Load("LevelCutscene12");
-                gameManager.LevelUp(2);
+                GameManager.instance.LevelUp(2);
             }
             else if(scene.name == "Level2")
             {
                 gameManager.Load("LevelCutscene23");
-                gameManager.LevelUp(3);
+                GameManager.instance.LevelUp(3);
             }
             else if(scene.name == "Level3")
             {

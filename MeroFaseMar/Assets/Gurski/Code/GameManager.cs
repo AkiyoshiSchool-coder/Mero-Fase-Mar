@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public InputActionAsset InputActions;
     private InputAction level1action, level2action, level3action, menuaction;
-    private static GameManager instance;
+    public static GameManager instance;
     private string cena;
     public GameObject pauseMenu;
     private InputActionMap playerMap;
@@ -33,26 +33,6 @@ public class GameManager : MonoBehaviour
         level3action = InputSystem.actions.FindAction("Level3");
         menuaction = InputSystem.actions.FindAction("MainMenu");
         playerMap = InputActions.FindActionMap("Player");
-    }
-
-    void Update()
-    {
-        if(level1action.WasPressedThisFrame())
-        {
-            Load("SeletorFase");
-        }
-        if(level2action.WasPressedThisFrame())
-        {
-            Load("LevelCutscene12");
-        }
-        if(level3action.WasPressedThisFrame())
-        {
-            Load("LevelCutscene23");
-        }
-        if(menuaction.WasPressedThisFrame())
-        {
-            Load("MenuInicial");
-        }
     }
 
     public void Load(string sceneName)

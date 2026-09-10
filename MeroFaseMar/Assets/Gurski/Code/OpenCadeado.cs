@@ -17,7 +17,7 @@ public class OpenCadeado : MonoBehaviour
 
     void OpenLock()
     {
-        int currentLevel = gameManager.GetLevel();
+        int currentLevel = GameManager.instance.GetLevel();
         if(currentLevel >= levelReq)
         {
             lockSprite.texture = openSprite;
