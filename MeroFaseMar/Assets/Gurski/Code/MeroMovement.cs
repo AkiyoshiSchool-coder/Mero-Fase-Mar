@@ -33,6 +33,7 @@ public class MeroMovement : MonoBehaviour
     
     void Awake()
     {
+        Time.timeScale = 7;
         moveAction = InputSystem.actions.FindAction("Move");
         escapeAction = InputSystem.actions.FindAction("Escape");
         codeBarraTime = barraTime.GetComponent<MoveBarrinha>();

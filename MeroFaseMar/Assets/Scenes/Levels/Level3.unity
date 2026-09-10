@@ -645,6 +645,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8262630833375765872, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8291357420742331095, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.41666666
@@ -1860,7 +1864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedeManager
   startTime: 20
-  repeat: 50
+  repeat: 60
   redeBoat: {fileID: 3068049722718520758, guid: 22af2839a01a80041a037774a64e3ceb, type: 3}
   spawnPos: {fileID: 1823546548}
 --- !u!1 &271390577
@@ -6247,7 +6251,7 @@ MonoBehaviour:
   boat: {fileID: 1637929301562293182, guid: abcdcdbee50ee364b833fd1665c23108, type: 3}
   mero: {fileID: 1180932541}
   spawnCD: 60
-  timer: 10
+  timer: 20
 --- !u!4 &732926817
 Transform:
   m_ObjectHideFlags: 0
@@ -14721,7 +14725,7 @@ MonoBehaviour:
   boat: {fileID: 6169983108186466782, guid: 3bd559ff68854a44dacd2a6f34d5f4c3, type: 3}
   mero: {fileID: 1180932541}
   spawnCD: 60
-  timer: 55
+  timer: 0
 --- !u!4 &1619986022
 Transform:
   m_ObjectHideFlags: 0

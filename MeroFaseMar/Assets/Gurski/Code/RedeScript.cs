@@ -5,7 +5,7 @@ public class RedeScript : MonoBehaviour
     [SerializeField] float timer;
     private float fallSpeed = -1.5f;
     private float zSpeed = -0.1f;
-    private int redeDuration = 28;
+    public float redeDuration;
     void Start()
     {
         Destroy(gameObject, redeDuration);

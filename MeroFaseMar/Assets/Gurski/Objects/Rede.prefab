@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RedeScript
   timer: 0
+  redeDuration: 40
 --- !u!114 &-2467639227155526363
 MonoBehaviour:
   m_ObjectHideFlags: 0
