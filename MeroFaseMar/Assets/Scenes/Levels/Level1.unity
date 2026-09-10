@@ -862,15 +862,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1080302719522824959, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.98777246
+      value: 0.9528302
       objectReference: {fileID: 0}
     - target: {fileID: 1080302719522824959, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
+      value: 0.89716756
       objectReference: {fileID: 0}
     - target: {fileID: 1080302719522824959, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.3820755
+      value: 0.22921856
       objectReference: {fileID: 0}
     - target: {fileID: 2220960240111314292, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_LocalScale.x
@@ -949,8 +949,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7033110308098389488, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033110308098389488, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_MaxParticleSize
-      value: 0.01
+      value: 0.0075
       objectReference: {fileID: 0}
     - target: {fileID: 8499717547839377244, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: barraTap
