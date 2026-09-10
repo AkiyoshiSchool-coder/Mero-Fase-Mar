@@ -48,6 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RedeSpawner
   rede: {fileID: 4205126555133266285, guid: 97201e59464dfcb44b79af8881b8bfeb, type: 3}
   barcoDuration: 40
+  startTime: 8
+  lowerTimeLimit: 3.99
+  upperTimeLimit: 10.1
   timer: 0
 --- !u!114 &1478355101249976601
 MonoBehaviour:
