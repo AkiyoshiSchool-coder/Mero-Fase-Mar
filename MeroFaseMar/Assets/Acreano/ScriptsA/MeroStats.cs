@@ -27,9 +27,9 @@ public class MeroStats : MonoBehaviour
             botao.SetActive(true);
         }
     }
-    public void FoodCounter()
+    public void FoodCounter(int value)
     {
-        FoodCount++;
+        FoodCount += value;
         
         if(FoodCount >= 10-Poison || FoodCount <= -10+Poison)
         {
