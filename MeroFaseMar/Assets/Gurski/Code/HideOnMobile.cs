@@ -4,7 +4,7 @@ public class HideOnMobile : MonoBehaviour
 {
     void Start()
     {
-        if(Application.platform != RuntimePlatform.Android)
+        if(!Application.platform.Equals(RuntimePlatform.Android))
         {
             gameObject.SetActive(false);
         }
