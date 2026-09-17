@@ -29,6 +29,7 @@ public class FoodScript : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();   
     }
+    
     void Start()
     {
         cs.anchoredPosition = new Vector2(cs.anchoredPosition.x, cs.anchoredPosition.y);

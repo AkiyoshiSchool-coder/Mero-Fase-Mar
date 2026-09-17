@@ -3,7 +3,7 @@ using UnityEngine;
 public class RedeScript : MonoBehaviour
 {
     [SerializeField] float timer;
-    private float fallSpeed = -1.5f;
+    public float fallSpeed = -1.5f;
     private float zSpeed = -0.1f;
     public float redeDuration;
     void Start()

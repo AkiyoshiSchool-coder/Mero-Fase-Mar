@@ -20,7 +20,8 @@ public class BarcoMovement : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, direction.transform.position, speed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, 
+            direction.transform.position, speed*Time.deltaTime);
         if(timer >= spawnCD && !spawnedDiver)
         {
             diverSpawner.Diver();
