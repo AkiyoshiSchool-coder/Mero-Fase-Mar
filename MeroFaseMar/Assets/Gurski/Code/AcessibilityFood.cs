@@ -9,7 +9,7 @@ public class AcessibilityFood : MonoBehaviour
     public GameObject gameManager;
     public GameManagerColor colorManager;
     public int index;
-    public int imageIndex; // inspector
+    public int imageIndex;
     private int limit;
     public Color cor;
 

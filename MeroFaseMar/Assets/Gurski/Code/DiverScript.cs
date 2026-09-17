@@ -49,7 +49,7 @@ public class DiverScript : MonoBehaviour
         {
             if(gameObject.CompareTag("Pescador"))
             {
-                if(SceneManager.GetActiveScene().name != "LevelCutscene23")
+                if(SceneManager.GetActiveScene().name.Equals("Level3"))
                 {
                     GameManager.instance.GameOver();
                 }

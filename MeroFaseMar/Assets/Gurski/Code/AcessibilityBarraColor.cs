@@ -7,6 +7,7 @@ public class AcessibilityBarraColor : MonoBehaviour
     public Color colorA, colorB;
     public GameObject gameManager;
     public GameManagerColor colorManager;
+    
     void Start()
     {
         barra = gameObject.GetComponent<TextMeshProUGUI>();

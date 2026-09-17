@@ -16070,6 +16070,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1893032704819533849, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893032704819533849, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893032704819533849, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 786
       objectReference: {fileID: 0}
@@ -16090,12 +16098,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7564631733189363780, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564631733189363780, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564631733189363780, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564631733189363780, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564631733189363780, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 16354d46b15726e40976f7a0e713096b, type: 3}
     - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 180
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 7693559864374982680, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_AnchoredPosition.x
