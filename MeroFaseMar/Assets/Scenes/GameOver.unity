@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 1944236807}
   - component: {fileID: 1944236806}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Sombra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -994,8 +994,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Voc\xEA perdeu"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
-  m_sharedMaterial: {fileID: 7095034732292760781, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
+  m_sharedMaterial: {fileID: -6786287470260676282, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 2064120511}
   - component: {fileID: 2064120510}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Titulo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,8 +1131,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Voc\xEA perdeu"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
-  m_sharedMaterial: {fileID: 7095034732292760781, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
+  m_sharedMaterial: {fileID: -6786287470260676282, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -254,8 +254,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Voc\xEA venceu"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
-  m_sharedMaterial: {fileID: 7095034732292760781, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
+  m_sharedMaterial: {fileID: -6786287470260676282, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -938,8 +938,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Voc\xEA venceu"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
-  m_sharedMaterial: {fileID: 7095034732292760781, guid: 6cdc7716279d5d440b39dfa08d6802d2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
+  m_sharedMaterial: {fileID: -6786287470260676282, guid: dec47cb6bf879fc4dac1705e5632777c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
