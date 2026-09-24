@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 60b2ef5a702bf054b8a5842cc2b49d5d
+guid: c61767bdce3205b49aea138ace7487ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5189909510057395268
-    second: botaogrito_0
+      213: -5072269152490031639
+    second: botaoscream_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: botaogrito_0
+      name: botaoscream_0
       rect:
         serializedVersion: 2
-        x: 156
-        y: 24
-        width: 701
-        height: 694
+        x: 122
+        y: 72
+        width: 689
+        height: 665
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 444846bb333460840800000000000000
-      internalID: 5189909510057395268
+      spriteID: 9e5f8a0741eab99b0800000000000000
+      internalID: -5072269152490031639
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      botaogrito_0: 5189909510057395268
+      botaoscream_0: -5072269152490031639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

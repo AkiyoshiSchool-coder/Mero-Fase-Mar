@@ -129,10 +129,10 @@ TextureImporter:
       name: botaorede_0
       rect:
         serializedVersion: 2
-        x: 156
-        y: 24
-        width: 701
-        height: 694
+        x: 118
+        y: 72
+        width: 689
+        height: 665
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
