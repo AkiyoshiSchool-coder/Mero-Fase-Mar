@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8160885916129557572}
   - component: {fileID: 7828180088135823557}
   - component: {fileID: 7960913652003182328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PesquisadorSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 30
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7808028151744729215, guid: 9a00964d143857247abac026c0edb2c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
