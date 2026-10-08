@@ -42,11 +42,11 @@ public class GameManager : MonoBehaviour
         }
         if(level2action.WasPressedThisFrame())
         {
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("LevelCutscene12");
         }
         if(level3action.WasPressedThisFrame())
         {
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("LevelCutscene23");
         }
         if(menuaction.WasPressedThisFrame())
         {
