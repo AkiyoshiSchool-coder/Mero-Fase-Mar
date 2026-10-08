@@ -668,12 +668,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s sair da correnteza, Merinha finalmente chega ao mar, dando in\xEDcio
-    \xE0 sua fase adulta. Neste novo ambiente, ela precisa se alimentar para crescer
-    saud\xE1vel e ir aos cost\xF5es rochosos se reproduzir. \n\nNo entanto, este
-    vasto novo ambiente est\xE1 repleto de obst\xE1culos. Conte com a ajuda do Projeto
-    Meros do Brasil para auxiliar a Merinha neste novo ciclo, ajudando a peixinha
-    a se alimentar enquanto evita a polui\xE7\xE3o marinha e pescadores desinformados.\n"
+  m_text: "Depois de finalmente deixar o estu\xE1rio, Merinha chega ao mar aberto.\r\nTudo
+    parece enorme.\r\nH\xE1 novas esp\xE9cies, diferentes paisagens e lugares que
+    ela nunca havia visto. \xC9 um mundo vasto, cheio de possibilidades, mas tamb\xE9m
+    muito diferente da seguran\xE7a que encontrou durante sua inf\xE2ncia no manguezal.\r\nPara
+    viver nesse novo ambiente, Merinha ainda precisa crescer. Ela come\xE7a ent\xE3o
+    uma nova etapa de sua jornada: procurar alimento, explorar o fundo do mar e encontrar
+    um lugar seguro onde possa estabelecer sua casa.\r\nDurante essa aventura, Merinha
+    descobre recifes, forma\xE7\xF5es rochosas e outros ambientes que podem servir
+    como abrigo. Mas tamb\xE9m encontra novos perigos: redes de pesca, pescadores
+    com arp\xF5es e polui\xE7\xE3o marinha.\r\nAgora, Merinha precisa usar tudo o
+    que aprendeu durante sua jornada para sobreviver.\r\nAjude Merinha a encontrar
+    alimento, crescer, fazer novos amigos e encontrar um lugar seguro para chamar
+    de lar.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -715,7 +722,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 40
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
