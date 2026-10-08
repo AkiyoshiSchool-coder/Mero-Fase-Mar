@@ -1514,6 +1514,7 @@ GameObject:
   - component: {fileID: 742359177}
   - component: {fileID: 742359181}
   - component: {fileID: 742359180}
+  - component: {fileID: 742359182}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1654,6 +1655,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &742359182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742359176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &789538038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +2761,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4098995587294927172, guid: 5c234839c44fd7e41b6e6150e4e65a39, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1094734870}
     - target: {fileID: 5045917511133213985, guid: 5c234839c44fd7e41b6e6150e4e65a39, type: 3}
       propertyPath: m_Name
       value: EscapeMeter
