@@ -622,6 +622,7 @@ GameObject:
   - component: {fileID: 1109025706}
   - component: {fileID: 1109025705}
   - component: {fileID: 1109025707}
+  - component: {fileID: 1109025708}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -773,8 +774,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
   pos: {x: 0, y: -40}
-  mobileScale: {x: 0.83, y: 0.83}
+  mobileScale: {x: 0.72, y: 0.72}
   objectPos: {fileID: 1109025704}
+--- !u!114 &1109025708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109025703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94eaadf8498fce4d830e3a64347e1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResizeTextboxPlatform
+  sizeX: 1850
+  sizeY: 600
 --- !u!1 &1149353572
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepositionPlatform
   pos: {x: 0, y: -40}
-  mobileScale: {x: 0.84, y: 0.84}
+  mobileScale: {x: 0.88, y: 0.88}
   objectPos: {fileID: 1413081655}
 --- !u!1 &1450967203
 GameObject:
