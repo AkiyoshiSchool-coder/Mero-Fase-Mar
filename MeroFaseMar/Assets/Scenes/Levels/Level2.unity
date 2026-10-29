@@ -632,6 +632,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1080302719522824959, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
+      propertyPath: ShapeModule.randomDirectionAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2220960240111314292, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.4
@@ -4423,14 +4427,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2812262194145198550, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8593462655657743714, guid: 8bec70a1d58ada34085df5df0a17dfa4, type: 3}
     - target: {fileID: 3913132996017623084, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_Name
       value: MobileHUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011503280448966355, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 5756920131088052787, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5911024392013670597, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 492992a42079b0449adb3f4698d2dc51, type: 3}
     - target: {fileID: 9075817420574143976, guid: a14200b0f8e70e64eb5301aa4021d6c6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5375,9 +5391,9 @@ MonoBehaviour:
   m_colorMode: 1
   m_fontColorGradient:
     topLeft: {r: 0, g: 0.5152774, b: 1, a: 1}
-    topRight: {r: 1, g: 0.9561808, b: 0, a: 1}
+    topRight: {r: 1, g: 0.9957261, b: 0, a: 1}
     bottomLeft: {r: 0, g: 0.5152774, b: 1, a: 1}
-    bottomRight: {r: 1, g: 0.9561808, b: 0, a: 1}
+    bottomRight: {r: 1, g: 0.9957261, b: 0, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
