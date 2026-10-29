@@ -9,6 +9,7 @@ public class FoodSpawner : MonoBehaviour
     public List<GameObject> Foods = new List<GameObject>();
     public GameObject FoodA;
     public GameObject FoodB;
+    public RectTransform limit;
     [SerializeField] private GameObject Mero, cursor, barraNivel;
     [SerializeField] int operators = 0;
     private GameObject TempFood;
@@ -97,7 +98,7 @@ public class FoodSpawner : MonoBehaviour
         }
         TempFood.transform.SetParent(foodEmpty.transform);
         TempFoodScript = TempFood.GetComponent<FoodScript>();
-        TempFoodScript.Init(Mero, cursor, barraNivel, gameObject);
+        TempFoodScript.Init(Mero, cursor, barraNivel, gameObject, limit);
     }
 
 }

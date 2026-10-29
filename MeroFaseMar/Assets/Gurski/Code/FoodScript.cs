@@ -91,10 +91,11 @@ public class FoodScript : MonoBehaviour
         }
     }
 
-    public void Init(GameObject mero, GameObject curs, GameObject barraXp, GameObject spawner)
+    public void Init(GameObject mero, GameObject curs, GameObject barraXp, GameObject spawner, RectTransform lim)
     {
         cursor = curs;
         barra = barraXp;
+        cursorRange = lim.position.x-960;
         foodSpawn = spawner;
 
         merostats = mero.GetComponent<MeroStats>();
