@@ -2014,6 +2014,14 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.1254902
       objectReference: {fileID: 0}
+    - target: {fileID: 6077958651445529039, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 389725931111617527, guid: 053b7c0fe5145d04ea8c9957282cbb8f, type: 3}
+    - target: {fileID: 6077958651445529039, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnpauseMap
+      objectReference: {fileID: 0}
     - target: {fileID: 7172199501506716927, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
       propertyPath: m_fontColor.b
       value: 0.74509805

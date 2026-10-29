@@ -12,6 +12,7 @@ public class PauseButton : MonoBehaviour
     {
         pauseAction = InputSystem.actions.FindAction("Pause");
         unpauseAction = InputSystem.actions.FindAction("Unpause");
+        playerMap = InputActions.FindActionMap("Player");
     }
 
     void Update()
@@ -33,12 +34,10 @@ public class PauseButton : MonoBehaviour
         {
             Time.timeScale = 0;
             InputActions.FindActionMap("Player").Disable();
-            InputActions.FindActionMap("UI").Enable();
         }
         else
         {
             Time.timeScale = 1;
-            InputActions.FindActionMap("UI").Disable();
             InputActions.FindActionMap("Player").Enable();
         }
     }

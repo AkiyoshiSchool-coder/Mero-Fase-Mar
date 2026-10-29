@@ -39,7 +39,6 @@ public class MeroStats : MonoBehaviour
     public void PoisonUpper()
     {
         Poison++;
-        Debug.Log(Poison);
         if(FoodCount >= 10-Poison || FoodCount <= -10+Poison)
         {
             GameManager.instance.GameOver();

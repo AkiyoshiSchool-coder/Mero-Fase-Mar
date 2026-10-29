@@ -10,7 +10,7 @@ public class FoodSpawner : MonoBehaviour
     public GameObject FoodA;
     public GameObject FoodB;
     public RectTransform limit;
-    [SerializeField] private GameObject Mero, cursor, barraNivel;
+    [SerializeField] private GameObject Mero, cursor, barraNivel, cStt;
     [SerializeField] int operators = 0;
     private GameObject TempFood;
     private FoodScript TempFoodScript;

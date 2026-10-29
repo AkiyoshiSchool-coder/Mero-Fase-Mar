@@ -4686,9 +4686,11 @@ MonoBehaviour:
   Foods: []
   FoodA: {fileID: 3327296857486405652, guid: 39d6d304161eb764c8c0e998fbd8fec8, type: 3}
   FoodB: {fileID: 3403562119263904250, guid: 980c0df42dc96a64b92e1fafdd4ec2dd, type: 3}
+  limit: {fileID: 0}
   Mero: {fileID: 1180932541}
   cursor: {fileID: 807606117}
   barraNivel: {fileID: 1733183367}
+  cStt: {fileID: 0}
   operators: 0
   foodEmpty: {fileID: 1268855421}
   waitTime: 0.6
@@ -10768,6 +10770,10 @@ PrefabInstance:
     - target: {fileID: 3834119291819458767, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
       propertyPath: m_fontColor.r
       value: 0.1254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591905188190542325, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 7172199501506716927, guid: 9172162d99cc2744bab62b2cae40c1c9, type: 3}
       propertyPath: m_fontColor.b

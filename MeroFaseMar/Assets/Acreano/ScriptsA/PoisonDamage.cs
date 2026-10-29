@@ -13,6 +13,7 @@ public class PoisonDamage : MonoBehaviour
         merostats = GetComponent<MeroStats>();
         startPosEsq = BarraEsq.transform.position;
         startPosDir = BarraDir.transform.position;
+        BarMovement = 38 * (Screen.width/1920);
     }
 
     public void BarsMove()

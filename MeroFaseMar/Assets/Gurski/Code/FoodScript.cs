@@ -84,7 +84,8 @@ public class FoodScript : MonoBehaviour
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
-                cs.localPosition = new Vector3(cs.localPosition.x + (comidinhas/100) * cursorRange, cs.localPosition.y, cs.localPosition.z);
+                cs.localPosition = new Vector3(cs.localPosition.x + (comidinhas/100) * cursorRange, 
+                cs.localPosition.y, cs.localPosition.z);
             }
             barraCode.FoodCount();
             Destroy(gameObject);
@@ -95,7 +96,7 @@ public class FoodScript : MonoBehaviour
     {
         cursor = curs;
         barra = barraXp;
-        cursorRange = lim.position.x-960;
+        cursorRange = 380 * (Screen.width/1920);
         foodSpawn = spawner;
 
         merostats = mero.GetComponent<MeroStats>();
