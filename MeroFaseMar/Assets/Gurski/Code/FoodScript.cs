@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using UnityEditor;
-using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using Unity.Mathematics;
@@ -22,7 +21,9 @@ public class FoodScript : MonoBehaviour
     [SerializeField] private GameObject FoodImage;
     private SpriteRenderer spriteRenderer;
     private BarraNivel barraCode;
+    public float cursorRange;
     public Sprite sprite;
+
     [SerializeField] private float comidinhas;
     
     void Awake()
@@ -68,7 +69,7 @@ public class FoodScript : MonoBehaviour
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
-                cs.localPosition = new Vector3(cs.localPosition.x - (comidinhas/100) * 487f, cs.localPosition.y, cs.localPosition.z);
+                cs.localPosition = new Vector3(cs.localPosition.x - (comidinhas/100) * cursorRange, cs.localPosition.y, cs.localPosition.z);
             }
             else if(gameObject.CompareTag("FoodB"))
             {
@@ -83,7 +84,7 @@ public class FoodScript : MonoBehaviour
                 FS.FoodsPos.Remove(gameObject.transform.position);
                 FS.Foods.Remove(gameObject);
 
-                cs.localPosition = new Vector3(cs.localPosition.x + (comidinhas/100) * 487f, cs.localPosition.y, cs.localPosition.z);
+                cs.localPosition = new Vector3(cs.localPosition.x + (comidinhas/100) * cursorRange, cs.localPosition.y, cs.localPosition.z);
             }
             barraCode.FoodCount();
             Destroy(gameObject);

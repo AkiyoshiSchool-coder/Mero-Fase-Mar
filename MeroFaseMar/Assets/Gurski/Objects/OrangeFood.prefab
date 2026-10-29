@@ -249,6 +249,7 @@ MonoBehaviour:
   poison: {fileID: 0}
   skullImage: {fileID: 4698068288394715978}
   FoodImage: {fileID: 1547181636882442810}
+  cursorRange: 380
   sprite: {fileID: 0}
   comidinhas: 10
 --- !u!114 &1898218259343074387
