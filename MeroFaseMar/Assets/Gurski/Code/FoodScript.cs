@@ -92,7 +92,7 @@ public class FoodScript : MonoBehaviour
         }
     }
 
-    public void Init(GameObject mero, GameObject curs, GameObject barraXp, GameObject spawner, RectTransform lim)
+    public void Init(GameObject mero, GameObject curs, GameObject barraXp, GameObject spawner)
     {
         cursor = curs;
         barra = barraXp;

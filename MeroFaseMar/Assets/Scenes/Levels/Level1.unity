@@ -1083,11 +1083,11 @@ PrefabInstance:
     - target: {fileID: 4333045775212785828, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: BarraDir
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 105906089}
     - target: {fileID: 4333045775212785828, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: BarraEsq
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 149293354}
     - target: {fileID: 4333045775212785828, guid: 28253223ec183c9439a11de8014a9d6a, type: 3}
       propertyPath: BarMovement
       value: 38
@@ -4397,6 +4397,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3982002910674260756, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
   m_PrefabInstance: {fileID: 370575248}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &370575250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9222094362274996350, guid: 9169aca9a1bd42a4a9ce7dc3481cbf4e, type: 3}
+  m_PrefabInstance: {fileID: 370575248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &381184985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,11 +6513,10 @@ MonoBehaviour:
   Foods: []
   FoodA: {fileID: 3327296857486405652, guid: 39d6d304161eb764c8c0e998fbd8fec8, type: 3}
   FoodB: {fileID: 3403562119263904250, guid: 980c0df42dc96a64b92e1fafdd4ec2dd, type: 3}
-  limit: {fileID: 0}
+  limit: {fileID: 105906090}
   Mero: {fileID: 1180932541}
-  cursor: {fileID: 0}
-  barraNivel: {fileID: 0}
-  cStt: {fileID: 0}
+  cursor: {fileID: 1983703880}
+  barraNivel: {fileID: 370575250}
   operators: 0
   foodEmpty: {fileID: 527040228}
   waitTime: 0.6
@@ -17982,6 +17986,11 @@ PrefabInstance:
 --- !u!224 &1983703879 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8109569872407818332, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
+  m_PrefabInstance: {fileID: 1983703878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1983703880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 731591691293518012, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
   m_PrefabInstance: {fileID: 1983703878}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2011771450

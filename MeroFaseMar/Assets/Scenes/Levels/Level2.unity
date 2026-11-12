@@ -5952,7 +5952,6 @@ MonoBehaviour:
   Mero: {fileID: 1180932541}
   cursor: {fileID: 1197639237}
   barraNivel: {fileID: 1668501581}
-  cStt: {fileID: 1523734877}
   operators: 0
   foodEmpty: {fileID: 138096056}
   waitTime: 0.6
@@ -13691,11 +13690,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452349069}
   m_CullTransparentMesh: 1
---- !u!1 &1523734877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 731591691293518012, guid: ec5f681ba74e6f74d8704f4204cbe789, type: 3}
-  m_PrefabInstance: {fileID: 422678875}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1526746078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19020,14 +19014,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1385726216}
+  - {fileID: 1975739952}
   - {fileID: 275516761}
   - {fileID: 138096057}
   - {fileID: 620840391}
   - {fileID: 619394802}
   - {fileID: 87184913}
   - {fileID: 465336833}
-  - {fileID: 1385726216}
-  - {fileID: 1975739952}
   - {fileID: 5489872386502021502}
   - {fileID: 1926944258}
   - {fileID: 1766416533}
