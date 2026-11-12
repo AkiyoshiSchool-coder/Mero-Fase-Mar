@@ -5,7 +5,7 @@ public class PauseButton : MonoBehaviour
 {
     public InputActionAsset InputActions;
     public GameObject pauseMenu;
-    private InputActionMap playerMap;
+    private InputActionMap playerMap, uiMap;
     private InputAction pauseAction, unpauseAction;
 
     void Start()
@@ -13,6 +13,7 @@ public class PauseButton : MonoBehaviour
         pauseAction = InputSystem.actions.FindAction("Pause");
         unpauseAction = InputSystem.actions.FindAction("Unpause");
         playerMap = InputActions.FindActionMap("Player");
+        uiMap = InputActions.FindActionMap("UI");
     }
 
     void Update()
@@ -33,12 +34,16 @@ public class PauseButton : MonoBehaviour
         if(pause)
         {
             Time.timeScale = 0;
-            InputActions.FindActionMap("Player").Disable();
+            Debug.Log("pauseGM");
+            playerMap.Disable();
+            uiMap.Enable();
         }
         else
         {
+            Debug.Log("unpauseGM");
+            uiMap.Disable();
+            playerMap.Enable();
             Time.timeScale = 1;
-            InputActions.FindActionMap("Player").Enable();
         }
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class MeroBoom : MonoBehaviour
 {
     public GameObject boom;
-    public InputActionAsset InputActions;
     private InputAction boomAction;
     private GameObject currentBoom;
     [SerializeField] private bool noAbrigo;

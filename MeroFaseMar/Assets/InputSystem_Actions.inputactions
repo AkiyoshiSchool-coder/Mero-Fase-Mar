@@ -345,7 +345,7 @@
                 },
                 {
                     "name": "ScrollWheel",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "e02330e4-d11a-40dd-a847-c679b1863dc4",
                     "expectedControlType": "Vector2",
                     "processors": "",

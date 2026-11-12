@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public string cena;
     public GameObject pauseMenu;
-    private InputActionMap playerMap, uiMap;
     [SerializeField] private int levelsUnlocked = 1;
 
     void Awake()
@@ -31,8 +30,6 @@ public class GameManager : MonoBehaviour
         level2action = InputSystem.actions.FindAction("Level2");
         level3action = InputSystem.actions.FindAction("Level3");
         menuaction = InputSystem.actions.FindAction("MainMenu"); 
-        playerMap = InputActions.FindActionMap("Player");
-        uiMap = InputActions.FindActionMap("UI");
     }
 
     void Update()
@@ -57,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void Load(string sceneName)
     {
-        Debug.Log("ahh");
+        Debug.Log(sceneName);
         SceneManager.LoadScene(sceneName);
     }
 
@@ -94,27 +91,6 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(GameManager.instance.cena);
-    }
-
-    public void Pause(bool pause)
-    {
-        pauseMenu.SetActive(pause);
-        if(pause)
-        {
-            Time.timeScale = 0;
-            GameManager.instance.playerMap.Disable();
-        }
-        else
-        {
-            Time.timeScale = 1;
-            GameManager.instance.playerMap.Enable();
-        }
-    }
-
-    public void UnpauseMap()
-    {
-        Time.timeScale = 1;
-        GameManager.instance.playerMap.Enable();
     }
 
     public void EndGame()
