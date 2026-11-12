@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     private InputAction level1action, level2action, level3action, menuaction;
     public static GameManager instance;
     public string cena;
-    public GameObject pauseMenu;
     [SerializeField] private int levelsUnlocked = 1;
 
     void Awake()
